@@ -3,7 +3,7 @@ import { FaTwitter, FaLinkedin, FaTelegram } from 'react-icons/fa';
 
 const AboutSection = () => {
   return (
-    <section id="about" className="bg-gray-50 py-16 md:py-24">
+    <section id="about" className="bg-white py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
@@ -65,12 +65,11 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Abstract Geometric Background */}
+          {/* Geometric Illustration / Abstract Background */}
           <div className="hidden md:flex justify-center items-center">
             <div className="relative w-full h-80 rounded-lg shadow-lg overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 animate-pulse"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 animate-pulse opacity-70"></div>
               <div className="absolute inset-0 opacity-20">
-                {/* Optional geometric pattern overlay */}
                 <svg
                   className="w-full h-full"
                   viewBox="0 0 200 200"
@@ -91,3 +90,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
