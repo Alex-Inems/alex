@@ -2,20 +2,20 @@ import React from 'react';
 
 const clients = [
   {
-    name: 'TechCorp Solutions',
-    logo: '/images/bike.jpg',
+    name: 'BikeFixup',
+    logo: '/images/bike.png',
     project: 'E-commerce Platform',
     description: 'Built a comprehensive e-commerce platform with real-time inventory management and payment processing.'
   },
   {
-    name: 'Creative Agency Pro',
-    logo: '/placeholder.svg',
+    name: 'Creative Builders',
+    logo: '/images/creative.png',
     project: 'Portfolio Website',
     description: 'Designed and developed a modern portfolio website showcasing creative work with smooth animations.'
   },
   {
-    name: 'FinanceFlow Inc.',
-    logo: '/placeholder.svg',
+    name: 'Amazon PPC',
+    logo: '/images/amazon.png',
     project: 'Financial Dashboard',
     description: 'Created an interactive financial dashboard with data visualization and reporting capabilities.'
   },
@@ -26,14 +26,14 @@ const clients = [
     description: 'Developed a secure patient management system with appointment scheduling and medical records.'
   },
   {
-    name: 'EduLearn Platform',
-    logo: '/placeholder.svg',
+    name: 'Dehoni Technologies',
+    logo: '/images/dehoni.png',
     project: 'Learning Management System',
-    description: 'Built an online learning platform with video streaming, quizzes, and progress tracking.'
+    description: 'Used my skills as a fullstack devveloper in mentoring junior frontend developers '
   },
   {
-    name: 'RetailMax Group',
-    logo: '/placeholder.svg',
+    name: 'Xtaspare',
+    logo: '/images/',
     project: 'Inventory Management',
     description: 'Implemented a real-time inventory management system with barcode scanning and analytics.'
   }

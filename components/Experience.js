@@ -3,22 +3,22 @@ import React from 'react';
 const experiences = [
   {
     title: 'Senior Full Stack Developer',
-    company: 'Tech Solutions Inc.',
-    period: '2022 - Present',
+    company: 'BikeFixup.com',
+    period: '2024 - Present',
     description: 'Lead development of enterprise web applications using React, Node.js, and cloud technologies. Managed a team of 4 developers and improved application performance by 40%.',
     technologies: ['React', 'Node.js', 'TypeScript', 'AWS', 'MongoDB']
   },
   {
     title: 'Frontend Developer',
-    company: 'Digital Agency Co.',
-    period: '2020 - 2022',
+    company: 'Creative Builders',
+    period: '2022 - 2023',
     description: 'Developed responsive web applications for various clients. Collaborated with designers and backend developers to deliver high-quality user experiences.',
     technologies: ['React', 'JavaScript', 'CSS3', 'SASS', 'REST APIs']
   },
   {
-    title: 'Junior Web Developer',
-    company: 'StartUp Ventures',
-    period: '2019 - 2020',
+    title: 'Fullstack Developer',
+    company: 'Dehoni Technologies',
+    period: '2024 - 2025',
     description: 'Built and maintained company websites and web applications. Gained experience in full-stack development and agile methodologies.',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL']
   }
