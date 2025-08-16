@@ -67,7 +67,7 @@ const AboutSection = () => {
 
           {/* Geometric Illustration / Abstract Background */}
           <div className="hidden md:flex justify-center items-center">
-            <div className="relative w-full h-80 rounded-lg shadow-lg overflow-hidden">
+            <div className="relative w-full h-80 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
               <div className="absolute inset-0 bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 animate-pulse opacity-70"></div>
               <div className="absolute inset-0 opacity-20">
                 <svg
@@ -90,4 +90,3 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
-

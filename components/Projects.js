@@ -85,7 +85,7 @@ const ProjectsSection = () => {
                                         <p className="text-black mb-4">{project.description}</p>
                                         <div className="flex flex-wrap gap-2 mb-4">
                                             {project.tags.map((tag, index) => (
-                                                <span key={index} className="text-xs bg-blue-100 text-portfolio-lightBlue px-2 py-1 rounded-full">
+                                                <span key={index} className="text-xs bg-blue-900 text-portfolio-lightBlue px-2 py-1 rounded-full">
                                                     {tag}
                                                 </span>
                                             ))}
@@ -93,7 +93,7 @@ const ProjectsSection = () => {
                                         <div className="flex justify-between items-center">
                                             <a
                                                 href={project.link}
-                                                className="text-portfolio-lightBlue hover:underline font-medium inline-flex items-center"
+                                                className="text-red-950 hover:underline font-medium inline-flex items-center"
                                             >
                                                 View Project
                                                 <svg
