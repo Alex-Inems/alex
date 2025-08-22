@@ -11,13 +11,7 @@ const AboutSection = () => {
           <div>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
             <p className="mb-4 text-gray-700 leading-relaxed">
-              I'm a passionate web developer with over 5 years of experience creating modern and responsive web applications. I specialize in front-end development with React and have a strong foundation in back-end technologies.
-            </p>
-            <p className="mb-4 text-gray-700 leading-relaxed">
-              My journey in web development started when I was in college, and I've been hooked ever since. I love solving complex problems and creating intuitive, enjoyable user experiences.
-            </p>
-            <p className="mb-6 text-gray-700 leading-relaxed">
-              When I'm not coding, you can find me hiking, reading science fiction, or experimenting with new recipes in the kitchen.
+            I dont just write code, I solve business problems with technology. For over 5 years I have been the person founders and teams call when they need to turn a messy idea into a scalable product. I operate across the full stack: React and modern front-end, powerful APIs, optimized databases, and cloud systems built to last. I dont build features for the sake of it, I eliminate bottlenecks, cut wasted time, and create solutions that drive revenue. I have rescued failing projects, rebuilt products from scratch, and delivered results that competitors cant match. That is the 10x difference: I make complexity disappear and leave clients with systems that just work.
             </p>
 
             {/* Buttons */}
@@ -37,7 +31,7 @@ const AboutSection = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <a
                 href="https://twitter.com/yourhandle"
                 target="_blank"
@@ -62,7 +56,7 @@ const AboutSection = () => {
               >
                 <FaTelegram />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Geometric Illustration / Abstract Background */}
