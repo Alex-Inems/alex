@@ -42,7 +42,7 @@ const ProjectsSection = () => {
       image:
         'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
       link: 'https://www.eventie.africa',
-      detailPage: '/projects/ppc-dashboard',
+      detailPage: '/dashboard',
       accent: 'from-pink-500 to-red-600'
     },
   ];
