@@ -1,11 +1,11 @@
 import React from 'react'
-import ClientListSection from '@/components/ClientListSection'
-import HeroSection from '@/components/HeroSection'
-import ExperiencesSection from '@/components/Experience'
-//import ContactSection from '@/components/Contact'
-import ProjectsSection from '@/components/Projects'
-import AboutSection from '@/components/AboutSection'
+
 import Navbar from '@/components/Navbar'
+import HeroSection from '@/components/HeroSection'
+import AboutSection from '@/components/AboutSection'
+import ProjectsSection from '@/components/Projects'
+import ClientListSection from '@/components/ClientListSection'
+import ExperiencesSection from '@/components/Experience'
 
 function page() {
   return (
