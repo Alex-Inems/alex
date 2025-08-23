@@ -42,7 +42,20 @@ const ExperiencesSection = () => {
       bgGradient: 'from-red-50 to-gray-50',
       icon: '🎨',
       status: 'completed'
-    }
+    },
+    {
+      title: 'Frontend Developer',
+      company: 'Creative Builders',
+      period: '2022 - 2023',
+      description: 'Developed responsive web applications for various clients. Collaborated with designers and backend developers to deliver high-quality user experiences.',
+      technologies: ['React', 'JavaScript', 'CSS3', 'SASS', 'REST APIs'],
+      accent: 'from-red-600 to-gray-700',
+      bgGradient: 'from-red-50 to-gray-50',
+      icon: '🎨',
+      status: 'completed'
+    },
+    
+
   ];
 
   useEffect(() => {
@@ -186,7 +199,7 @@ const ExperiencesSection = () => {
                   <div className={`absolute -top-2 left-20 md:left-16 px-2 py-1 rounded-full text-xs font-medium transform transition-all duration-500 ${
                     experience.status === 'current' ? 'bg-red-100 text-red-800' :
                     experience.status === 'recent' ? 'bg-gray-100 text-gray-800' :
-                    'bg-gray-100 text-gray-600'
+                    'bg-gray-100 text-white'
                   } ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-2 opacity-0'}`}
                   style={{ transitionDelay: `${index * 200 + 300}ms` }}>
                     {experience.status === 'current' ? '🔴 Current' : 
@@ -243,7 +256,7 @@ const ExperiencesSection = () => {
                             {experience.technologies.map((tech, techIndex) => (
                               <span
                                 key={techIndex}
-                                className={`px-3 py-1 bg-gradient-to-r ${experience.accent} bg-opacity-10 text-gray-800 rounded-lg text-xs font-medium border border-gray-200 hover:border-transparent hover:bg-gradient-to-r hover:${experience.accent} hover:text-white transform hover:scale-105 transition-all duration-300 cursor-pointer`}
+                                className={`px-3 py-1 bg-gradient-to-r ${experience.accent} bg-opacity-10 text-white rounded-lg text-xs font-medium border border-gray-200 hover:border-transparent hover:bg-gradient-to-r hover:${experience.accent} hover:text-white transform hover:scale-105 transition-all duration-300 cursor-pointer`}
                                 style={{ 
                                   transitionDelay: `${techIndex * 50}ms` 
                                 }}
