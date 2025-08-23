@@ -121,7 +121,7 @@ const ExperiencesSection = () => {
           {/* Experience stats */}
           <div className="flex justify-center items-center space-x-8 mb-8">
             <div className="text-center transform transition-all duration-1000 delay-400 translate-y-0 opacity-100">
-              <div className="text-4xl font-bold bg-gradient-to-r from-red-600 to-gray-700 bg-clip-text text-transparent">3+</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-red-600 to-gray-700 bg-clip-text text-transparent">5+</div>
               <div className="text-sm text-gray-600 font-medium">Years Experience</div>
             </div>
             <div className="w-px h-12 bg-gray-300"></div>
