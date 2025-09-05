@@ -11,7 +11,7 @@ const ClientListSection = () => {
   const clients = [
     {
       name: 'BikeFixup',
-      logo: '/images/bike.png',
+      logo: 'https://alexthonpson.live/images/bike.png',
       project: 'E-commerce Platform',
       description: 'Built a comprehensive e-commerce platform with real-time inventory management and payment processing.',
       accent: 'from-blue-500 to-indigo-600',
@@ -19,7 +19,7 @@ const ClientListSection = () => {
     },
     {
       name: 'Creative Builders',
-      logo: '/images/creative.png',
+      logo: 'https://alexthonpson.live/images/creative.png',
       project: 'Portfolio Website',
       description: 'Designed and developed a modern portfolio website showcasing creative work with smooth animations.',
       accent: 'from-purple-500 to-violet-600',
@@ -27,7 +27,7 @@ const ClientListSection = () => {
     },
     {
       name: 'Amazon PPC',
-      logo: '/images/amazon.png',
+      logo: 'https://alexthonpson.live/images/amazon.png',
       project: 'Financial Dashboard',
       description: 'Created an interactive financial dashboard with data visualization and reporting capabilities.',
       accent: 'from-orange-500 to-red-600',
@@ -43,7 +43,7 @@ const ClientListSection = () => {
     },
     {
       name: 'Dehoni Technologies',
-      logo: '/images/dehoni.png',
+      logo: 'https://alexthonpson.live/images/dehoni.png',
       project: 'Learning Management System',
       description: 'Used my skills as a fullstack developer in mentoring junior frontend developers and building scalable educational platforms.',
       accent: 'from-pink-500 to-rose-600',
@@ -51,7 +51,7 @@ const ClientListSection = () => {
     },
     {
       name: 'Xtaspare',
-      logo: '/images/',
+      logo: 'https://alexthonpson.live/images/',
       project: 'Inventory Management',
       description: 'Implemented a real-time inventory management system with barcode scanning and analytics.',
       accent: 'from-teal-500 to-cyan-600',
@@ -89,9 +89,9 @@ const ClientListSection = () => {
   };
 
   return (
-    <section 
+    <section
       ref={sectionRef}
-      id="clients" 
+      id="clients"
       className="relative bg-gradient-to-b from-gray-50 to-white py-20 md:py-32 overflow-hidden"
     >
       {/* Dynamic background elements */}
@@ -99,13 +99,13 @@ const ClientListSection = () => {
         {/* Large floating shapes */}
         <div className="absolute top-40 -left-20 w-72 h-72 bg-gradient-to-br from-blue-100/30 to-purple-100/30 rounded-full animate-pulse" style={{ animationDuration: '6s' }}></div>
         <div className="absolute bottom-20 -right-32 w-96 h-96 bg-gradient-to-tl from-pink-100/20 to-orange-100/20 rounded-full" style={{ animation: 'bounce 8s infinite' }}></div>
-        
+
         {/* Animated grid pattern */}
         <div className="absolute inset-0 opacity-5">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="currentColor" strokeWidth="1"/>
+                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="currentColor" strokeWidth="1" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#grid)" />
@@ -119,7 +119,7 @@ const ClientListSection = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Enhanced Section Header */}
         <div className="text-center mb-20">
           <div className="overflow-hidden mb-6">
@@ -129,7 +129,7 @@ const ClientListSection = () => {
               </span>
             </h2>
           </div>
-          
+
           <div className="relative max-w-3xl mx-auto mb-8">
             <p className="text-xl text-gray-700 leading-relaxed transform transition-all duration-800 delay-200 translate-y-0 opacity-100">
               I've had the privilege of working with amazing clients across various industries,
@@ -173,29 +173,28 @@ const ClientListSection = () => {
                 key={index}
                 ref={el => cardRefs.current[index] = el}
                 data-card-index={index}
-                className={`group relative transform transition-all duration-1000 ease-out ${
-                  isVisible 
-                    ? 'translate-x-0 translate-y-0 opacity-100' 
+                className={`group relative transform transition-all duration-1000 ease-out ${isVisible
+                    ? 'translate-x-0 translate-y-0 opacity-100'
                     : `${slideDirection} opacity-0`
-                }`}
+                  }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
                 onMouseEnter={() => setHoveredCard(index)}
                 onMouseLeave={() => setHoveredCard(null)}
                 onMouseMove={(e) => handleMouseMove(e, index)}
               >
-                
+
                 {/* Animated background glow */}
                 <div className={`absolute -inset-2 bg-gradient-to-br ${client.accent} rounded-3xl opacity-0 group-hover:opacity-10 transition-all duration-500 blur-xl`}></div>
-                
+
                 {/* Main card */}
                 <div className={`relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:scale-[1.03] group-hover:-translate-y-2 overflow-hidden h-full flex flex-col`}>
-                  
+
                   {/* Dynamic gradient background */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${client.bgGradient} opacity-0 group-hover:opacity-50 transition-all duration-500`}></div>
-                  
+
                   {/* Interactive mouse trail effect */}
                   {isHovered && mousePosition.cardIndex === index && (
-                    <div 
+                    <div
                       className="absolute inset-0 opacity-20 transition-all duration-300 pointer-events-none rounded-2xl"
                       style={{
                         background: `radial-gradient(circle 150px at ${mousePosition.x * 100}% ${mousePosition.y * 100}%, rgba(59, 130, 246, 0.3) 0%, transparent 70%)`
@@ -204,7 +203,7 @@ const ClientListSection = () => {
                   )}
 
                   <div className="relative z-10 p-8 flex flex-col h-full">
-                    
+
                     {/* Header section with logo and info */}
                     <div className="flex items-center mb-6 group-hover:transform group-hover:scale-105 transition-transform duration-300">
                       <div className="relative">
@@ -219,7 +218,7 @@ const ClientListSection = () => {
                             }}
                           />
                         </div>
-                        
+
                         {/* Floating indicator */}
                         <div className={`absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r ${client.accent} rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 animate-ping`}></div>
                       </div>
@@ -271,10 +270,10 @@ const ClientListSection = () => {
         <div className="mt-24 text-center">
           <div className="max-w-4xl mx-auto">
             <blockquote className="text-2xl font-light text-gray-700 italic mb-8 transform transition-all duration-1000 translate-y-0 opacity-100">
-              "Working with talented developers who understand both technology and business needs 
+              "Working with talented developers who understand both technology and business needs
               makes all the difference in project success."
             </blockquote>
-            
+
             {/* Call to action */}
             <div className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-full font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-500 cursor-pointer group">
               <span>Ready to join these success stories?</span>

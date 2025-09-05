@@ -16,7 +16,7 @@ const ProjectsSection = () => {
         'The client needed a seamless auto-service booking platform, so I built a responsive app using React, TypeScript, and Tailwind that automated technician assignments and reduced manual coordination, helping the client onboard 40+ users in two weeks — double their initial goal.',
       tags: ['React', 'Node.js', 'MongoDB'],
       image:
-        'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80',
+        'https:/https://alexthonpson.live/images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80',
       link: 'https://bikefixup.com/',
       detailPage: '/bikefixup',
       accent: 'from-blue-500 to-purple-600'
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
         'The client wanted a story platform to engage writers and readers, so I built it with Next.js, TypeScript, and OpenAI\'s API for AI-powered storytelling, resulting in a 120% increase in user-generated content and outperforming their engagement target within the first month.',
       tags: ['Nextjs', 'Express', 'D3.js', 'Firebase'],
       image:
-        'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
+        'https:/https://alexthonpson.live/images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
       link: 'https://www.blogme.africa',
       detailPage: '/blogme',
       accent: 'from-purple-500 to-pink-600'
@@ -40,7 +40,7 @@ const ProjectsSection = () => {
         'The client needed a way to track Amazon ad performance and reduce wasted spend, so I built a real-time dashboard using React, Recharts, and the Amazon Advertising API — enabling users to securely connect their own PPC accounts, visualize campaign metrics, and make informed decisions, which led to an 18% drop in ACOS within two weeks, surpassing the client\'s expectations.',
       tags: ['React', 'Supabase', 'Tailwind CSS'],
       image:
-        'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
+        'https:/https://alexthonpson.live/images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
       link: 'https://www.eventie.africa',
       detailPage: '/dashboard',
       accent: 'from-pink-500 to-red-600'
@@ -88,7 +88,7 @@ const ProjectsSection = () => {
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 -left-40 w-80 h-80 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full opacity-20 animate-pulse" style={{ animationDuration: '4s' }}></div>
         <div className="absolute bottom-40 -right-40 w-96 h-96 bg-gradient-to-tl from-pink-100 to-orange-100 rounded-full opacity-15 animate-bounce" style={{ animationDuration: '6s' }}></div>
-        
+
         {/* Floating geometric shapes */}
         <div className="absolute top-1/3 left-1/4 w-4 h-4 bg-blue-400 rounded-full opacity-30 animate-ping" style={{ animationDelay: '1s' }}></div>
         <div className="absolute bottom-1/3 right-1/4 w-3 h-3 bg-purple-400 opacity-20" style={{ clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)', animation: 'bounce 3s infinite' }}></div>
@@ -96,7 +96,7 @@ const ProjectsSection = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Enhanced Title Section */}
         <div className="text-center mb-20">
           <div className="overflow-hidden mb-6">
@@ -104,12 +104,12 @@ const ProjectsSection = () => {
               My Projects
             </h2>
           </div>
-          
+
           <div className="relative max-w-3xl mx-auto">
             <p className="text-xl text-gray-700 leading-relaxed transform transition-all duration-800 delay-300 translate-y-0 opacity-100">
               Here are some of my recent projects. Each project is unique and solves specific problems with cutting-edge technology and innovative solutions.
             </p>
-            
+
             {/* Decorative underline */}
             <div className="flex justify-center mt-8">
               <div className="w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full transform transition-all duration-1000 delay-500 scale-x-100 opacity-100"></div>
@@ -131,26 +131,25 @@ const ProjectsSection = () => {
                 key={project.id}
                 ref={el => cardRefs.current[index] = el}
                 data-card-id={cardId}
-                className={`group relative transform transition-all duration-1000 ease-out ${
-                  isVisible 
-                    ? 'translate-x-0 translate-y-0 opacity-100' 
-                    : index % 2 === 0 
+                className={`group relative transform transition-all duration-1000 ease-out ${isVisible
+                    ? 'translate-x-0 translate-y-0 opacity-100'
+                    : index % 2 === 0
                       ? '-translate-x-12 translate-y-8 opacity-0'
                       : 'translate-x-12 translate-y-8 opacity-0'
-                } ${isFlippedH ? 'scale-x-[-1]' : ''} ${isFlippedV ? 'scale-y-[-1]' : ''}`}
+                  } ${isFlippedH ? 'scale-x-[-1]' : ''} ${isFlippedV ? 'scale-y-[-1]' : ''}`}
                 style={{
                   transitionDelay: `${index * 200}ms`
                 }}
                 onMouseEnter={() => setHoveredCard(project.id)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
-                
+
                 {/* Animated background glow */}
                 <div className={`absolute -inset-1 bg-gradient-to-r ${project.accent} rounded-2xl opacity-0 group-hover:opacity-20 transition-all duration-500 blur-sm`}></div>
-                
+
                 {/* Main card */}
                 <div className="relative overflow-hidden bg-white rounded-2xl border border-gray-100 shadow-lg group-hover:shadow-2xl transition-all duration-500 transform group-hover:scale-[1.02] group-hover:-translate-y-2">
-                  
+
                   {/* Image section with advanced hover effects */}
                   <div className="relative h-56 overflow-hidden">
                     <img
@@ -158,10 +157,10 @@ const ProjectsSection = () => {
                       alt={project.title}
                       className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
                     />
-                    
+
                     {/* Gradient overlay */}
                     <div className={`absolute inset-0 bg-gradient-to-t ${project.accent} opacity-0 group-hover:opacity-30 transition-all duration-500`}></div>
-                    
+
                     {/* Floating action buttons */}
                     <div className={`absolute top-4 right-4 flex space-x-2 transform transition-all duration-500 ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`} style={{ transitionDelay: `${index * 200 + 600}ms` }}>
                       <button
