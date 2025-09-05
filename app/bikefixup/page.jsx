@@ -10,7 +10,7 @@ export default function ProjectPage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <img
 
-          src="https://alexthonpson.live/images/bikewall.jpg"
+          src="https://alexthompson.live/images/bikewall.jpg"
           alt="Project Hero"
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
@@ -129,15 +129,15 @@ export default function ProjectPage() {
       <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
         {[
           {
-            url: 'https://alexthonpson.live/images/biker1.jpg',
+            url: 'https://alexthompson.live/images/biker1.jpg',
             desc: 'performing preventive maintenance on a modern motorcycle.',
           },
           {
-            url: 'https://alexthonpson.live/images/biker.jpg',
+            url: 'https://alexthompson.live/images/biker.jpg',
             desc: 'Bike components being carefully inspected.',
           },
           {
-            url: 'https://alexthonpson.live/images/biker2.jpg',
+            url: 'https://alexthompson.live/images/biker2.jpg',
             desc: 'Motorcycle ready for pick-up and drop-off service, illustrating convenience.',
           },
         ].map((item, i) => (
@@ -174,7 +174,7 @@ export default function ProjectPage() {
           viewport={{ once: true }}
         >
           <img
-            src="https://alexthonpson.live/images/bikereview.png" // Replace with actual Upwork review image URL
+            src="https://alexthompson.live/images/bikereview.png" // Replace with actual Upwork review image URL
             alt="Upwork Reviews"
             className="mx-auto w-64 md:w-80 object-contain rounded-xl shadow-lg"
           />

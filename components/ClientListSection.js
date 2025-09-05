@@ -11,7 +11,7 @@ const ClientListSection = () => {
   const clients = [
     {
       name: 'BikeFixup',
-      logo: 'https://alexthonpson.live/images/bike.png',
+      logo: 'https://alexthompson.live/images/bike.png',
       project: 'E-commerce Platform',
       description: 'Built a comprehensive e-commerce platform with real-time inventory management and payment processing.',
       accent: 'from-blue-500 to-indigo-600',
@@ -19,7 +19,7 @@ const ClientListSection = () => {
     },
     {
       name: 'Creative Builders',
-      logo: 'https://alexthonpson.live/images/creative.png',
+      logo: 'https://alexthompson.live/images/creative.png',
       project: 'Portfolio Website',
       description: 'Designed and developed a modern portfolio website showcasing creative work with smooth animations.',
       accent: 'from-purple-500 to-violet-600',
@@ -27,7 +27,7 @@ const ClientListSection = () => {
     },
     {
       name: 'Amazon PPC',
-      logo: 'https://alexthonpson.live/images/amazon.png',
+      logo: 'https://alexthompson.live/images/amazon.png',
       project: 'Financial Dashboard',
       description: 'Created an interactive financial dashboard with data visualization and reporting capabilities.',
       accent: 'from-orange-500 to-red-600',
@@ -43,7 +43,7 @@ const ClientListSection = () => {
     },
     {
       name: 'Dehoni Technologies',
-      logo: 'https://alexthonpson.live/images/dehoni.png',
+      logo: 'https://alexthompson.live/images/dehoni.png',
       project: 'Learning Management System',
       description: 'Used my skills as a fullstack developer in mentoring junior frontend developers and building scalable educational platforms.',
       accent: 'from-pink-500 to-rose-600',
@@ -51,7 +51,7 @@ const ClientListSection = () => {
     },
     {
       name: 'Xtaspare',
-      logo: 'https://alexthonpson.live/images/',
+      logo: 'https://alexthompson.live/images/',
       project: 'Inventory Management',
       description: 'Implemented a real-time inventory management system with barcode scanning and analytics.',
       accent: 'from-teal-500 to-cyan-600',
@@ -174,8 +174,8 @@ const ClientListSection = () => {
                 ref={el => cardRefs.current[index] = el}
                 data-card-index={index}
                 className={`group relative transform transition-all duration-1000 ease-out ${isVisible
-                    ? 'translate-x-0 translate-y-0 opacity-100'
-                    : `${slideDirection} opacity-0`
+                  ? 'translate-x-0 translate-y-0 opacity-100'
+                  : `${slideDirection} opacity-0`
                   }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
                 onMouseEnter={() => setHoveredCard(index)}
