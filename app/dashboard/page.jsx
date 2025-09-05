@@ -1,161 +1,191 @@
-"use client";
+'use client'
 
-import React from "react";
-import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { motion } from 'framer-motion'
 
 export default function ProjectPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white text-gray-900 px-6 py-28 flex justify-center">
-      <div className="max-w-6xl w-full space-y-56">
+    <main className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-black text-white">
+
+      {/* Hero Section */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <img
         
-        {/* HERO */}
-        <section className="relative text-center space-y-12">
+        src="/images/blogwall.jpg"
+          alt="Project Hero"
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
+        />
+        <div className="relative z-10 text-center max-w-3xl px-6">
           <motion.h1
-            initial={{ opacity: 0, y: 60 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: "easeOut" }}
-            className="text-7xl md:text-9xl font-extrabold tracking-tight leading-tight"
+            transition={{ duration: 1 }}
+            className="text-6xl md:text-8xl font-bold tracking-tight"
           >
-            <span className="bg-gradient-to-r from-violet-500 via-fuchsia-500 to-pink-500 bg-clip-text text-transparent">
-              Project Name
-            </span>
+            BikeFixUp.com
           </motion.h1>
-
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="text-2xl md:text-3xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light"
+            transition={{ duration: 1, delay: 0.3 }}
+            className="mt-6 text-lg md:text-2xl text-gray-300"
           >
-            A cinematic showcase of design, code, and storytelling.
+            Two Wheeler Services Made Smart. 
           </motion.p>
+        </div>
+      </section>
 
-          {/* Floating Card for Hero Image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-            className="relative mt-24 rounded-[2.5rem] overflow-hidden shadow-[0_0_120px_-20px_rgba(168,85,247,0.4)]"
-          >
-            <img
-              src="https://via.placeholder.com/1600x900"
-              alt="Project Hero"
-              className="w-full h-auto object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
-          </motion.div>
-        </section>
-
-        {/* OVERVIEW */}
-        <section className="relative">
-          <div className="absolute left-0 top-0 h-full w-1.5 bg-gradient-to-b from-violet-500 to-pink-500 rounded-full"></div>
-          <div className="pl-12 space-y-8">
-            <h2 className="text-6xl font-bold tracking-tight">Overview</h2>
-            <p className="text-xl md:text-2xl leading-relaxed text-gray-700 max-w-4xl">
-              This project was crafted as a{" "}
-              <span className="font-semibold">premium case study</span> —
-              blending cinematic visuals, whitespace, and modern engineering.
-              Every element was built to{" "}
-              <span className="italic">feel timeless and luxurious</span>,
-              while solving a real-world challenge for users.
-            </p>
-          </div>
-        </section>
-
-        {/* SPLIT: Goals + Features */}
-        <section className="grid md:grid-cols-2 gap-24">
-          <div className="space-y-8">
-            <h2 className="text-5xl font-bold">Goals</h2>
-            <ul className="space-y-6 text-xl text-gray-700">
-              {[
-                "Craft a world-class digital experience",
-                "Balance beauty with scalability",
-                "Push design + code to luxury standards",
-                "Deliver a story-driven interface",
-              ].map((goal, i) => (
-                <motion.li
-                  key={i}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.15 }}
-                  className="border-l-4 border-violet-500 pl-5"
-                >
-                  {goal}
-                </motion.li>
-              ))}
-            </ul>
-          </div>
-          <div className="space-y-8">
-            <h2 className="text-5xl font-bold">Features</h2>
-            <ul className="space-y-6 text-xl text-gray-700">
-              {[
-                "Interactive visual storytelling",
-                "Immersive gallery with hover motion",
-                "Framer Motion micro-interactions",
-                "Next.js + Tailwind + MongoDB stack",
-              ].map((feat, i) => (
-                <motion.li
-                  key={i}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.15 }}
-                  className="border-l-4 border-pink-500 pl-5"
-                >
-                  {feat}
-                </motion.li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
-        {/* GALLERY */}
-        <section className="space-y-20">
-          <h2 className="text-6xl font-bold text-center">Gallery</h2>
-          <div className="grid md:grid-cols-2 gap-16">
-            {[1, 2, 3, 4].map((n) => (
-              <motion.div
-                key={n}
-                whileHover={{ scale: 1.04, y: -6 }}
-                transition={{ type: "spring", stiffness: 200 }}
-                className="relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition"
-              >
-                <img
-                  src={`https://via.placeholder.com/1200x800?text=Visual+${n}`}
-                  alt={`Visual ${n}`}
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 hover:opacity-100 transition"></div>
-              </motion.div>
-            ))}
-          </div>
-        </section>
-
-        {/* RESULTS */}
-        <section className="space-y-10 text-center">
-          <h2 className="text-6xl font-bold">Impact</h2>
-          <p className="text-2xl leading-relaxed text-gray-700 max-w-4xl mx-auto">
-            The launch{" "}
-            <span className="font-semibold">elevated the brand</span>,
-            delivered measurable{" "}
-            <span className="font-semibold">user growth</span>, and positioned
-            the product as a{" "}
-            <span className="italic">premium flagship experience</span>. This
-            project is not just work — it’s a{" "}
-            <span className="font-semibold">statement piece</span>.
+      {/* Project Overview */}
+      <section className="relative py-32 px-6 max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="bg-gray-900/70 border border-gray-800 rounded-2xl p-12 shadow-2xl backdrop-blur-lg"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Project Overview</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+          Bikefixup is a full-service preventive maintenance and motorcycle repair platform designed to make bike servicing simple and convenient. Many motorcycle owners struggle to find a trusted service station, waste time at workshops, or need reliable pick-up and drop-off options. Bikefixup solves these problems by allowing users to schedule their bike service seamlessly, whether they prefer visiting the workshop or arranging for their bike to be picked up. This approach gives owners the freedom to relax with their families or continue working while their motorcycle is serviced. With high-quality, guaranteed services at fair prices, Bikefixup ensures a hassle-free, trustworthy, and time-saving experience for every rider.
+          www.bikefixup.com
           </p>
-        </section>
+        </motion.div>
+      </section>
 
-        {/* CTA */}
-        <section className="text-center">
-          <a
-            href="#"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-violet-600 via-fuchsia-600 to-pink-600 text-xl font-semibold px-14 py-6 rounded-full shadow-[0_0_50px_-10px_rgba(236,72,153,0.6)] hover:scale-105 transition"
-          >
-            View Live Project <ArrowUpRight size={26} />
-          </a>
-        </section>
+      {/* Timeline Section */}
+      <section className="relative py-32 px-6 max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">Project Timeline</h2>
+        <div className="relative border-l border-gray-700 pl-10 space-y-16">
+  {[
+    {
+      phase: 'Week 1: Research & Planning',
+      desc: 'As the assigned Next.js expert, I analyzed the client’s requirements, conducted competitor research, and defined the full project scope to ensure a seamless development process.',
+    },
+    {
+      phase: 'Week 1: Design & Prototyping',
+      desc: 'Created wireframes, high-fidelity UI/UX designs, and interactive prototypes aligned with Bikefixup’s branding and user experience goals.',
+    },
+    {
+      phase: 'Week 2: Development & Integration',
+      desc: 'Implemented the frontend with Next.js, integrated backend services, set up pick-up/drop-off scheduling features, and conducted thorough testing for reliability and performance.',
+    },
+    {
+      phase: 'Week 2: Launch & Optimization',
+      desc: 'Deployed the platform, monitored initial usage, optimized performance, and ensured a smooth post-launch experience for users.',
+    },
+  ].map((step, i) => (
+    <motion.div
+      key={i}
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, delay: i * 0.2 }}
+      viewport={{ once: true }}
+      className="relative"
+    >
+      <div className="absolute -left-5 top-1 w-3 h-3 bg-yellow-400 rounded-full"></div>
+      <h3 className="text-2xl font-semibold">{step.phase}</h3>
+      <p className="text-gray-400 mt-2">{step.desc}</p>
+    </motion.div>
+  ))}
+</div>
+
+      </section>
+
+      {/* Challenges Section */}
+      <section className="relative py-32 px-6 max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="grid md:grid-cols-2 gap-12"
+        >
+          <div>
+  <h2 className="text-4xl md:text-5xl font-bold mb-6">Challenges</h2>
+  <ul className="space-y-4 text-gray-300">
+    <li>⚡ Delivering a fully functional, production-ready platform in just 2 weeks — because average timelines are for amateurs.</li>
+    <li>⚡ Marrying premium, polished UI/UX with peak performance across devices without a single lag or jank.</li>
+    <li>⚡ Implementing complex interactive features like dynamic pick-up/drop-off scheduling and animated transitions while keeping the app 100% accessible.</li>
+    <li>⚡ Ensuring seamless integration between Next.js frontend, backend APIs, and real-time updates — all without a single broken build.</li>
+  </ul>
+</div>
+
+<div>
+  <h2 className="text-4xl md:text-5xl font-bold mb-6">Solutions</h2>
+  <ul className="space-y-4 text-gray-300">
+    <li>✅ Took full ownership of the project architecture, leveraging Next.js capabilities like server-side rendering, static generation, and incremental static regeneration to deliver an ultra-fast experience.</li>
+    <li>✅ Applied advanced performance optimizations: lazy-loaded assets, implemented efficient image handling, and minimized bundle sizes — all without sacrificing design integrity.</li>
+    <li>✅ Crafted custom animations and micro-interactions with framer-motion while adhering to accessibility standards, proving speed and style can coexist.</li>
+    <li>✅ Coordinated seamless API integration, error handling, and real-time updates so the platform works flawlessly under heavy usage.</li>
+    <li>✅ Executed rapid, expert-level iterations across design, development, and deployment cycles — because a real Next.js pro doesn’t waste a second.</li>
+  </ul>
+</div>
+
+        </motion.div>
+      </section>
+
+      {/* Gallery Section */}
+{/* Gallery Section */}
+{/* Gallery Section */}
+<section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+  {[
+    {
+      url: '/images/biker1.jpg',
+      desc: 'performing preventive maintenance on a modern motorcycle.',
+    },
+    {
+      url: '/images/biker.jpg',
+      desc: 'Bike components being carefully inspected.',
+    },
+    {
+      url: '/images/biker2.jpg',
+      desc: 'Motorcycle ready for pick-up and drop-off service, illustrating convenience.',
+    },
+  ].map((item, i) => (
+    <motion.div
+      key={i}
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: i * 0.2 }}
+      viewport={{ once: true }}
+      className="relative overflow-hidden rounded-2xl shadow-lg group"
+    >
+      <img
+        src={item.url}
+        alt={item.desc}
+        className="w-full object-contain transition-transform duration-700 ease-out group-hover:scale-105"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+        <p className="text-white font-semibold">{item.desc}</p>
       </div>
+    </motion.div>
+  ))}
+</section>
+
+
+
+      {/* Reviews Section */}
+{/* Upwork Review Section */}
+<section className="relative py-16 px-6 max-w-4xl mx-auto text-center">
+  <h2 className="text-3xl md:text-4xl font-bold mb-8">Upwork Reviews</h2>
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}
+  >
+    <img
+      src="/images/bikereview.png" // Replace with actual Upwork review image URL
+      alt="Upwork Reviews"
+      className="mx-auto w-64 md:w-80 object-contain rounded-xl shadow-lg"
+    />
+    <p className="text-gray-400 mt-4 text-lg">
+      Verified client feedback on Upwork highlighting professionalism and project excellence.
+    </p>
+  </motion.div>
+</section>
+
+
+
     </main>
-  );
+  )
 }
