@@ -10,7 +10,7 @@ export default function ProjectPage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <Image
-          src="https://alexthompson.live/images/bikewall.jpg"
+          src="/images/bikewall.jpg"
           alt="Project Hero"
           fill
           priority
@@ -127,15 +127,15 @@ export default function ProjectPage() {
       <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
         {[
           {
-            url: 'https://alexthompson.live/images/biker1.jpg',
+            url: '/images/biker1.jpg',
             desc: 'performing preventive maintenance on a modern motorcycle.',
           },
           {
-            url: 'https://alexthompson.live/images/biker.jpg',
+            url: '/images/biker.jpg',
             desc: 'Bike components being carefully inspected.',
           },
           {
-            url: 'https://alexthompson.live/images/biker2.jpg',
+            url: '/images/biker2.jpg',
             desc: 'Motorcycle ready for pick-up and drop-off service, illustrating convenience.',
           },
         ].map((item, i) => (
@@ -171,7 +171,7 @@ export default function ProjectPage() {
           viewport={{ once: true }}
         >
           <Image
-            src="https://alexthompson.live/images/bikereview.png"
+            src="/images/bikereview.png"
             alt="Upwork Reviews"
             width={400}
             height={300}

@@ -16,7 +16,7 @@ const ProjectsSection = () => {
         'The client needed a seamless auto-service booking platform, so I built a responsive app using React, TypeScript, and Tailwind that automated technician assignments and reduced manual coordination, helping the client onboard 40+ users in two weeks — double their initial goal.',
       tags: ['React', 'Node.js', 'MongoDB'],
       image:
-        'https:/https://alexthompson.live/images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80',
       link: 'https://bikefixup.com/',
       detailPage: '/bikefixup',
       accent: 'from-blue-500 to-purple-600'
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
         'The client wanted a story platform to engage writers and readers, so I built it with Next.js, TypeScript, and OpenAI\'s API for AI-powered storytelling, resulting in a 120% increase in user-generated content and outperforming their engagement target within the first month.',
       tags: ['Nextjs', 'Express', 'D3.js', 'Firebase'],
       image:
-        'https:/https://alexthompson.live/images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
       link: 'https://www.blogme.africa',
       detailPage: '/blogme',
       accent: 'from-purple-500 to-pink-600'
@@ -40,7 +40,7 @@ const ProjectsSection = () => {
         'The client needed a way to track Amazon ad performance and reduce wasted spend, so I built a real-time dashboard using React, Recharts, and the Amazon Advertising API — enabling users to securely connect their own PPC accounts, visualize campaign metrics, and make informed decisions, which led to an 18% drop in ACOS within two weeks, surpassing the client\'s expectations.',
       tags: ['React', 'Supabase', 'Tailwind CSS'],
       image:
-        'https:/https://alexthompson.live/images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
       link: 'https://www.eventie.africa',
       detailPage: '/dashboard',
       accent: 'from-pink-500 to-red-600'

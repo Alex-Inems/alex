@@ -11,7 +11,7 @@ const ClientListSection = () => {
   const clients = [
     {
       name: 'BikeFixup',
-      logo: 'https://alexthompson.live/images/bike.png',
+      logo: '/images/bike.png',
       project: 'E-commerce Platform',
       description: 'Built a comprehensive e-commerce platform with real-time inventory management and payment processing.',
       accent: 'from-blue-500 to-indigo-600',
@@ -19,7 +19,7 @@ const ClientListSection = () => {
     },
     {
       name: 'Creative Builders',
-      logo: 'https://alexthompson.live/images/creative.png',
+      logo: '/images/creative.png',
       project: 'Portfolio Website',
       description: 'Designed and developed a modern portfolio website showcasing creative work with smooth animations.',
       accent: 'from-purple-500 to-violet-600',
@@ -27,7 +27,7 @@ const ClientListSection = () => {
     },
     {
       name: 'Amazon PPC',
-      logo: 'https://alexthompson.live/images/amazon.png',
+      logo: '/images/amazon.png',
       project: 'Financial Dashboard',
       description: 'Created an interactive financial dashboard with data visualization and reporting capabilities.',
       accent: 'from-orange-500 to-red-600',
@@ -43,7 +43,7 @@ const ClientListSection = () => {
     },
     {
       name: 'Dehoni Technologies',
-      logo: 'https://alexthompson.live/images/dehoni.png',
+      logo: '/images/dehoni.png',
       project: 'Learning Management System',
       description: 'Used my skills as a fullstack developer in mentoring junior frontend developers and building scalable educational platforms.',
       accent: 'from-pink-500 to-rose-600',
@@ -51,7 +51,7 @@ const ClientListSection = () => {
     },
     {
       name: 'Xtaspare',
-      logo: 'https://alexthompson.live/images/',
+      logo: '/images/',
       project: 'Inventory Management',
       description: 'Implemented a real-time inventory management system with barcode scanning and analytics.',
       accent: 'from-teal-500 to-cyan-600',
