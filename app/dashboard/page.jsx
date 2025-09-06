@@ -23,7 +23,7 @@ export default function ProjectPage() {
             transition={{ duration: 1 }}
             className="text-6xl md:text-8xl font-bold tracking-tight"
           >
-            BikeFixUp.com
+            Amazon PPC
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -31,7 +31,7 @@ export default function ProjectPage() {
             transition={{ duration: 1, delay: 0.3 }}
             className="mt-6 text-lg md:text-2xl text-gray-300"
           >
-            Two Wheeler Services Made Smart.
+            Amazon made smart
           </motion.p>
         </div>
       </section>
