@@ -10,7 +10,7 @@ export default function ProjectPage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/blogwall.jpg"
+          src="/images/amazon.jpg"
           alt="Project Hero"
           fill
           priority
@@ -127,15 +127,15 @@ export default function ProjectPage() {
       <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
         {[
           {
-            url: "/images/biker1.jpg",
+            url: "/images/ama1.jpg",
             desc: "performing preventive maintenance on a modern motorcycle.",
           },
           {
-            url: "/images/biker.jpg",
+            url: "/images/ama2.jpg",
             desc: "Bike components being carefully inspected.",
           },
           {
-            url: "/images/biker2.jpg",
+            url: "/images/blog1.jpg",
             desc: "Motorcycle ready for pick-up and drop-off service, illustrating convenience.",
           },
         ].map((item, i) => (
