@@ -66,6 +66,28 @@ export default function ProjectPage() {
         </motion.div>
       </section>
 
+      {/* YouTube Video Section */}
+      <section className="relative py-32 px-6 max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12">Watch the Demo</h2>
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl"
+        >
+          <iframe
+  className="absolute inset-0 w-full h-full"
+  src="https://www.youtube.com/embed/Z9zrUe2EohI"
+  title="BikeFixUp Demo Video"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+/>
+
+        </motion.div>
+      </section>
+
       {/* Timeline Section */}
       <section className="relative py-32 px-6 max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">Project Timeline</h2>
