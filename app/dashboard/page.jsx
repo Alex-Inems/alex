@@ -1,6 +1,7 @@
-'use client'
+"use client"
 
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion"
+import Image from "next/image"
 
 export default function ProjectPage() {
   return (
@@ -8,11 +9,12 @@ export default function ProjectPage() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <img
-
-          src="https://alexthompson.live/images/blogwall.jpg"
+        <Image
+          src="/images/blogwall.jpg"
           alt="Project Hero"
-          className="absolute inset-0 w-full h-full object-cover opacity-70"
+          fill
+          priority
+          className="absolute inset-0 object-cover opacity-70"
         />
         <div className="relative z-10 text-center max-w-3xl px-6">
           <motion.h1
@@ -57,20 +59,20 @@ export default function ProjectPage() {
         <div className="relative border-l border-gray-700 pl-10 space-y-16">
           {[
             {
-              phase: 'Week 1: Research & Planning',
-              desc: 'As the assigned Next.js expert, I analyzed the client’s requirements, conducted competitor research, and defined the full project scope to ensure a seamless development process.',
+              phase: "Week 1: Research & Planning",
+              desc: "As the assigned Next.js expert, I analyzed the client’s requirements, conducted competitor research, and defined the full project scope to ensure a seamless development process.",
             },
             {
-              phase: 'Week 1: Design & Prototyping',
-              desc: 'Created wireframes, high-fidelity UI/UX designs, and interactive prototypes aligned with Bikefixup’s branding and user experience goals.',
+              phase: "Week 1: Design & Prototyping",
+              desc: "Created wireframes, high-fidelity UI/UX designs, and interactive prototypes aligned with Bikefixup’s branding and user experience goals.",
             },
             {
-              phase: 'Week 2: Development & Integration',
-              desc: 'Implemented the frontend with Next.js, integrated backend services, set up pick-up/drop-off scheduling features, and conducted thorough testing for reliability and performance.',
+              phase: "Week 2: Development & Integration",
+              desc: "Implemented the frontend with Next.js, integrated backend services, set up pick-up/drop-off scheduling features, and conducted thorough testing for reliability and performance.",
             },
             {
-              phase: 'Week 2: Launch & Optimization',
-              desc: 'Deployed the platform, monitored initial usage, optimized performance, and ensured a smooth post-launch experience for users.',
+              phase: "Week 2: Launch & Optimization",
+              desc: "Deployed the platform, monitored initial usage, optimized performance, and ensured a smooth post-launch experience for users.",
             },
           ].map((step, i) => (
             <motion.div
@@ -87,7 +89,6 @@ export default function ProjectPage() {
             </motion.div>
           ))}
         </div>
-
       </section>
 
       {/* Challenges Section */}
@@ -119,26 +120,23 @@ export default function ProjectPage() {
               <li>✅ Executed rapid, expert-level iterations across design, development, and deployment cycles — because a real Next.js pro doesn’t waste a second.</li>
             </ul>
           </div>
-
         </motion.div>
       </section>
 
       {/* Gallery Section */}
-      {/* Gallery Section */}
-      {/* Gallery Section */}
       <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
         {[
           {
-            url: 'https://alexthompson.live/images/biker1.jpg',
-            desc: 'performing preventive maintenance on a modern motorcycle.',
+            url: "/images/biker1.jpg",
+            desc: "performing preventive maintenance on a modern motorcycle.",
           },
           {
-            url: 'https://alexthompson.live/images/biker.jpg',
-            desc: 'Bike components being carefully inspected.',
+            url: "/images/biker.jpg",
+            desc: "Bike components being carefully inspected.",
           },
           {
-            url: 'https://alexthompson.live/images/biker2.jpg',
-            desc: 'Motorcycle ready for pick-up and drop-off service, illustrating convenience.',
+            url: "/images/biker2.jpg",
+            desc: "Motorcycle ready for pick-up and drop-off service, illustrating convenience.",
           },
         ].map((item, i) => (
           <motion.div
@@ -147,12 +145,13 @@ export default function ProjectPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: i * 0.2 }}
             viewport={{ once: true }}
-            className="relative overflow-hidden rounded-2xl shadow-lg group"
+            className="relative overflow-hidden rounded-2xl shadow-lg group aspect-[4/3]"
           >
-            <img
+            <Image
               src={item.url}
               alt={item.desc}
-              className="w-full object-contain transition-transform duration-700 ease-out group-hover:scale-105"
+              fill
+              className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
               <p className="text-white font-semibold">{item.desc}</p>
@@ -161,10 +160,7 @@ export default function ProjectPage() {
         ))}
       </section>
 
-
-
       {/* Reviews Section */}
-      {/* Upwork Review Section */}
       <section className="relative py-16 px-6 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">Upwork Reviews</h2>
         <motion.div
@@ -173,9 +169,11 @@ export default function ProjectPage() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <img
-            src="https://alexthompson.live/images/bikereview.png" // Replace with actual Upwork review image URL
+          <Image
+            src="/images/bikereview.png"
             alt="Upwork Reviews"
+            width={320}
+            height={240}
             className="mx-auto w-64 md:w-80 object-contain rounded-xl shadow-lg"
           />
           <p className="text-gray-400 mt-4 text-lg">
@@ -183,9 +181,6 @@ export default function ProjectPage() {
           </p>
         </motion.div>
       </section>
-
-
-
     </main>
   )
 }

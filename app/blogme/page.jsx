@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function ProjectPage() {
   return (
@@ -8,11 +9,12 @@ export default function ProjectPage() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <img
-
+        <Image
           src="https://alexthompson.live/images/blogwall.jpg"
           alt="Project Hero"
-          className="absolute inset-0 w-full h-full object-cover opacity-70"
+          fill
+          className="absolute inset-0 object-cover opacity-70"
+          priority
         />
         <div className="relative z-10 text-center max-w-3xl px-6">
           <motion.h1
@@ -46,7 +48,6 @@ export default function ProjectPage() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Project Overview</h2>
           <p className="text-gray-300 leading-relaxed text-lg">
             BlogMe is a modern storytelling platform I built as the Next.js lead, delivering a fully responsive, high-performance blogging experience in just two weeks, designing an intuitive, mobile-friendly UI, implementing secure user authentication and role-based management, optimizing performance with server-side rendering and incremental static regeneration, and deploying a seamless platform that enabled writers and readers to engage efficiently while exceeding the client’s content engagement goals.
-
           </p>
         </motion.div>
       </section>
@@ -89,7 +90,6 @@ export default function ProjectPage() {
         </div>
       </section>
 
-
       {/* Challenges Section */}
       <section className="relative py-32 px-6 max-w-6xl mx-auto">
         <motion.div
@@ -122,9 +122,6 @@ export default function ProjectPage() {
         </motion.div>
       </section>
 
-
-      {/* Gallery Section */}
-      {/* Gallery Section */}
       {/* Gallery Section */}
       <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
         {[
@@ -149,9 +146,11 @@ export default function ProjectPage() {
             viewport={{ once: true }}
             className="relative overflow-hidden rounded-2xl shadow-lg group"
           >
-            <img
+            <Image
               src={item.url}
               alt={item.desc}
+              width={600}
+              height={400}
               className="w-full object-contain transition-transform duration-700 ease-out group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
@@ -161,10 +160,7 @@ export default function ProjectPage() {
         ))}
       </section>
 
-
-
       {/* Reviews Section */}
-      {/* Upwork Review Section */}
       <section className="relative py-16 px-6 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">Upwork Reviews</h2>
         <motion.div
@@ -173,9 +169,11 @@ export default function ProjectPage() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <img
-            src="https://alexthompson.live/images/bikereview.png" // Replace with actual Upwork review image URL
+          <Image
+            src="https://alexthompson.live/images/bikereview.png"
             alt="Upwork Reviews"
+            width={320}
+            height={200}
             className="mx-auto w-64 md:w-80 object-contain rounded-xl shadow-lg"
           />
           <p className="text-gray-400 mt-4 text-lg">
@@ -183,8 +181,6 @@ export default function ProjectPage() {
           </p>
         </motion.div>
       </section>
-
-
 
     </main>
   )

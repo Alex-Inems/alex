@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function ProjectPage() {
   return (
@@ -8,11 +9,12 @@ export default function ProjectPage() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <img
-
+        <Image
           src="https://alexthompson.live/images/bikewall.jpg"
           alt="Project Hero"
-          className="absolute inset-0 w-full h-full object-cover opacity-70"
+          fill
+          priority
+          className="object-cover opacity-70"
         />
         <div className="relative z-10 text-center max-w-3xl px-6">
           <motion.h1
@@ -87,7 +89,6 @@ export default function ProjectPage() {
             </motion.div>
           ))}
         </div>
-
       </section>
 
       {/* Challenges Section */}
@@ -119,12 +120,9 @@ export default function ProjectPage() {
               <li>✅ Executed rapid, expert-level iterations across design, development, and deployment cycles — because a real Next.js pro doesn’t waste a second.</li>
             </ul>
           </div>
-
         </motion.div>
       </section>
 
-      {/* Gallery Section */}
-      {/* Gallery Section */}
       {/* Gallery Section */}
       <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
         {[
@@ -149,10 +147,12 @@ export default function ProjectPage() {
             viewport={{ once: true }}
             className="relative overflow-hidden rounded-2xl shadow-lg group"
           >
-            <img
+            <Image
               src={item.url}
               alt={item.desc}
-              className="w-full object-contain transition-transform duration-700 ease-out group-hover:scale-105"
+              width={800}
+              height={600}
+              className="w-full h-auto object-contain transition-transform duration-700 ease-out group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
               <p className="text-white font-semibold">{item.desc}</p>
@@ -161,10 +161,7 @@ export default function ProjectPage() {
         ))}
       </section>
 
-
-
       {/* Reviews Section */}
-      {/* Upwork Review Section */}
       <section className="relative py-16 px-6 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">Upwork Reviews</h2>
         <motion.div
@@ -173,9 +170,11 @@ export default function ProjectPage() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <img
-            src="https://alexthompson.live/images/bikereview.png" // Replace with actual Upwork review image URL
+          <Image
+            src="https://alexthompson.live/images/bikereview.png"
             alt="Upwork Reviews"
+            width={400}
+            height={300}
             className="mx-auto w-64 md:w-80 object-contain rounded-xl shadow-lg"
           />
           <p className="text-gray-400 mt-4 text-lg">
@@ -183,9 +182,6 @@ export default function ProjectPage() {
           </p>
         </motion.div>
       </section>
-
-
-
     </main>
   )
 }
