@@ -31,7 +31,7 @@ export default function ProjectPage() {
             transition={{ duration: 1, delay: 0.3 }}
             className="mt-6 text-lg md:text-2xl text-gray-300"
           >
-            Events at your fingertip
+            Your gateway to unforgettable events
           </motion.p>
         </div>
       </section>
@@ -47,8 +47,13 @@ export default function ProjectPage() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Project Overview</h2>
           <p className="text-gray-300 leading-relaxed text-lg">
-            Bikefixup is a full-service preventive maintenance and motorcycle repair platform designed to make bike servicing simple and convenient. Many motorcycle owners struggle to find a trusted service station, waste time at workshops, or need reliable pick-up and drop-off options. Bikefixup solves these problems by allowing users to schedule their bike service seamlessly, whether they prefer visiting the workshop or arranging for their bike to be picked up. This approach gives owners the freedom to relax with their families or continue working while their motorcycle is serviced. With high-quality, guaranteed services at fair prices, Bikefixup ensures a hassle-free, trustworthy, and time-saving experience for every rider.
-            www.bikefixup.com
+            Eventie is a next-generation event discovery and management platform. 
+            From concerts and conferences to local meetups and festivals, users can 
+            seamlessly explore, book, and manage events in one place. Organizers 
+            gain powerful tools to create, promote, and sell tickets, while 
+            attendees enjoy a smooth, mobile-first booking experience.  
+            By integrating real-time updates, personalized recommendations, and 
+            secure payment flows, Eventie redefines how people connect through live events.
           </p>
         </motion.div>
       </section>
@@ -60,19 +65,19 @@ export default function ProjectPage() {
           {[
             {
               phase: "Week 1: Research & Planning",
-              desc: "As the assigned Next.js expert, I analyzed the client’s requirements, conducted competitor research, and defined the full project scope to ensure a seamless development process.",
+              desc: "Analyzed the events industry, identified user pain points around discovery and ticketing, and scoped the product roadmap to ensure scalable architecture.",
             },
             {
               phase: "Week 1: Design & Prototyping",
-              desc: "Created wireframes, high-fidelity UI/UX designs, and interactive prototypes aligned with Bikefixup’s branding and user experience goals.",
+              desc: "Produced wireframes and high-fidelity prototypes with a focus on discoverability, frictionless checkout, and organizer dashboards.",
             },
             {
               phase: "Week 2: Development & Integration",
-              desc: "Implemented the frontend with Next.js, integrated backend services, set up pick-up/drop-off scheduling features, and conducted thorough testing for reliability and performance.",
+              desc: "Built the frontend in Next.js, integrated booking APIs, payment gateways, and real-time updates for event capacity and ticketing.",
             },
             {
               phase: "Week 2: Launch & Optimization",
-              desc: "Deployed the platform, monitored initial usage, optimized performance, and ensured a smooth post-launch experience for users.",
+              desc: "Deployed to production, monitored analytics, optimized performance, and rolled out feedback-driven enhancements for both users and organizers.",
             },
           ].map((step, i) => (
             <motion.div
@@ -103,21 +108,21 @@ export default function ProjectPage() {
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Challenges</h2>
             <ul className="space-y-4 text-gray-300">
-              <li>⚡ Delivering a fully functional, production-ready platform in just 2 weeks — because average timelines are for amateurs.</li>
-              <li>⚡ Marrying premium, polished UI/UX with peak performance across devices without a single lag or jank.</li>
-              <li>⚡ Implementing complex interactive features like dynamic pick-up/drop-off scheduling and animated transitions while keeping the app 100% accessible.</li>
-              <li>⚡ Ensuring seamless integration between Next.js frontend, backend APIs, and real-time updates — all without a single broken build.</li>
+              <li>⚡ Delivering an enterprise-grade event platform in just 2 weeks.</li>
+              <li>⚡ Balancing sleek, modern UI/UX with scalability for thousands of concurrent users.</li>
+              <li>⚡ Implementing real-time ticketing updates and personalized recommendations without compromising speed.</li>
+              <li>⚡ Ensuring seamless integration of payment gateways, booking APIs, and organizer dashboards.</li>
             </ul>
           </div>
 
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Solutions</h2>
             <ul className="space-y-4 text-gray-300">
-              <li>✅ Took full ownership of the project architecture, leveraging Next.js capabilities like server-side rendering, static generation, and incremental static regeneration to deliver an ultra-fast experience.</li>
-              <li>✅ Applied advanced performance optimizations: lazy-loaded assets, implemented efficient image handling, and minimized bundle sizes — all without sacrificing design integrity.</li>
-              <li>✅ Crafted custom animations and micro-interactions with framer-motion while adhering to accessibility standards, proving speed and style can coexist.</li>
-              <li>✅ Coordinated seamless API integration, error handling, and real-time updates so the platform works flawlessly under heavy usage.</li>
-              <li>✅ Executed rapid, expert-level iterations across design, development, and deployment cycles — because a real Next.js pro doesn’t waste a second.</li>
+              <li>✅ Designed a modular Next.js architecture with server-side rendering and static generation for optimal performance.</li>
+              <li>✅ Integrated Stripe and PayPal for secure, reliable, and fast transactions.</li>
+              <li>✅ Leveraged framer-motion to build engaging interactions and micro-animations for immersive user experience.</li>
+              <li>✅ Built a robust backend integration for real-time event updates, ensuring accurate ticket availability.</li>
+              <li>✅ Delivered iterative builds rapidly, combining agile development with production-level polish.</li>
             </ul>
           </div>
         </motion.div>
@@ -128,15 +133,15 @@ export default function ProjectPage() {
         {[
           {
             url: "/images/eve.jpg",
-            desc: "performing preventive maintenance on a modern motorcycle.",
+            desc: "Concerts and live shows discoverable at a glance.",
           },
           {
             url: "/images/eve2.jpg",
-            desc: "Bike components being carefully inspected.",
+            desc: "Event dashboards for organizers to manage ticket sales.",
           },
           {
             url: "/images/eve3.jpg",
-            desc: "Motorcycle ready for pick-up and drop-off service, illustrating convenience.",
+            desc: "Seamless booking and ticketing on mobile devices.",
           },
         ].map((item, i) => (
           <motion.div
@@ -177,7 +182,7 @@ export default function ProjectPage() {
             className="mx-auto w-64 md:w-80 object-contain rounded-xl shadow-lg"
           />
           <p className="text-gray-400 mt-4 text-lg">
-            Verified client feedback on Upwork highlighting professionalism and project excellence.
+            Verified client feedback on Upwork highlighting expertise in event platform development.
           </p>
         </motion.div>
       </section>
