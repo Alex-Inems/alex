@@ -10,7 +10,7 @@ export default function ProjectPage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/amazon.jpg"
+          src="/images/eventie.jpg"
           alt="Project Hero"
           fill
           priority
@@ -23,7 +23,7 @@ export default function ProjectPage() {
             transition={{ duration: 1 }}
             className="text-6xl md:text-8xl font-bold tracking-tight"
           >
-            Amazon PPC
+            Eventie
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -31,7 +31,7 @@ export default function ProjectPage() {
             transition={{ duration: 1, delay: 0.3 }}
             className="mt-6 text-lg md:text-2xl text-gray-300"
           >
-            Amazon made smart
+            Events at your fingertip
           </motion.p>
         </div>
       </section>
@@ -127,15 +127,15 @@ export default function ProjectPage() {
       <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
         {[
           {
-            url: "/images/ama1.jpg",
+            url: "/images/eve.jpg",
             desc: "performing preventive maintenance on a modern motorcycle.",
           },
           {
-            url: "/images/ama2.jpg",
+            url: "/images/eve2.jpg",
             desc: "Bike components being carefully inspected.",
           },
           {
-            url: "/images/blog1.jpg",
+            url: "/images/eve3.jpg",
             desc: "Motorcycle ready for pick-up and drop-off service, illustrating convenience.",
           },
         ].map((item, i) => (
