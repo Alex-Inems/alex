@@ -1,9 +1,40 @@
-'use client'
+"use client"
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 export default function ProjectPage() {
+  const features = [
+    { title: "Personalized Storytelling", desc: "Readers and writers experience tailored content discovery and recommendations." },
+    { title: "Follow & Network", desc: "Connect with favorite authors, comment, and engage with the community." },
+    { title: "Mobile-First Design", desc: "Optimized reading and writing experience on all devices." },
+    { title: "Real-Time Updates", desc: "Live notifications for comments, likes, and new posts." },
+  ]
+
+  const metrics = [
+    { label: "Articles Published", value: "1k+" },
+    { label: "Active Users", value: "5k+" },
+    { label: "Comments", value: "12k+" },
+    { label: "Writers Onboarded", value: "300+" },
+  ]
+
+  const testimonials = [
+    {
+      name: "Alice Johnson",
+      role: "Content Creator",
+      quote: "BlogMe.africa allowed me to share my stories effortlessly and reach a wider audience faster than any other platform.",
+      avatar: "/images/testimonial1.jpg",
+    },
+    {
+      name: "Michael Lee",
+      role: "Reader",
+      quote: "I love how I can follow my favorite writers and get notifications when new posts are published. It keeps me engaged daily!",
+      avatar: "/images/testimonial2.jpg",
+    },
+  ]
+
+  const techStack = ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Node.js", "MongoDB", "Vercel"]
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-black text-white">
 
@@ -59,19 +90,19 @@ export default function ProjectPage() {
           {[
             {
               phase: 'Week 1: Research & Planning',
-              desc: 'As the assigned Next.js expert, I thoroughly analyzed the client’s requirements, studied competitor platforms, and defined the full project scope to ensure a smooth and efficient development process.',
+              desc: 'Analyzed requirements, studied competitors, and defined full project scope for efficient development.',
             },
             {
               phase: 'Week 1: Design & Prototyping',
-              desc: 'I created wireframes, high-fidelity UI/UX designs, and interactive prototypes that aligned perfectly with BlogMe’s branding and user experience goals.',
+              desc: 'Created wireframes, high-fidelity designs, and interactive prototypes aligning with branding and UX goals.',
             },
             {
               phase: 'Week 2: Development & Integration',
-              desc: 'I implemented the frontend with Next.js, integrated backend services, built content management features, and conducted thorough testing to guarantee reliability, responsiveness, and optimal performance.',
+              desc: 'Implemented frontend in Next.js, integrated backend services, content management features, and testing.',
             },
             {
               phase: 'Week 2: Launch & Optimization',
-              desc: 'I deployed the platform, monitored initial user interactions, optimized performance metrics, and ensured a seamless post-launch experience for both writers and readers.',
+              desc: 'Deployed the platform, monitored user interactions, optimized performance, and ensured seamless post-launch experience.',
             },
           ].map((step, i) => (
             <motion.div
@@ -90,7 +121,7 @@ export default function ProjectPage() {
         </div>
       </section>
 
-      {/* Challenges Section */}
+      {/* Challenges & Solutions */}
       <section className="relative py-32 px-6 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
@@ -102,47 +133,99 @@ export default function ProjectPage() {
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Challenges</h2>
             <ul className="space-y-4 text-gray-300">
-              <li>⚡ Delivering a fully functional, production-ready blogging platform in just two weeks while maintaining flawless performance and responsiveness.</li>
-              <li>⚡ Designing an intuitive and polished UI/UX that looks premium across all devices without compromising speed or usability.</li>
-              <li>⚡ Implementing dynamic features such as real-time content updates, post previews, comments, and likes without any glitches or broken states.</li>
-              <li>⚡ Ensuring seamless coordination between Next.js frontend, backend APIs, and database queries, all under tight deadlines and high expectations.</li>
+              <li>⚡ Delivering a fully functional, production-ready blogging platform in just two weeks.</li>
+              <li>⚡ Designing an intuitive and polished UI/UX across devices without compromising speed.</li>
+              <li>⚡ Implementing real-time content updates, comments, and likes seamlessly.</li>
+              <li>⚡ Ensuring smooth coordination between frontend, backend APIs, and database under tight deadlines.</li>
             </ul>
           </div>
-
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Solutions</h2>
             <ul className="space-y-4 text-gray-300">
-              <li>✅ Took full ownership of the platform architecture, leveraging Next.js features like server-side rendering, static generation, and incremental static regeneration to achieve lightning-fast load times.</li>
-              <li>✅ Optimized performance with lazy-loading, efficient image handling, and minimized bundle sizes while keeping the design visually striking and consistent.</li>
-              <li>✅ Built smooth interactive features and micro-interactions using framer-motion, fully compliant with accessibility standards, proving speed and style can coexist.</li>
-              <li>✅ Integrated APIs and real-time updates flawlessly, with robust error handling and automated workflows ensuring reliability under heavy usage.</li>
-              <li>✅ Executed rapid iterations across design, development, and deployment, hitting milestones with precision because a real Next.js expert wastes no time.</li>
+              <li>✅ Full ownership of architecture leveraging Next.js SSR, SSG, and ISR for speed and SEO.</li>
+              <li>✅ Optimized performance with lazy-loading, efficient image handling, and minimized bundle sizes.</li>
+              <li>✅ Smooth interactive features with framer-motion, fully accessible and visually polished.</li>
+              <li>✅ Integrated APIs and real-time updates with robust error handling and automated workflows.</li>
+              <li>✅ Rapid iterations across design, development, and deployment for production-level quality.</li>
             </ul>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Features Section */}
+      <section className="relative py-32 px-6 max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">Key Features</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          {features.map((f, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: i * 0.2 }}
+              viewport={{ once: true }}
+              className="bg-gray-900/70 p-8 rounded-2xl border border-gray-800 shadow-lg backdrop-blur-lg"
+            >
+              <h3 className="text-2xl font-semibold mb-2">{f.title}</h3>
+              <p className="text-gray-300">{f.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Metrics Section */}
+      <section className="relative py-32 px-6 max-w-6xl mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12">Impact & Metrics</h2>
+        <div className="grid md:grid-cols-4 gap-8">
+          {metrics.map((m, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: i * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <p className="text-4xl md:text-5xl font-bold text-yellow-400">{m.value}</p>
+              <p className="text-gray-300 mt-2">{m.label}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Tech Stack Section */}
+      <section className="relative py-32 px-6 max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="bg-gray-900/70 border border-gray-800 rounded-2xl p-12 shadow-2xl backdrop-blur-lg"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Tech Stack & Tools</h2>
+          <p className="text-gray-300 mb-6">BlogMe.africa was built using modern technologies:</p>
+          <div className="flex flex-wrap gap-4">
+            {techStack.map((tech, i) => (
+              <span key={i} className="px-4 py-2 bg-yellow-400/20 text-yellow-400 rounded-full font-semibold">
+                {tech}
+              </span>
+            ))}
           </div>
         </motion.div>
       </section>
 
       {/* Gallery Section */}
       <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-        {[
-          {
-            url: '/images/blog1.jpg',
-            desc: 'personalized strorytelling.',
-          },
-          {
-            url: '/images/blog2.jpg',
-            desc: 'Follow who you love and network.',
-          },
-          {
-            url: '/images/blog3.jpg',
-            desc: 'Ensuring convenience.',
-          },
-        ].map((item, i) => (
+        {[{
+          url: '/images/blog1.jpg', desc: 'Personalized storytelling.'
+        },{
+          url: '/images/blog2.jpg', desc: 'Follow favorite authors and network.'
+        },{
+          url: '/images/blog3.jpg', desc: 'Convenient reading and writing experience.'
+        }].map((item, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: i * 0.2 }}
+            transition={{ duration: 0.8, delay: i*0.2 }}
             viewport={{ once: true }}
             className="relative overflow-hidden rounded-2xl shadow-lg group"
           >
@@ -160,7 +243,48 @@ export default function ProjectPage() {
         ))}
       </section>
 
-      {/* Reviews Section */}
+      {/* Video / Demo Section */}
+      <section className="relative py-32 px-6 max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8">Demo / Walkthrough</h2>
+        <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-lg">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="BlogMe Demo"
+            className="w-full h-full"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="relative py-32 px-6 max-w-6xl mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12">Client Testimonials</h2>
+        <div className="grid md:grid-cols-2 gap-12">
+          {testimonials.map((t, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: i*0.2 }}
+              viewport={{ once: true }}
+              className="bg-gray-900/70 p-8 rounded-2xl border border-gray-800 shadow-lg backdrop-blur-lg"
+            >
+              <Image
+                src={t.avatar}
+                alt={t.name}
+                width={80}
+                height={80}
+                className="mx-auto rounded-full mb-4"
+              />
+              <p className="text-gray-300 italic">"{t.quote}"</p>
+              <p className="mt-4 font-semibold">{t.name}</p>
+              <p className="text-gray-400 text-sm">{t.role}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Upwork Reviews Section (kept) */}
       <section className="relative py-16 px-6 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">Upwork Reviews</h2>
         <motion.div

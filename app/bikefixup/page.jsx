@@ -4,6 +4,20 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 export default function ProjectPage() {
+  const features = [
+    { title: "Convenient Scheduling", desc: "Users can book bike services and arrange pick-up/drop-off effortlessly." },
+    { title: "Trusted Mechanics", desc: "All services are performed by certified, experienced professionals." },
+    { title: "Real-Time Updates", desc: "Track your bike status live, get notifications, and receive completion alerts." },
+    { title: "Premium UX", desc: "Mobile-first, intuitive design ensures users can schedule, pay, and review services easily." },
+  ]
+
+  const metrics = [
+    { label: "Bikes Serviced", value: "500+" },
+    { label: "Active Users", value: "2k+" },
+    { label: "Pick-Ups Completed", value: "1k+" },
+    { label: "Mechanics Onboarded", value: "50+" },
+  ]
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-black text-white">
 
@@ -47,8 +61,7 @@ export default function ProjectPage() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Project Overview</h2>
           <p className="text-gray-300 leading-relaxed text-lg">
-            Bikefixup is a full-service preventive maintenance and motorcycle repair platform designed to make bike servicing simple and convenient. Many motorcycle owners struggle to find a trusted service station, waste time at workshops, or need reliable pick-up and drop-off options. Bikefixup solves these problems by allowing users to schedule their bike service seamlessly, whether they prefer visiting the workshop or arranging for their bike to be picked up. This approach gives owners the freedom to relax with their families or continue working while their motorcycle is serviced. With high-quality, guaranteed services at fair prices, Bikefixup ensures a hassle-free, trustworthy, and time-saving experience for every rider.
-            www.bikefixup.com
+            Bikefixup is a full-service preventive maintenance and motorcycle repair platform designed to make bike servicing simple and convenient. Many motorcycle owners struggle to find a trusted service station, waste time at workshops, or need reliable pick-up and drop-off options. Bikefixup solves these problems by allowing users to schedule their bike service seamlessly, whether they prefer visiting the workshop or arranging for their bike to be picked up. This approach gives owners the freedom to relax with their families or continue working while their motorcycle is serviced. With high-quality, guaranteed services at fair prices, Bikefixup ensures a hassle-free, trustworthy, and time-saving experience for every rider. <br /> www.bikefixup.com
           </p>
         </motion.div>
       </section>
@@ -58,22 +71,10 @@ export default function ProjectPage() {
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">Project Timeline</h2>
         <div className="relative border-l border-gray-700 pl-10 space-y-16">
           {[
-            {
-              phase: 'Week 1: Research & Planning',
-              desc: 'As the assigned Next.js expert, I analyzed the client’s requirements, conducted competitor research, and defined the full project scope to ensure a seamless development process.',
-            },
-            {
-              phase: 'Week 1: Design & Prototyping',
-              desc: 'Created wireframes, high-fidelity UI/UX designs, and interactive prototypes aligned with Bikefixup’s branding and user experience goals.',
-            },
-            {
-              phase: 'Week 2: Development & Integration',
-              desc: 'Implemented the frontend with Next.js, integrated backend services, set up pick-up/drop-off scheduling features, and conducted thorough testing for reliability and performance.',
-            },
-            {
-              phase: 'Week 2: Launch & Optimization',
-              desc: 'Deployed the platform, monitored initial usage, optimized performance, and ensured a smooth post-launch experience for users.',
-            },
+            { phase: 'Week 1: Research & Planning', desc: 'Analyzed client requirements, conducted competitor research, defined project scope.' },
+            { phase: 'Week 1: Design & Prototyping', desc: 'Created wireframes, high-fidelity designs, and interactive prototypes aligned with branding.' },
+            { phase: 'Week 2: Development & Integration', desc: 'Implemented frontend/backend, integrated pick-up/drop-off scheduling, and tested thoroughly.' },
+            { phase: 'Week 2: Launch & Optimization', desc: 'Deployed platform, monitored usage, optimized performance, ensured smooth user experience.' },
           ].map((step, i) => (
             <motion.div
               key={i}
@@ -91,7 +92,7 @@ export default function ProjectPage() {
         </div>
       </section>
 
-      {/* Challenges Section */}
+      {/* Challenges & Solutions */}
       <section className="relative py-32 px-6 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
@@ -103,41 +104,70 @@ export default function ProjectPage() {
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Challenges</h2>
             <ul className="space-y-4 text-gray-300">
-              <li>⚡ Delivering a fully functional, production-ready platform in just 2 weeks — because average timelines are for amateurs.</li>
-              <li>⚡ Marrying premium, polished UI/UX with peak performance across devices without a single lag or jank.</li>
-              <li>⚡ Implementing complex interactive features like dynamic pick-up/drop-off scheduling and animated transitions while keeping the app 100% accessible.</li>
-              <li>⚡ Ensuring seamless integration between Next.js frontend, backend APIs, and real-time updates — all without a single broken build.</li>
+              <li>⚡ Delivering a fully functional platform in just 2 weeks.</li>
+              <li>⚡ Combining polished UI/UX with optimal performance across devices.</li>
+              <li>⚡ Implementing interactive scheduling features and animations while maintaining accessibility.</li>
+              <li>⚡ Seamless integration between frontend, backend, and real-time updates.</li>
             </ul>
           </div>
-
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Solutions</h2>
             <ul className="space-y-4 text-gray-300">
-              <li>✅ Took full ownership of the project architecture, leveraging Next.js capabilities like server-side rendering, static generation, and incremental static regeneration to deliver an ultra-fast experience.</li>
-              <li>✅ Applied advanced performance optimizations: lazy-loaded assets, implemented efficient image handling, and minimized bundle sizes — all without sacrificing design integrity.</li>
-              <li>✅ Crafted custom animations and micro-interactions with framer-motion while adhering to accessibility standards, proving speed and style can coexist.</li>
-              <li>✅ Coordinated seamless API integration, error handling, and real-time updates so the platform works flawlessly under heavy usage.</li>
-              <li>✅ Executed rapid, expert-level iterations across design, development, and deployment cycles — because a real Next.js pro doesn’t waste a second.</li>
+              <li>✅ Full ownership of architecture using Next.js SSR, SSG, and ISR for ultra-fast experience.</li>
+              <li>✅ Performance optimizations: lazy loading, efficient image handling, and minimized bundles.</li>
+              <li>✅ Custom animations and micro-interactions via framer-motion with accessibility compliance.</li>
+              <li>✅ API integration, error handling, and real-time updates for smooth usage under heavy load.</li>
+              <li>✅ Rapid iterations across design, development, and deployment ensuring professional quality.</li>
             </ul>
           </div>
         </motion.div>
       </section>
 
+      {/* Features Section */}
+      <section className="relative py-32 px-6 max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">Key Features</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          {features.map((f, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: i * 0.2 }}
+              viewport={{ once: true }}
+              className="bg-gray-900/70 p-8 rounded-2xl border border-gray-800 shadow-lg backdrop-blur-lg"
+            >
+              <h3 className="text-2xl font-semibold mb-2">{f.title}</h3>
+              <p className="text-gray-300">{f.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Metrics Section */}
+      <section className="relative py-32 px-6 max-w-6xl mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12">Impact & Metrics</h2>
+        <div className="grid md:grid-cols-4 gap-8">
+          {metrics.map((m, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: i * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <p className="text-4xl md:text-5xl font-bold text-yellow-400">{m.value}</p>
+              <p className="text-gray-300 mt-2">{m.label}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
       {/* Gallery Section */}
       <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
         {[
-          {
-            url: '/images/biker1.jpg',
-            desc: 'performing preventive maintenance on a modern motorcycle.',
-          },
-          {
-            url: '/images/biker.jpg',
-            desc: 'Bike components being carefully inspected.',
-          },
-          {
-            url: '/images/biker2.jpg',
-            desc: 'Motorcycle ready for pick-up and drop-off service, illustrating convenience.',
-          },
+          { url: '/images/biker1.jpg', desc: 'Preventive maintenance on a modern motorcycle.' },
+          { url: '/images/biker.jpg', desc: 'Bike components inspected carefully.' },
+          { url: '/images/biker2.jpg', desc: 'Pick-up and drop-off service illustrating convenience.' },
         ].map((item, i) => (
           <motion.div
             key={i}
@@ -161,7 +191,7 @@ export default function ProjectPage() {
         ))}
       </section>
 
-      {/* Reviews Section */}
+      {/* Upwork Reviews Section */}
       <section className="relative py-16 px-6 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">Upwork Reviews</h2>
         <motion.div
@@ -182,6 +212,7 @@ export default function ProjectPage() {
           </p>
         </motion.div>
       </section>
+
     </main>
   )
 }
