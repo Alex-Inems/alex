@@ -20,16 +20,16 @@ export default function ProjectPage() {
 
   const testimonials = [
     {
-      name: "Alice Johnson",
+      name: "Sam Collins",
       role: "Content Creator",
       quote: "BlogMe.africa allowed me to share my stories effortlessly and reach a wider audience faster than any other platform.",
-      avatar: "/images/testimonial1.jpg",
+      avatar: "/images/refer1.png",
     },
     {
       name: "Michael Lee",
       role: "Reader",
       quote: "I love how I can follow my favorite writers and get notifications when new posts are published. It keeps me engaged daily!",
-      avatar: "/images/testimonial2.jpg",
+      avatar: "/images/user2.jpg",
     },
   ]
 
