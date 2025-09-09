@@ -25,7 +25,7 @@ const ProjectsSection = () => {
       id: 2,
       title: 'Blogging Platform',
       description:
-        'The client wanted a story platform to engage writers and readers, so I built it with Next.js, TypeScript, and OpenAI\'s API for AI-powered storytelling, resulting in a 120% increase in user-generated content and outperforming their engagement target within the first month.',
+        'BlogMe is a modern storytelling platform I built as the Next.js lead, delivering a fully responsive, high-performance blogging experience in just two weeks, designing an intuitive, mobile-friendly UI, implementing secure user authentication and role-based management, optimizing performance with server-side rendering and incremental static regeneration, and deploying a seamless platform that enabled writers and readers to engage efficiently while exceeding the clients content engagement goals.',
       tags: ['Nextjs', 'Express', 'D3.js', 'Firebase'],
       image:
         '/images/blogwall.jpg',
@@ -37,12 +37,12 @@ const ProjectsSection = () => {
       id: 3,
       title: 'Events management site',
       description:
-        'The client needed a way to track Amazon ad performance and reduce wasted spend, so I built a real-time dashboard using React, Recharts, and the Amazon Advertising API — enabling users to securely connect their own PPC accounts, visualize campaign metrics, and make informed decisions, which led to an 18% drop in ACOS within two weeks, surpassing the client\'s expectations.',
+        'Eventie is an all-in-one platform designed to simplify event discovery, registration, and hosting. It addresses the challenges of finding, organizing, and trusting events in Africa, offering users seamless tools to connect with experiences that matter.',
       tags: ['React', 'Supabase', 'Tailwind CSS'],
       image:
         '/images/eventie.jpg',
       link: 'https://www.eventie.africa',
-      detailPage: '/dashboard',
+      detailPage: '/eventie',
       accent: 'from-pink-500 to-red-600'
     },
   ];

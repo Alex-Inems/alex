@@ -78,7 +78,7 @@ export default function ProjectPage() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Project Overview</h2>
           <p className="text-gray-300 leading-relaxed text-lg">
-            BlogMe is a modern storytelling platform I built as the Next.js lead, delivering a fully responsive, high-performance blogging experience in just two weeks, designing an intuitive, mobile-friendly UI, implementing secure user authentication and role-based management, optimizing performance with server-side rendering and incremental static regeneration, and deploying a seamless platform that enabled writers and readers to engage efficiently while exceeding the client’s content engagement goals.
+            BlogMe is a modern storytelling platform I built as the Next.js lead, delivering a fully responsive, high-performance blogging experience in just two weeks, designing an intuitive, mobile-friendly UI, implementing secure user authentication and role-based management, optimizing performance with server-side rendering and incremental static regeneration, and deploying a seamless platform that enabled writers and readers to engage efficiently while exceeding the clients content engagement goals.
           </p>
         </motion.div>
       </section>
