@@ -81,7 +81,7 @@ const AboutSection = () => {
           <div className={`relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl transition-all duration-1000 ease-out delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
             <iframe
               className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/Z9zrUe2EohI"
+              src="https://www.youtube.com/embed//JF95wa5ss-0"
               title="About Me Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
