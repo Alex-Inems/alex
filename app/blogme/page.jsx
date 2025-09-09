@@ -247,12 +247,14 @@ export default function ProjectPage() {
       <section className="relative py-32 px-6 max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-8">Demo / Walkthrough</h2>
         <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="BlogMe Demo"
-            className="w-full h-full"
+        <iframe
+            className="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/DpKzSzGgcxQ"
+            title="BlogMe Demo Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          ></iframe>
+          />
         </div>
       </section>
 

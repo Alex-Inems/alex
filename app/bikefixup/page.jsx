@@ -18,6 +18,14 @@ export default function ProjectPage() {
     { label: "Mechanics Onboarded", value: "50+" },
   ]
 
+  const faqs = [
+    { q: "How do I book a bike service?", a: "You can book easily through our mobile app or website by selecting your city, service type, and preferred time slot." },
+    { q: "Do you provide pick-up and drop-off?", a: "Yes, we offer free bike pick-up and drop-off in most service areas, making it completely hassle-free." },
+    { q: "Are your mechanics certified?", a: "Absolutely. All our mechanics are trained professionals with expertise in two-wheeler servicing and repair." },
+    { q: "What warranty do you offer?", a: "Every service comes with a 7-day service warranty covering the work done on your bike." },
+    { q: "What cities are you available in?", a: "We are present in major cities like Delhi, Mumbai, Bengaluru, Pune, Hyderabad, Chennai, and expanding rapidly." },
+  ]
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-black text-white">
 
@@ -77,14 +85,13 @@ export default function ProjectPage() {
           className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl"
         >
           <iframe
-  className="absolute inset-0 w-full h-full"
-  src="https://www.youtube.com/embed/Z9zrUe2EohI"
-  title="BikeFixUp Demo Video"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-/>
-
+            className="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/Z9zrUe2EohI"
+            title="BikeFixUp Demo Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </motion.div>
       </section>
 
@@ -233,6 +240,26 @@ export default function ProjectPage() {
             Verified client feedback on Upwork highlighting professionalism and project excellence.
           </p>
         </motion.div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="relative py-32 px-6 max-w-4xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">Frequently Asked Questions</h2>
+        <div className="space-y-8">
+          {faqs.map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: i * 0.2 }}
+              viewport={{ once: true }}
+              className="bg-gray-900/70 p-6 rounded-2xl border border-gray-800 shadow-lg backdrop-blur-lg"
+            >
+              <h3 className="text-xl font-semibold mb-2">{item.q}</h3>
+              <p className="text-gray-300">{item.a}</p>
+            </motion.div>
+          ))}
+        </div>
       </section>
 
     </main>

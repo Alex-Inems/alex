@@ -12,7 +12,7 @@ const ExperiencesSection = () => {
   const experiences = [
     {
       title: 'Senior Full Stack Developer',
-      company: 'BikeFixup.com',
+      company: 'Xtraspare.com',
       period: '2024 - Present',
       description: 'Lead development of enterprise web applications using React, Node.js, and cloud technologies. Managed a team of 4 developers and improved application performance by 40%.',
       technologies: ['React', 'Node.js', 'TypeScript', 'AWS', 'MongoDB'],
@@ -22,11 +22,22 @@ const ExperiencesSection = () => {
       status: 'current'
     },
     {
-      title: 'Fullstack Developer',
+      title: 'Senior Front-end Developer',
+      company: 'BikeFixUp.com',
+      period: '2024 - Present',
+      description: 'Lead development of enterprise web applications using React, Node.js, and cloud technologies. Managed a team of 4 developers and improved application performance by 40%.',
+      technologies: ['React', 'Node.js', 'TypeScript', 'AWS', 'MongoDB'],
+      accent: 'from-red-500 to-red-600',
+      bgGradient: 'bg-red-950 ',
+      icon: '🚀',
+      status: 'recent'
+    },
+    {
+      title: 'Senior Nextjs Developer',
       company: 'Dehoni Technologies',
       period: '2024 - 2025',
-      description: 'Built and maintained company websites and web applications. Gained experience in full-stack development and agile methodologies.',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL'],
+      description: 'Built and maintained company websites and web applications. Gained experience in full-stack Nextjs development and agile methodologies.',
+      technologies: ['Nextjs', 'TailwindCss', 'Nodejs', 'APIs', 'MySQL'],
       accent: 'from-gray-600 to-gray-700',
       bgGradient: 'from-gray-50 to-gray-100',
       icon: '💻',
@@ -37,7 +48,7 @@ const ExperiencesSection = () => {
       company: 'Creative Builders',
       period: '2022 - 2023',
       description: 'Developed responsive web applications for various clients. Collaborated with designers and backend developers to deliver high-quality user experiences.',
-      technologies: ['React', 'JavaScript', 'CSS3', 'SASS', 'REST APIs'],
+      technologies: ['React', 'TypeScript', 'Supabase', 'SASS', 'REST APIs'],
       accent: 'from-red-600 to-gray-700',
       bgGradient: 'from-red-50 to-gray-50',
       icon: '🎨',
@@ -45,10 +56,10 @@ const ExperiencesSection = () => {
     },
     {
       title: 'Frontend Developer',
-      company: 'Creative Builders',
-      period: '2022 - 2023',
+      company: 'RootHub',
+      period: '2021 - 2022',
       description: 'Developed responsive web applications for various clients. Collaborated with designers and backend developers to deliver high-quality user experiences.',
-      technologies: ['React', 'JavaScript', 'CSS3', 'SASS', 'REST APIs'],
+      technologies: ['React', 'JavaScript', 'Tailwind', 'SASS', 'REST APIs'],
       accent: 'from-red-600 to-gray-700',
       bgGradient: 'from-red-50 to-gray-50',
       icon: '🎨',

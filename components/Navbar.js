@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import { FaTwitter, FaLinkedin, FaTelegram } from 'react-icons/fa';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Clients', href: '#clients' },
     { name: 'Experience', href: '#experiences' },
-    { name: 'Contact', href: '#contact' },
+  
   ];
 
   return (
@@ -33,33 +33,7 @@ const Navbar = () => {
               </a>
             ))}
 
-            {/* Social Links */}
-            <div className="flex items-center space-x-3">
-              <a
-                href="https://twitter.com/yourhandle"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:text-blue-600 transition text-xl"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="https://linkedin.com/in/yourprofile"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-700 hover:text-blue-800 transition text-xl"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="https://t.me/yourhandle"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-500 transition text-xl"
-              >
-                <FaTelegram />
-              </a>
-            </div>
+            
           </div>
 
           {/* Mobile Menu Button */}
@@ -111,32 +85,7 @@ const Navbar = () => {
               </a>
             ))}
 
-            <div className="flex space-x-3 mt-2">
-              <a
-                href="https://twitter.com/yourhandle"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:text-blue-600 transition text-xl"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="https://linkedin.com/in/yourprofile"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-700 hover:text-blue-800 transition text-xl"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="https://t.me/yourhandle"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-500 transition text-xl"
-              >
-                <FaTelegram />
-              </a>
-            </div>
+            
           </div>
         </div>
       )}

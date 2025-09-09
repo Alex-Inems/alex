@@ -35,7 +35,7 @@ const ClientListSection = () => {
     },
     {
       name: 'HealthTech Innovations',
-      logo: '/placeholder.svg',
+      logo: '/images/newwr.png',
       project: 'Patient Management System',
       description: 'Developed a secure patient management system with appointment scheduling and medical records.',
       accent: 'from-green-500 to-emerald-600',
@@ -51,7 +51,7 @@ const ClientListSection = () => {
     },
     {
       name: 'Xtaspare',
-      logo: '/images/',
+      logo: '/images/xtra.png',
       project: 'Inventory Management',
       description: 'Implemented a real-time inventory management system with barcode scanning and analytics.',
       accent: 'from-teal-500 to-cyan-600',

@@ -31,7 +31,7 @@ const HeroSection = () => {
             Hi, I'm <span className="text-red-900">Alex Thompson</span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl mb-8 text-black">
-            Full-Stack Developer & Digital Innovator
+            Web Developer
           </p>
           <p className="text-base sm:text-lg mb-12 max-w-2xl mx-auto text-black">
             I create beautiful, functional web applications that solve real-world problems.
