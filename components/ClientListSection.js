@@ -275,12 +275,26 @@ const ClientListSection = () => {
             </blockquote>
 
             {/* Call to action */}
-            <div className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-full font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-500 cursor-pointer group">
-              <span>Ready to join these success stories?</span>
-              <svg className="w-5 h-5 ml-3 transform group-hover:translate-x-2 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </div>
+            <a
+  href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-full font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-500 cursor-pointer group"
+>
+  <span>Ready to join these success stories?</span>
+  <svg
+    className="w-5 h-5 ml-3 transform group-hover:translate-x-2 transition-transform duration-300"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+  >
+    <path
+      fillRule="evenodd"
+      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+      clipRule="evenodd"
+    />
+  </svg>
+</a>
+
           </div>
         </div>
       </div>

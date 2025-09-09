@@ -306,13 +306,27 @@ const ExperiencesSection = () => {
 
         {/* Call to action */}
         <div className="text-center mt-20">
-          <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-red-600 via-gray-700 to-red-600 text-white rounded-full font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-500 cursor-pointer group">
-            <span>Ready to add your project to my journey?</span>
-            <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-            </svg>
-          </div>
-        </div>
+  <a
+    href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-red-600 via-gray-700 to-red-600 text-white rounded-full font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-500 cursor-pointer group"
+  >
+    <span>Ready to add your project to my journey?</span>
+    <svg
+      className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-300"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+    >
+      <path
+        fillRule="evenodd"
+        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+        clipRule="evenodd"
+      />
+    </svg>
+  </a>
+</div>
+
       </div>
     </section>
   );

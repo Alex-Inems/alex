@@ -261,6 +261,28 @@ export default function ProjectPage() {
           ))}
         </div>
       </section>
+      <section className="relative py-32 px-6 max-w-4xl mx-auto text-center">
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}
+    className="bg-gradient-to-r from-yellow-500 to-yellow-400 text-black rounded-2xl p-12 shadow-xl"
+  >
+    <h2 className="text-4xl md:text-5xl font-bold mb-6">Lets Build Something Together</h2>
+    <p className="text-lg mb-8">
+      Have an idea for a world-class platform? I will love to collaborate and bring it to life.
+    </p>
+    <a
+      href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-8 py-4 bg-black text-yellow-400 rounded-full font-semibold hover:bg-gray-900 transition"
+    >
+      View Portfolio →
+    </a>
+  </motion.div>
+</section>
 
     </main>
   )
