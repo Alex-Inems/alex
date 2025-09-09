@@ -23,13 +23,13 @@ export default function ProjectPage() {
       name: "Adeniyi John",
       role: "Event Organizer",
       quote: "Eventie transformed the way we manage our events. Booking and ticketing are seamless!",
-      avatar: "/images/user-4.jpg",
+      avatar: "/images/user-4.png",
     },
     {
       name: "Jessy Smith",
       role: "Music Enthusiast",
       quote: "I discovered so many concerts thanks to Eventie. The app is fast, intuitive, and beautiful.",
-      avatar: "/images/user3.jpg",
+      avatar: "/images/user3.png",
     },
   ]
 
