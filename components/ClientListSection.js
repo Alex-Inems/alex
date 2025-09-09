@@ -224,7 +224,7 @@ const ClientListSection = () => {
                       </div>
 
                       <div className="flex-1">
-                        <h3 className={`text-xl font-bold text-gray-900 group-hover:bg-gradient-to-r group-hover:${client.accent} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 mb-1`}>
+                        <h3 className={`text-xl font-bold text-gray-900 group-hover:bg-gradient-to-r group-hover:${client.accent}  transition-all duration-300 mb-1`}>
                           {client.name}
                         </h3>
                         <p className="text-sm font-medium text-gray-600 group-hover:text-gray-800 transition-colors duration-300">

@@ -240,7 +240,7 @@ const ExperiencesSection = () => {
                             </div>
                             
                             <div className="flex-1">
-                              <h3 className={`text-2xl font-bold text-gray-900 group-hover:bg-gradient-to-r group-hover:${experience.accent} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 mb-2`}>
+                              <h3 className={`text-2xl font-bold text-gray-900 group-hover:bg-gradient-to-r group-hover:${experience.accent}  transition-all duration-300 mb-2`}>
                                 {experience.title}
                               </h3>
                               <p className="text-xl font-semibold text-gray-700 group-hover:text-gray-800 transition-colors duration-300">
