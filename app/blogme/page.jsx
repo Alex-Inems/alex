@@ -236,7 +236,7 @@ export default function ProjectPage() {
               height={400}
               className="w-full object-contain transition-transform duration-700 ease-out group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-100  transition-opacity duration-500 flex items-end p-6">
               <p className="text-white font-semibold">{item.desc}</p>
             </div>
           </motion.div>
