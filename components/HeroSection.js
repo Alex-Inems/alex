@@ -47,7 +47,9 @@ const HeroSection = () => {
               View My Work
             </a>
             <a
-              href="#contact"
+              href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto text-center px-6 py-3 border border-blue-500 text-blue-500 hover:bg-blue-100 font-semibold rounded-lg transition"
             >
               Get In Touch

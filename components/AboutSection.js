@@ -63,16 +63,18 @@ const AboutSection = () => {
             {/* Buttons */}
             <div className={`mt-8 flex gap-6 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
               <a
-                href="#contact"
+                href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold shadow-lg hover:scale-105 transition"
               >
                 Get In Touch
               </a>
               <a
-                href="#"
+                href="#Projects"
                 className="px-8 py-4 border-2 border-gray-300 text-gray-800 rounded-xl font-semibold hover:border-gray-900 hover:scale-105 transition"
               >
-                Download CV
+                View Projects
               </a>
             </div>
           </div>
