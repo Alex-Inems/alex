@@ -100,7 +100,7 @@ const ExperiencesSection = () => {
     <section 
       ref={sectionRef}
       id="experiences" 
-      className="relative bg-gradient-to-b from-gray-50 via-white to-gray-50 py-20 md:py-32 overflow-hidden"
+      className="relative bg-white/95 backdrop-blur-sm py-20 md:py-32 overflow-hidden"
     >
       {/* Dynamic background elements */}
       <div className="absolute inset-0 overflow-hidden">

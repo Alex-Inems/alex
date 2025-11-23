@@ -83,7 +83,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section ref={sectionRef} id="projects" className="relative bg-gradient-to-b from-gray-50 to-white py-20 md:py-32 overflow-hidden">
+    <section ref={sectionRef} id="projects" className="relative bg-white/95 backdrop-blur-sm py-20 md:py-32 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 -left-40 w-80 h-80 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full opacity-20 animate-pulse" style={{ animationDuration: '4s' }}></div>
