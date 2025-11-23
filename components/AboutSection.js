@@ -23,6 +23,11 @@ const AboutSection = () => {
     "Whether it's building a new application from scratch, rescuing a struggling project, or enhancing existing systems, I bring full-stack expertise that ensures every layer of your application works together seamlessly and efficiently."
   ];
 
+  const skills = [
+    'Next.js', 'React', 'TypeScript', 'Node.js', 
+    'MongoDB', 'PostgreSQL', 'Tailwind CSS', 'Firebase'
+  ];
+
   const stats = [
     { number: '5+', label: 'Years Experience' },
     { number: '50+', label: 'Projects Delivered' },
@@ -33,7 +38,7 @@ const AboutSection = () => {
     <section 
       ref={sectionRef}
       id="about" 
-      className="relative bg-white/95 backdrop-blur-sm py-20 md:py-32 overflow-hidden"
+      className="relative bg-gradient-to-b from-white to-gray-50 py-20 md:py-32 overflow-hidden"
     >
       {/* Background accents */}
       <div className="absolute inset-0 overflow-hidden">
@@ -73,9 +78,23 @@ const AboutSection = () => {
               ))}
             </div>
 
+            {/* Skills */}
+            <div className={`mb-10 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
+              <h3 className="text-xl font-semibold text-gray-900 mb-5">Full-Stack Technologies</h3>
+              <div className="flex flex-wrap gap-3">
+                {skills.map((skill, i) => (
+                  <span
+                    key={i}
+                    className="px-4 py-2 bg-white text-blue-700 rounded-lg font-medium text-sm border border-blue-200 hover:bg-blue-50 hover:border-blue-400 hover:shadow-sm transition-all"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
 
             {/* Buttons */}
-            <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
+            <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
               <a
                 href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
                 target="_blank"
@@ -120,14 +139,14 @@ const AboutSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className={`grid grid-cols-1 md:grid-cols-3 gap-8 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           {stats.map((stat, i) => (
             <div
               key={i}
-              className="text-center"
+              className="text-center p-8 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-400 hover:shadow-xl transition-all transform hover:scale-105"
             >
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">{stat.number}</div>
-              <div className="text-gray-600 font-medium">{stat.label}</div>
+              <div className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-3">{stat.number}</div>
+              <div className="text-gray-600 font-semibold text-lg">{stat.label}</div>
             </div>
           ))}
         </div>
