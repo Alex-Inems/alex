@@ -13,39 +13,38 @@ const ProjectsSection = () => {
       id: 1,
       title: 'Xtraspare Ecommerce',
       description:
-        'I built the XtraSpare website as a full-stack e-commerce platform, handling both the frontend user interface and backend system. The site allows customers to easily browse motorcycle spare parts, view product details, and shop through a clean and responsive interface, while the backend manages product data and ensures smooth communication with the database.',
+        'I built the XtraSpare website as a full-stack e-commerce platform, handling both the frontend user interface and backend system. The site allows customers to easily browse motorcycle spare parts by brand and category, view product details, and shop through a clean and responsive interface, while the backend manages product data and ensures smooth communication with the database.',
       tags: ['Nextjs', 'Node.js', 'MongoDB'],
-      image:
-        '/images/bikewall.jpg',
+      image: '/images/bikewall.jpg',
       link: 'https://xtraspare.com/',
-      detailPage: '/bikefixup',
+      detailPage: '/xtraspare',
       accent: 'from-blue-500 to-purple-600'
     },
+
     {
-      id: 2,
+      id: 3,
       title: 'Blogging Platform',
       description:
         'BlogMe is a modern storytelling platform I built as the Next.js lead, delivering a fully responsive, high-performance blogging experience in just two weeks, designing an intuitive, mobile-friendly UI, implementing secure user authentication and role-based management, optimizing performance with server-side rendering and incremental static regeneration, and deploying a seamless platform that enabled writers and readers to engage efficiently while exceeding the clients content engagement goals.',
       tags: ['Nextjs', 'Express', 'D3.js', 'Firebase'],
-      image:
-        '/images/blogwall.jpg',
+      image: '/images/blogwall.jpg',
       link: 'https://www.blogme.live',
       detailPage: '/blogme',
       accent: 'from-purple-500 to-pink-600'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Events management site',
       description:
         'Eventie is an all-in-one platform designed to simplify event discovery, registration, and hosting. It addresses the challenges of finding, organizing, and trusting events in Africa, offering users seamless tools to connect with experiences that matter.',
       tags: ['React', 'Supabase', 'Tailwind CSS'],
-      image:
-        '/images/eventie.jpg',
+      image: '/images/eventie.jpg',
       link: 'https://www.eventie.live',
       detailPage: '/eventie',
       accent: 'from-pink-500 to-red-600'
     },
   ];
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(

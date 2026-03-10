@@ -21,17 +21,7 @@ const ExperiencesSection = () => {
       icon: '🚀',
       status: 'current'
     },
-    {
-      title: 'Senior Front-end Developer',
-      company: 'BikeFixUp.com',
-      period: '2024 - Present',
-      description: 'Lead development of enterprise web applications using React, Node.js, and cloud technologies. Managed a team of 4 developers and improved application performance by 40%.',
-      technologies: ['React', 'Node.js', 'TypeScript', 'AWS', 'MongoDB'],
-      accent: 'from-red-500 to-red-600',
-      bgGradient: 'bg-red-950 ',
-      icon: '🚀',
-      status: 'recent'
-    },
+
     {
       title: 'Senior Nextjs Developer',
       company: 'Dehoni Technologies',
