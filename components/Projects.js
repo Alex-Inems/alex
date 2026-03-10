@@ -29,7 +29,7 @@ const ProjectsSection = () => {
       tags: ['Nextjs', 'Express', 'D3.js', 'Firebase'],
       image:
         '/images/blogwall.jpg',
-      link: 'https://www.blogme.africa',
+      link: 'https://www.blogme.live',
       detailPage: '/blogme',
       accent: 'from-purple-500 to-pink-600'
     },
@@ -41,7 +41,7 @@ const ProjectsSection = () => {
       tags: ['React', 'Supabase', 'Tailwind CSS'],
       image:
         '/images/eventie.jpg',
-      link: 'https://www.eventie.africa',
+      link: 'https://www.eventie.live',
       detailPage: '/eventie',
       accent: 'from-pink-500 to-red-600'
     },
