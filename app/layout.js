@@ -14,6 +14,14 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Alex Thompson ",
   description: "Software Developer",
+  icons: {
+    icon: [
+      { url: "/icon.png", sizes: "64x64", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icon.png", sizes: "64x64", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

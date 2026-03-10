@@ -65,7 +65,7 @@ const ExperiencesSection = () => {
       icon: '🎨',
       status: 'completed'
     },
-    
+
 
   ];
 
@@ -77,7 +77,7 @@ const ExperiencesSection = () => {
             const cardIndex = parseInt(entry.target.dataset.cardIndex);
             setTimeout(() => {
               setVisibleCards(prev => new Set([...prev, cardIndex]));
-              
+
               // Animate timeline progress
               setTimeout(() => {
                 setTimelineProgress(((cardIndex + 1) / experiences.length) * 100);
@@ -97,23 +97,23 @@ const ExperiencesSection = () => {
   }, []);
 
   return (
-    <section 
+    <section
       ref={sectionRef}
-      id="experiences" 
+      id="experiences"
       className="relative bg-gradient-to-b from-gray-50 via-white to-gray-50 py-20 md:py-32 overflow-hidden"
     >
       {/* Dynamic background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 -left-32 w-80 h-80 bg-gradient-to-br from-red-100/20 to-gray-100/20 rounded-full animate-pulse" style={{ animationDuration: '8s' }}></div>
         <div className="absolute bottom-40 -right-40 w-96 h-96 bg-gradient-to-tl from-gray-100/15 to-red-100/15 rounded-full" style={{ animation: 'bounce 12s infinite' }}></div>
-        
+
         {/* Animated background pattern */}
         <div className="absolute inset-0 opacity-5">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="experienceGrid" width="60" height="60" patternUnits="userSpaceOnUse">
-                <circle cx="30" cy="30" r="1" fill="currentColor" opacity="0.3"/>
-                <path d="M 60 30 L 30 30 30 60" fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.2"/>
+                <circle cx="30" cy="30" r="1" fill="currentColor" opacity="0.3" />
+                <path d="M 60 30 L 30 30 30 60" fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.2" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#experienceGrid)" />
@@ -126,7 +126,7 @@ const ExperiencesSection = () => {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Enhanced Header */}
         <div className="text-center mb-20">
           <div className="overflow-hidden mb-8">
@@ -136,7 +136,7 @@ const ExperiencesSection = () => {
               </span>
             </h2>
           </div>
-          
+
           <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8 transform transition-all duration-800 delay-200 translate-y-0 opacity-100">
             Here's a summary of my professional journey and the technologies I've mastered along the way.
             Each role has shaped me into a more versatile and impactful developer.
@@ -170,7 +170,7 @@ const ExperiencesSection = () => {
         <div className="relative">
           {/* Animated timeline line */}
           <div className="absolute left-8 top-0 bottom-0 w-1 bg-gray-200 rounded-full overflow-hidden hidden md:block">
-            <div 
+            <div
               ref={timelineRef}
               className="w-full bg-gradient-to-b from-red-500 via-gray-600 to-red-600 rounded-full transition-all duration-2000 ease-out"
               style={{ height: `${timelineProgress}%` }}
@@ -189,16 +189,15 @@ const ExperiencesSection = () => {
                   key={index}
                   ref={el => cardRefs.current[index] = el}
                   data-card-index={index}
-                  className={`group relative transform transition-all duration-1000 ease-out ${
-                    isVisible 
-                      ? 'translate-x-0 translate-y-0 opacity-100' 
+                  className={`group relative transform transition-all duration-1000 ease-out ${isVisible
+                      ? 'translate-x-0 translate-y-0 opacity-100'
                       : `${slideDirection} translate-y-8 opacity-0`
-                  }`}
+                    }`}
                   style={{ transitionDelay: `${index * 200}ms` }}
                   onMouseEnter={() => setActiveCard(index)}
                   onMouseLeave={() => setActiveCard(null)}
                 >
-                  
+
                   {/* Timeline dot for desktop */}
                   <div className="absolute left-6 top-8 w-6 h-6 hidden md:flex items-center justify-center z-20">
                     <div className={`w-4 h-4 rounded-full border-4 border-white shadow-lg bg-gradient-to-r ${experience.accent} transform transition-all duration-500 ${isVisible ? 'scale-100' : 'scale-0'} ${isActive ? 'scale-125' : ''}`}>
@@ -207,28 +206,27 @@ const ExperiencesSection = () => {
                   </div>
 
                   {/* Status indicator */}
-                  <div className={`absolute -top-2 left-20 md:left-16 px-2 py-1 rounded-full text-xs font-medium transform transition-all duration-500 ${
-                    experience.status === 'current' ? 'bg-red-100 text-red-800' :
-                    experience.status === 'recent' ? 'bg-gray-100 text-gray-800' :
-                    'bg-gray-100 text-white'
-                  } ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-2 opacity-0'}`}
-                  style={{ transitionDelay: `${index * 200 + 300}ms` }}>
-                    {experience.status === 'current' ? '🔴 Current' : 
-                     experience.status === 'recent' ? '⚫ Recent' : '⚪ Completed'}
+                  <div className={`absolute -top-2 left-20 md:left-16 px-2 py-1 rounded-full text-xs font-medium transform transition-all duration-500 ${experience.status === 'current' ? 'bg-red-100 text-red-800' :
+                      experience.status === 'recent' ? 'bg-gray-100 text-gray-800' :
+                        'bg-gray-100 text-white'
+                    } ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-2 opacity-0'}`}
+                    style={{ transitionDelay: `${index * 200 + 300}ms` }}>
+                    {experience.status === 'current' ? '🔴 Current' :
+                      experience.status === 'recent' ? '⚫ Recent' : '⚪ Completed'}
                   </div>
 
                   {/* Main card */}
                   <div className="md:ml-16 relative">
                     {/* Animated background glow */}
                     <div className={`absolute -inset-2 bg-gradient-to-br ${experience.accent} rounded-3xl opacity-0 group-hover:opacity-10 transition-all duration-500 blur-xl`}></div>
-                    
+
                     <div className="relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:scale-[1.02] group-hover:-translate-y-1 overflow-hidden">
-                      
+
                       {/* Dynamic gradient background */}
                       <div className={`absolute inset-0 bg-gradient-to-br ${experience.bgGradient} opacity-0 group-hover:opacity-40 transition-all duration-500`}></div>
-                      
+
                       <div className="relative z-10 p-8">
-                        
+
                         {/* Header section */}
                         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
                           <div className="flex items-start space-x-4 flex-1">
@@ -238,7 +236,7 @@ const ExperiencesSection = () => {
                                 {experience.icon}
                               </div>
                             </div>
-                            
+
                             <div className="flex-1">
                               <h3 className={`text-2xl font-bold text-gray-900 group-hover:bg-gradient-to-r group-hover:${experience.accent}  transition-all duration-300 mb-2`}>
                                 {experience.title}
@@ -248,9 +246,9 @@ const ExperiencesSection = () => {
                               </p>
                             </div>
                           </div>
-                          
+
                           {/* Period badge */}
-                          <div className={`mt-4 md:mt-0 inline-flex px-3 py-1 rounded-full text-xs font-medium bg-gradient-to-r ${experience.accent} text-white shadow-lg group-hover:shadow-xl transform group-hover:scale-105 transition-all duration-300`}>
+                          <div className="mt-4 md:mt-0 inline-flex px-3 py-1 rounded-md text-xs font-semibold tracking-wide bg-slate-100 text-slate-600 border border-slate-200 group-hover:bg-slate-200 group-hover:text-slate-800 transition-all duration-300">
                             {experience.period}
                           </div>
                         </div>
@@ -267,9 +265,9 @@ const ExperiencesSection = () => {
                             {experience.technologies.map((tech, techIndex) => (
                               <span
                                 key={techIndex}
-                                className={`px-3 py-1 bg-gradient-to-r ${experience.accent} bg-opacity-10 text-white rounded-lg text-xs font-medium border border-gray-200 hover:border-transparent hover:bg-gradient-to-r hover:${experience.accent} hover:text-white transform hover:scale-105 transition-all duration-300 cursor-pointer`}
-                                style={{ 
-                                  transitionDelay: `${techIndex * 50}ms` 
+                                className="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-md text-xs font-medium border border-slate-200 hover:bg-slate-200 hover:text-slate-900 transform hover:scale-[1.03] transition-all duration-200 cursor-pointer"
+                                style={{
+                                  transitionDelay: `${techIndex * 50}ms`
                                 }}
                               >
                                 {tech}
@@ -306,26 +304,26 @@ const ExperiencesSection = () => {
 
         {/* Call to action */}
         <div className="text-center mt-20">
-  <a
-    href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-red-600 via-gray-700 to-red-600 text-white rounded-full font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-500 cursor-pointer group"
-  >
-    <span>Ready to add your project to my journey?</span>
-    <svg
-      className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-300"
-      fill="currentColor"
-      viewBox="0 0 20 20"
-    >
-      <path
-        fillRule="evenodd"
-        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-        clipRule="evenodd"
-      />
-    </svg>
-  </a>
-</div>
+          <a
+            href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-red-600 via-gray-700 to-red-600 text-white rounded-full font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-500 cursor-pointer group"
+          >
+            <span>Ready to add your project to my journey?</span>
+            <svg
+              className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-300"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
 
       </div>
     </section>

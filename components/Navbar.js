@@ -59,43 +59,41 @@ const Navbar = () => {
   };
 
   return (
-    <nav 
-      className={`fixed w-full z-50 bg-white transition-all duration-300 ${
-        scrolled ? 'shadow-md' : ''
-      }`}
+    <nav
+      className={`fixed w-full z-50 bg-white transition-all duration-300 ${scrolled ? 'shadow-md' : ''
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo / Brand */}
-          <a 
-            href="#home" 
+          <a
+            href="#home"
             onClick={(e) => handleSmoothScroll(e, '#home')}
-            className="text-2xl font-bold text-gray-900 hover:text-blue-600 transition"
+            className="flex items-center gap-2 text-2xl font-bold text-gray-900 hover:text-blue-600 transition"
           >
+            <img src="/icon.png" alt="Alex Thompson Logo" className="w-12 h-12 rounded-full" />
             Alex Thompson
           </a>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => {
-              const isActive = activeSection === link.href.substring(1) || 
-                              (link.href === '#home' && activeSection === '');
+              const isActive = activeSection === link.href.substring(1) ||
+                (link.href === '#home' && activeSection === '');
               return (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={(e) => handleSmoothScroll(e, link.href)}
-                  className={`relative font-semibold text-sm uppercase tracking-wide transition-all duration-300 group ${
-                    isActive
+                  className={`relative font-semibold text-sm uppercase tracking-wide transition-all duration-300 group ${isActive
                       ? 'text-blue-600'
                       : 'text-gray-800 hover:text-blue-600'
-                  }`}
+                    }`}
                 >
                   {link.name}
-                  <span 
-                    className={`absolute bottom-0 left-0 h-0.5 bg-blue-600 transition-all duration-300 ${
-                      isActive ? 'w-full' : 'w-0 group-hover:w-full'
-                    }`}
+                  <span
+                    className={`absolute bottom-0 left-0 h-0.5 bg-blue-600 transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                      }`}
                   ></span>
                 </a>
               );
@@ -140,18 +138,17 @@ const Navbar = () => {
         <div className="md:hidden bg-white px-4 pt-4 pb-6 border-t border-gray-200 shadow-md">
           <div className="flex flex-col space-y-4">
             {navLinks.map((link) => {
-              const isActive = activeSection === link.href.substring(1) || 
-                            (link.href === '#home' && activeSection === '');
+              const isActive = activeSection === link.href.substring(1) ||
+                (link.href === '#home' && activeSection === '');
               return (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={(e) => handleSmoothScroll(e, link.href)}
-                  className={`relative font-semibold text-sm uppercase tracking-wide py-2 transition-all duration-300 ${
-                    isActive
+                  className={`relative font-semibold text-sm uppercase tracking-wide py-2 transition-all duration-300 ${isActive
                       ? 'text-blue-600'
                       : 'text-gray-800 hover:text-blue-600'
-                  }`}
+                    }`}
                 >
                   {link.name}
                   {isActive && (

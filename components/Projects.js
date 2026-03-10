@@ -205,7 +205,7 @@ const ProjectsSection = () => {
                       {project.tags.map((tag, tagIndex) => (
                         <span
                           key={tagIndex}
-                          className={`text-sm px-4 py-2 rounded-full bg-gradient-to-r ${project.accent} text-white shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl opacity-90 group-hover:opacity-100`}
+                          className="text-sm px-3 py-1.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200 font-medium hover:bg-slate-200 hover:text-slate-900 transform transition-all duration-200 hover:scale-[1.03]"
                           style={{
                             transitionDelay: `${tagIndex * 100}ms`
                           }}
@@ -221,7 +221,7 @@ const ProjectsSection = () => {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group/link inline-flex items-center px-6 py-3 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                        className="group/link inline-flex items-center px-6 py-3 bg-slate-900 text-white rounded-lg font-medium tracking-wide hover:bg-slate-700 shadow-md hover:shadow-lg transform hover:scale-[1.03] transition-all duration-300"
                       >
                         <span>View Live</span>
                         <svg className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20">
@@ -231,11 +231,11 @@ const ProjectsSection = () => {
 
                       <a
                         href={project.detailPage}
-                        className="group/details inline-flex items-center px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-300"
+                        className="group/details inline-flex items-center px-6 py-3 border border-slate-300 text-slate-600 rounded-lg font-medium tracking-wide hover:border-slate-900 hover:text-slate-900 hover:bg-slate-50 transform hover:scale-[1.03] transition-all duration-300"
                       >
                         <span>Details</span>
-                        <svg className="w-4 h-4 ml-2 transform group-hover/details:rotate-45 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        <svg className="w-4 h-4 ml-2 transform group-hover/details:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                       </a>
                     </div>
@@ -252,26 +252,26 @@ const ProjectsSection = () => {
 
         {/* Call to action section */}
         <div className="text-center mt-20">
-  <a
-    href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-500 cursor-pointer group"
-  >
-    <span>Want to see more projects?</span>
-    <svg
-      className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform duration-300"
-      fill="currentColor"
-      viewBox="0 0 20 20"
-    >
-      <path
-        fillRule="evenodd"
-        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-        clipRule="evenodd"
-      />
-    </svg>
-  </a>
-</div>
+          <a
+            href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-8 py-4 bg-slate-900 text-white rounded-full font-semibold tracking-wide border border-slate-800 hover:bg-slate-700 shadow-lg hover:shadow-xl transform hover:scale-[1.03] transition-all duration-300 cursor-pointer group"
+          >
+            <span>Want to see more projects?</span>
+            <svg
+              className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform duration-300"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
 
       </div>
     </section>
