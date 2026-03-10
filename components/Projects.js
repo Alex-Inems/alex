@@ -11,13 +11,13 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: 'Bike-repaire services Site',
+      title: 'Xtraspare Ecommerce',
       description:
-        'The client needed a seamless auto-service booking platform, so I built a responsive app using React, TypeScript, and Tailwind that automated technician assignments and reduced manual coordination, helping the client onboard 40+ users in two weeks — double their initial goal.',
-      tags: ['React', 'Node.js', 'MongoDB'],
+        'I built the XtraSpare website as a full-stack e-commerce platform, handling both the frontend user interface and backend system. The site allows customers to easily browse motorcycle spare parts, view product details, and shop through a clean and responsive interface, while the backend manages product data and ensures smooth communication with the database.',
+      tags: ['Nextjs', 'Node.js', 'MongoDB'],
       image:
         '/images/bikewall.jpg',
-      link: 'https://bikefixup.com/',
+      link: 'https://xtraspare.com/',
       detailPage: '/bikefixup',
       accent: 'from-blue-500 to-purple-600'
     },
