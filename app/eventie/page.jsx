@@ -255,11 +255,12 @@ export default function ProjectPage() {
       </section>
 
       {/* Gallery Section */}
-      <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+      <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {[
-          { url: "/images/eve.jpg", desc: "Concerts and live shows discoverable at a glance." },
-          { url: "/images/eve2.jpg", desc: "Event dashboards for organizers to manage ticket sales." },
-          { url: "/images/eve3.jpg", desc: "Seamless booking and ticketing on mobile devices." },
+          { url: "/images/eventie (1).png", desc: "Concerts and live shows discoverable at a glance." },
+          { url: "/images/eventie (2).png", desc: "Event dashboards for organizers to manage ticket sales." },
+          { url: "/images/eventie (3).png", desc: "Seamless booking and ticketing on mobile devices." },
+          { url: "/images/eventie (4).png", desc: "Real-time updates and interactive experiences." },
         ].map((item, i) => (
           <motion.div
             key={i}

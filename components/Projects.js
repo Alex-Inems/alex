@@ -43,6 +43,17 @@ const ProjectsSection = () => {
       detailPage: '/eventie',
       accent: 'from-pink-500 to-red-600'
     },
+    {
+      id: 5,
+      title: 'Oreo Car Ecommerce',
+      description:
+        'Oreo is a comprehensive car e-commerce storefront backed by a robust admin dashboard. It features full CRUD capabilities allowing dealership administrators to seamlessly manage vehicle inventory, track customer inquiries, and oversee site content while offering buyers a premium digital showroom experience.',
+      tags: ['Next.js', 'React', 'Firebase', 'Tailwind CSS'],
+      image: '/images/oreo (1).png',
+      link: 'https://oreo.ink',
+      detailPage: '/oreo',
+      accent: 'from-orange-500 to-red-600'
+    },
   ];
 
 

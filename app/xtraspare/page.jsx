@@ -241,6 +241,34 @@ export default function XtraspareProjectPage() {
                 </motion.div>
             </section>
 
+            {/* Gallery Section */}
+            <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+                {[
+                    { url: '/images/xtraspare (1).png', desc: 'Comprehensive product catalog.' },
+                    { url: '/images/xtraspare (2).png', desc: 'Detailed spare parts filtering.' },
+                    { url: '/images/xtraspare (3).png', desc: 'Seamless checkout experience.' }
+                ].map((item, i) => (
+                    <motion.div
+                        key={i}
+                        initial={{ opacity: 0, y: 60 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: i * 0.2 }}
+                        viewport={{ once: true }}
+                        className="relative overflow-hidden rounded-2xl shadow-lg group aspect-[4/3]"
+                    >
+                        <Image
+                            src={item.url}
+                            alt={item.desc}
+                            fill
+                            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-100 transition-opacity duration-500 flex items-end p-6">
+                            <p className="text-white font-semibold">{item.desc}</p>
+                        </div>
+                    </motion.div>
+                ))}
+            </section>
+
             {/* CTA */}
             <section className="relative py-32 px-6 max-w-4xl mx-auto text-center">
                 <motion.div

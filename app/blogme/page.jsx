@@ -213,13 +213,15 @@ export default function ProjectPage() {
       </section>
 
       {/* Gallery Section */}
-      <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+      <section className="relative py-32 px-6 max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {[{
-          url: '/images/blog1.jpg', desc: 'Personalized storytelling.'
+          url: '/images/blogme (1).png', desc: 'Personalized storytelling.'
         },{
-          url: '/images/blog2.jpg', desc: 'Follow favorite authors and network.'
+          url: '/images/blogme (2).png', desc: 'Follow favorite authors and network.'
         },{
-          url: '/images/blog3.jpg', desc: 'Convenient reading and writing experience.'
+          url: '/images/blogme (3).png', desc: 'Convenient reading and writing experience.'
+        },{
+          url: '/images/blogme (4).png', desc: 'Seamless mobile responsive design.'
         }].map((item, i) => (
           <motion.div
             key={i}
@@ -227,16 +229,15 @@ export default function ProjectPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: i*0.2 }}
             viewport={{ once: true }}
-            className="relative overflow-hidden rounded-2xl shadow-lg group"
+            className="relative overflow-hidden rounded-2xl shadow-lg group aspect-[4/3]"
           >
             <Image
               src={item.url}
               alt={item.desc}
-              width={600}
-              height={400}
-              className="w-full object-contain transition-transform duration-700 ease-out group-hover:scale-105"
+              fill
+              className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-100  transition-opacity duration-500 flex items-end p-6">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-100 transition-opacity duration-500 flex items-end p-6">
               <p className="text-white font-semibold">{item.desc}</p>
             </div>
           </motion.div>
