@@ -13,7 +13,7 @@ const ProjectsSection = () => {
       id: 1,
       title: 'Xtraspare Ecommerce',
       description:
-        'I built the XtraSpare website as a full-stack e-commerce platform, handling both the frontend user interface and backend system. The site allows customers to easily browse motorcycle spare parts by brand and category, view product details, and shop through a clean and responsive interface, while the backend manages product data and ensures smooth communication with the database.',
+        "Inherited an Incomplete ecommerce codebase for a live spare parts store. Rebuilt and upgraded the entire platform including authentication, payment integration, security and performance improvements and a custom admin dashboard. Owner manages products, orders and pricing without touching code",
       tags: ['Nextjs', 'Node.js', 'MongoDB'],
       image: '/images/bikewall.jpg',
       link: 'https://xtraspare.com/',
@@ -25,7 +25,7 @@ const ProjectsSection = () => {
       id: 3,
       title: 'Blogging Platform',
       description:
-        'BlogMe is a modern storytelling platform I built as the Next.js lead, delivering a fully responsive, high-performance blogging experience in just two weeks, designing an intuitive, mobile-friendly UI, implementing secure user authentication and role-based management, optimizing performance with server-side rendering and incremental static regeneration, and deploying a seamless platform that enabled writers and readers to engage efficiently while exceeding the clients content engagement goals.',
+        "Built a full-featured blogging platform where users can create profiles, publish posts and share content across social media platforms. Features include real-time chat, individual user dashboards and posts are SEO optimized for maximum discoverability and organic reach.\n\nThis is a complete multi-user SaaS platform built entirely from scratch.",
       tags: ['Nextjs', 'Express', 'D3.js', 'Firebase'],
       image: '/images/blogwall.jpg',
       link: 'https://www.blogme.live',
@@ -36,7 +36,7 @@ const ProjectsSection = () => {
       id: 4,
       title: 'Events management site',
       description:
-        'Eventie is an all-in-one platform designed to simplify event discovery, registration, and hosting. It addresses the challenges of finding, organizing, and trusting events in Africa, offering users seamless tools to connect with experiences that matter.',
+        "Built a complete event management platform where organizers can create events, sell tickets and track registrations through a personal dashboard. Each ticket buyer automatically receives a unique QR code after payment that event staff can scan to verify entry.\n\nFeatures include Paystack payment integration, QR code generation , user authentication and real-time ticket sales tracking.",
       tags: ['React', 'Supabase', 'Tailwind CSS'],
       image: '/images/eventie.jpg',
       link: 'https://www.eventie.live',
@@ -47,7 +47,7 @@ const ProjectsSection = () => {
       id: 5,
       title: 'Oreo Car Ecommerce',
       description:
-        'Oreo is a comprehensive car e-commerce storefront backed by a robust admin dashboard. It features full CRUD capabilities allowing dealership administrators to seamlessly manage vehicle inventory, track customer inquiries, and oversee site content while offering buyers a premium digital showroom experience.',
+        "Built a complete Luxury car dealership platform with a fully functional admin interface. Admin can edit page content, manage inventory, add pages and control site settings - all without touching code. Clean responsive frontend with professional UI",
       tags: ['Next.js', 'React', 'Firebase', 'Tailwind CSS'],
       image: '/images/oreo (1).png',
       link: 'https://oreo.ink',
