@@ -42,18 +42,18 @@ const ProjectsSection = () => {
       link: 'https://www.eventie.live',
       detailPage: '/eventie',
       accent: 'from-pink-500 to-red-600'
-    },
-    {
-      id: 5,
-      title: 'Oreo Car Ecommerce',
-      description:
-        "Built a complete Luxury car dealership platform with a fully functional admin interface. Admin can edit page content, manage inventory, add pages and control site settings - all without touching code. Clean responsive frontend with professional UI",
-      tags: ['Next.js', 'React', 'Firebase', 'Tailwind CSS'],
-      image: '/images/oreo (1).png',
-      link: 'https://oreo.ink',
-      detailPage: '/oreo',
-      accent: 'from-orange-500 to-red-600'
-    },
+    }
+    // {
+    //   id: 5,
+    //   title: 'Oreo Car Ecommerce',
+    //   description:
+    //     "Built a complete Luxury car dealership platform with a fully functional admin interface. Admin can edit page content, manage inventory, add pages and control site settings - all without touching code. Clean responsive frontend with professional UI",
+    //   tags: ['Next.js', 'React', 'Firebase', 'Tailwind CSS'],
+    //   image: '/images/oreo (1).png',
+    //   link: 'https://oreo.ink',
+    //   detailPage: '/oreo',
+    //   accent: 'from-orange-500 to-red-600'
+    // },
   ];
 
 
