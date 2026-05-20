@@ -8,10 +8,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
+    { name: 'AI Playground', href: '#ai-playground' },
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
     { name: 'Clients', href: '#clients' },
-    { name: 'Experience', href: '#experiences' },
   ];
 
   // Handle scroll detection
@@ -69,10 +69,19 @@ const Navbar = () => {
           <a
             href="#home"
             onClick={(e) => handleSmoothScroll(e, '#home')}
-            className="flex items-center gap-2 text-2xl font-bold text-gray-900 hover:text-blue-600 transition"
+            className="flex items-center gap-3 group"
           >
-            <img src="/icon.png" alt="Alex Thompson Logo" className="w-12 h-12 rounded-full" />
-            Alex Thompson
+            <div className="relative w-10 h-10 flex-shrink-0">
+              <img
+                src="/images/alex.jpeg"
+                alt="Alex Thompson"
+                className="w-full h-full rounded-full object-cover border border-gray-150 shadow-sm"
+              />
+              <span className="absolute bottom-0 right-0 w-3 h-3 bg-[#14a800] border-2 border-white rounded-full" />
+            </div>
+            <span className="text-xl font-bold text-gray-900 group-hover:text-black transition-colors duration-200">
+              Alex Thompson
+            </span>
           </a>
 
           {/* Desktop Links */}
@@ -86,18 +95,29 @@ const Navbar = () => {
                   href={link.href}
                   onClick={(e) => handleSmoothScroll(e, link.href)}
                   className={`relative font-semibold text-sm uppercase tracking-wide transition-all duration-300 group ${isActive
-                      ? 'text-blue-600'
-                      : 'text-gray-800 hover:text-blue-600'
+                      ? 'text-[#14a800]'
+                      : 'text-gray-800 hover:text-[#14a800]'
                     }`}
                 >
                   {link.name}
                   <span
-                    className={`absolute bottom-0 left-0 h-0.5 bg-blue-600 transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                    className={`absolute bottom-0 left-0 h-0.5 bg-[#14a800] transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'
                       }`}
                   ></span>
                 </a>
               );
             })}
+            <a
+              href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-gray-800 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 shadow-sm hover:shadow"
+            >
+              <span className="w-4.5 h-4.5 rounded-full bg-[#14a800] flex items-center justify-center text-white text-[9px] font-black tracking-tighter leading-none pb-[2px] pr-[0.5px] select-none">
+                up
+              </span>
+              <span>Book a Call on Upwork</span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -146,17 +166,28 @@ const Navbar = () => {
                   href={link.href}
                   onClick={(e) => handleSmoothScroll(e, link.href)}
                   className={`relative font-semibold text-sm uppercase tracking-wide py-2 transition-all duration-300 ${isActive
-                      ? 'text-blue-600'
-                      : 'text-gray-800 hover:text-blue-600'
+                      ? 'text-[#14a800]'
+                      : 'text-gray-800 hover:text-[#14a800]'
                     }`}
                 >
                   {link.name}
                   {isActive && (
-                    <span className="absolute left-0 bottom-0 w-12 h-0.5 bg-blue-600"></span>
+                    <span className="absolute left-0 bottom-0 w-12 h-0.5 bg-[#14a800]"></span>
                   )}
                 </a>
               );
             })}
+            <a
+              href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-white border border-gray-200 hover:bg-gray-50 text-gray-800 rounded-full text-sm font-semibold transition-all duration-200 mt-2 shadow-md"
+            >
+              <span className="w-4.5 h-4.5 rounded-full bg-[#14a800] flex items-center justify-center text-white text-[9px] font-black tracking-tighter leading-none pb-[2px] pr-[0.5px] select-none">
+                up
+              </span>
+              <span>Book a Call on Upwork</span>
+            </a>
           </div>
         </div>
       )}

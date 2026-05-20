@@ -97,18 +97,7 @@ const ExperiencesSection = () => {
         <div className="absolute top-20 -left-32 w-80 h-80 bg-gradient-to-br from-red-100/20 to-gray-100/20 rounded-full animate-pulse" style={{ animationDuration: '8s' }}></div>
         <div className="absolute bottom-40 -right-40 w-96 h-96 bg-gradient-to-tl from-gray-100/15 to-red-100/15 rounded-full" style={{ animation: 'bounce 12s infinite' }}></div>
 
-        {/* Animated background pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="experienceGrid" width="60" height="60" patternUnits="userSpaceOnUse">
-                <circle cx="30" cy="30" r="1" fill="currentColor" opacity="0.3" />
-                <path d="M 60 30 L 30 30 30 60" fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.2" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#experienceGrid)" />
-          </svg>
-        </div>
+
 
         {/* Floating code-themed elements */}
         <div className="absolute top-1/4 right-1/4 w-4 h-4 bg-red-400 opacity-30 animate-ping" style={{ clipPath: 'polygon(0 0, 100% 50%, 0 100%)', animationDelay: '3s' }}></div>
@@ -298,20 +287,12 @@ const ExperiencesSection = () => {
             href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-red-600 via-gray-700 to-red-600 text-white rounded-full font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-500 cursor-pointer group"
+            className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-gray-800 font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:scale-[1.03] transition-all duration-300 cursor-pointer"
           >
-            <span>Ready to add your project to my journey?</span>
-            <svg
-              className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-300"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <span className="w-6 h-6 rounded-full bg-[#14a800] flex items-center justify-center text-white text-[10px] font-black tracking-tighter leading-none pb-[2px] pr-[1px] select-none">
+              up
+            </span>
+            <span>Book a Call on Upwork</span>
           </a>
         </div>
 
