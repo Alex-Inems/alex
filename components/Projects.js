@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 const ProjectsSection = () => {
   const [visibleCards, setVisibleCards] = useState(new Set());
@@ -16,15 +17,15 @@ const ProjectsSection = () => {
       link: 'https://oreo.ink',
       detailPage: '/oreo'
     },
-    {
-      id: 2,
-      title: 'Xtraspare Ecommerce',
-      description: "Rebuilt and upgraded a live spare parts store from an incomplete codebase. Built a high-performance custom admin dashboard where the owner can manage products, track orders, and edit pricing globally without touching any code.",
-      tags: ['Next.js', 'Node.js', 'MongoDB', 'Tailwind'],
-      image: '/images/xtraspare (1).png',
-      link: 'https://xtraspare.com/',
-      detailPage: '/xtraspare'
-    },
+    // {
+    //   id: 2,
+    //   title: 'Xtraspare Ecommerce',
+    //   description: "Rebuilt and upgraded a live spare parts store from an incomplete codebase. Built a high-performance custom admin dashboard where the owner can manage products, track orders, and edit pricing globally without touching any code.",
+    //   tags: ['Next.js', 'Node.js', 'MongoDB', 'Tailwind'],
+    //   image: '/images/xtraspare (1).png',
+    //   link: 'https://xtraspare.com/',
+    //   detailPage: '/xtraspare'
+    // },
     {
       id: 3,
       title: 'Blogging Platform (Blogme)',
@@ -43,14 +44,23 @@ const ProjectsSection = () => {
       link: 'https://www.eventie.live',
       detailPage: '/eventie'
     },
+    // {
+    //   id: 5,
+    //   title: 'Amazon Marketing Agency',
+    //   description: "Designed and engineered an elite performance advertising metrics dashboard for an Amazon marketing agency. Features elegant charts, real-time campaign performance trackers, and luxury dark-mode layouts.",
+    //   tags: ['React', 'Tailwind CSS', 'Framer Motion'],
+    //   image: '/images/ama_landing_page.png',
+    //   link: 'https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share',
+    //   detailPage: '/ama'
+    // },
     {
-      id: 5,
-      title: 'Amazon Marketing Agency',
-      description: "Designed and engineered an elite performance advertising metrics dashboard for an Amazon marketing agency. Features elegant charts, real-time campaign performance trackers, and luxury dark-mode layouts.",
-      tags: ['React', 'Tailwind CSS', 'Framer Motion'],
-      image: '/images/ama_landing_page.png',
-      link: 'https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share',
-      detailPage: '/ama'
+      id: 6,
+      title: 'Sturdee Education Platform',
+      description: "Built a premium education platform with structured course catalogs, learning paths, and instructor profiles. Features include program browsing, alumni network showcasing, and a clean editorial design with animated interactions across all device sizes.",
+      tags: ['Next.js', 'React', 'Tailwind CSS', 'Lucide Icons'],
+      image: '/images/sturdee.png',
+      link: 'https://sturdee.online',
+      detailPage: '/sturdee'
     }
   ];
 
@@ -145,20 +155,28 @@ const ProjectsSection = () => {
                   </div>
 
                   {/* Actions */}
-                  <div className="flex justify-between items-center pt-4 border-t border-white/10 mt-6">
+                  <div className="flex items-center gap-3 pt-4 border-t border-white/10 mt-6">
+                    <Link
+                      href={project.detailPage}
+                      className="inline-flex items-center px-5 py-2.5 bg-white text-black rounded-lg text-xs sm:text-sm font-semibold hover:bg-gray-100 transition-colors duration-200"
+                    >
+                      <span>Case Study</span>
+                      <svg className="w-3.5 h-3.5 ml-1.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                    </Link>
                     <a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-5 py-2.5 bg-white text-black rounded-lg text-xs sm:text-sm font-semibold hover:bg-gray-100 transition-colors duration-200"
+                      className="inline-flex items-center px-4 py-2.5 bg-white/10 text-white border border-white/20 rounded-lg text-xs sm:text-sm font-semibold hover:bg-white/20 transition-colors duration-200"
                     >
                       <span>View Live</span>
-                      <svg className="w-3.5 h-3.5 ml-1.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                      <svg className="w-3 h-3 ml-1.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
                       </svg>
                     </a>
-
-
                   </div>
                 </div>
               </div>
