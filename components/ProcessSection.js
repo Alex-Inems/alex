@@ -20,7 +20,7 @@ const ProcessSection = () => {
     {
       step: 'Step #1',
       title: 'Strategy Call',
-      description: "We'll hop on a strategy call to discover what you need and what's stopping your brand from growing.",
+      description: "I'll hop on a strategy call to discover what you need and what's stopping your brand from growing.",
       illustration: (
         <div className="relative w-full h-24 mt-8 flex items-center justify-between px-2">
           {/* Custom curved dotted line */}
@@ -57,7 +57,7 @@ const ProcessSection = () => {
     {
       step: 'Step #2',
       title: 'Building the Product',
-      description: "We'll start designing and building the products. Products that sell and build a premium brand.",
+      description: "I'll start designing and building the products. Products that sell and build a premium brand.",
       illustration: (
         <div className="relative w-full h-24 mt-8 flex items-center justify-between px-2">
           {/* Custom curved dotted line */}
@@ -105,7 +105,7 @@ const ProcessSection = () => {
     {
       step: 'Step #3',
       title: 'Launch & Track',
-      description: "We'll launch the product / designs and set up analytics and tracking to observe performance.",
+      description: "I'll launch the product / designs and set up analytics and tracking to observe performance.",
       illustration: (
         <div className="relative w-full h-24 mt-8 flex items-center justify-between px-6">
           {/* Custom curved dotted line */}
@@ -147,11 +147,11 @@ const ProcessSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className={`inline-block px-4 py-1.5 bg-gray-100 text-black text-xs sm:text-sm font-semibold tracking-wide uppercase rounded-full mb-4 shadow-sm select-none transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
-            Our process
+            My process
           </span>
           
           <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mt-2 mb-6 leading-tight transition-all duration-1000 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
-            How we get things done.
+            How I get things done.
           </h2>
 
           <div className={`flex justify-center transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>

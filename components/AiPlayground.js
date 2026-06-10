@@ -209,7 +209,7 @@ const AiPlayground = () => {
             Scope Your Business AI <br className="hidden sm:inline" /> Automation in Real-Time.
           </h2>
           <p className="text-base sm:text-lg text-gray-600 font-light max-w-2xl mx-auto">
-            Describe a repetitive workflow or agentic pipeline below. Our resident AI System Architect will instantly diagram your flow, select the optimal Python stack, and draft a production-ready script.
+            I'm an automation expert specializing in n8n. Describe a repetitive workflow or agentic pipeline below — my AI co-pilot will instantly diagram your flow, select the optimal stack (n8n, Python, or Next.js), and draft a production-ready blueprint.
           </p>
         </div>
 
@@ -227,7 +227,7 @@ const AiPlayground = () => {
                 <textarea
                   value={prompt}
                   onChange={(e) => setPrompt(e.target.value)}
-                  placeholder="e.g., Every hour, check our sales database for new transactions. If a deal is over $1,000, draft a personalized congratulations email using Gemini, write to Google Sheet, and ping the sales channel on Slack."
+                  placeholder="e.g., Every hour, check my sales database for new transactions. If a deal is over $1,000, draft a personalized congratulations email using Gemini, write to Google Sheet, and ping the sales channel on Slack."
                   className="w-full min-h-[140px] p-4 text-sm bg-gray-50 border border-gray-200 focus:border-emerald-500 focus:bg-white text-gray-900 rounded-2xl placeholder-gray-400 focus:outline-none transition-all duration-300 resize-none leading-relaxed"
                 />
               </div>

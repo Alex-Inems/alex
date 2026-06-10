@@ -13,18 +13,21 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   // ── Primary SEO ──────────────────────────────────────────────────────────────
-  title: "Alex Thompson | Full-Stack Developer & AI Automation Engineer",
+  title: "Alex Thompson | Full-Stack Developer & n8n Automation Expert",
   description:
-    "Senior Full-Stack Developer specialising in premium websites, AI automation pipelines, and Python engineering. I build world-class web products that look great and sell great. Available on Upwork.",
+    "Senior Full-Stack Developer and n8n automation expert specialising in premium websites, AI-powered workflows, and Python engineering. I build world-class web products and production-grade n8n automations that look great and sell great. Available on Upwork.",
 
   keywords: [
     "Full-Stack Developer",
+    "n8n Automation Expert",
+    "n8n Developer",
     "AI Automation Engineer",
     "Python Developer",
     "Next.js Developer",
     "React Developer",
     "Web Design",
     "AI Pipelines",
+    "Workflow Automation",
     "Freelance Developer",
     "Upwork Developer",
     "Alex Thompson",
@@ -32,9 +35,9 @@ export const metadata = {
 
   // ── Open Graph (Facebook Ads, LinkedIn, WhatsApp, Slack previews) ─────────
   openGraph: {
-    title: "Alex Thompson | Full-Stack Developer & AI Automation Engineer",
+    title: "Alex Thompson | Full-Stack Developer & n8n Automation Expert",
     description:
-      "Premium websites, AI automation pipelines, and Python engineering. Book a strategy call on Upwork.",
+      "Premium websites, n8n automation workflows, and AI-powered pipelines. Book a strategy call on Upwork.",
     url: "https://www.upwork.com/freelancers/~01d99779b36e05950f",
     siteName: "Alex Thompson Portfolio",
     images: [
@@ -52,9 +55,9 @@ export const metadata = {
   // ── Twitter / X Card ─────────────────────────────────────────────────────────
   twitter: {
     card: "summary_large_image",
-    title: "Alex Thompson | Full-Stack Developer & AI Automation Engineer",
+    title: "Alex Thompson | Full-Stack Developer & n8n Automation Expert",
     description:
-      "Premium websites, AI automation pipelines, and Python engineering. Book a strategy call on Upwork.",
+      "Premium websites, n8n automation workflows, and AI-powered pipelines. Book a strategy call on Upwork.",
     images: ["/images/alex.jpeg"],
   },
 

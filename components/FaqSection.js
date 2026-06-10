@@ -20,27 +20,31 @@ const FaqSection = () => {
   const faqs = [
     {
       question: "Why should I work with you instead of a traditional agency?",
-      answer: "When you work with us, you bypass middle management, sales reps, and corporate overhead. You deal directly with a senior designer and full-stack engineer. This direct pipeline guarantees transparent communication, rapid iteration speeds, and custom, premium-grade code built to your exact specifications."
+      answer: "When you work with me, you bypass middle management, sales reps, and corporate overhead. You deal directly with a senior full-stack developer and n8n automation expert. This direct pipeline guarantees transparent communication, rapid iteration speeds, and custom, premium-grade code built to your exact specifications."
     },
     {
       question: "Do you build custom AI automation and Python agent pipelines?",
-      answer: "Yes, absolutely! We design and implement robust, custom AI automation workflows, autonomous LLM agents (using frameworks like CrewAI and LangChain), data scrapers, and API integrations using modern Python. We can embed AI features directly into your Next.js application or build them as automated background processes that save your business hundreds of hours."
+      answer: "Yes, absolutely! As an automation expert specializing in n8n, I design and implement production-grade workflows that connect webhooks, LLM classifiers, Google Sheets, Gmail, Slack, and CRM tools. I also build autonomous LLM agents (using CrewAI and LangChain), Python data scrapers, and API integrations — embedding AI directly into your Next.js app or running them as background automations that save your business hundreds of hours."
+    },
+    {
+      question: "Do you build n8n workflows and webhook integrations?",
+      answer: "Yes — n8n is one of my core specializations. I build end-to-end automations with n8n cloud or self-hosted instances, wired to Next.js webhook endpoints, OpenAI/GPT nodes, Google Sheets logging, Gmail notifications, and custom admin dashboards. Recent builds include an AI leads classifier and a LinkedIn post generator — both with instant frontend responses and background task processing."
     },
     {
       question: "What is your typical project timeline?",
-      answer: "A standard high-converting landing page or corporate website takes between 2 to 3 weeks. Complex SaaS applications, database integrations, or full custom e-commerce stores typically take 4 to 6 weeks. We outline clear, secure milestones on Upwork so you always know exactly what is being delivered."
+      answer: "A standard high-converting landing page or corporate website takes between 2 to 3 weeks. Complex SaaS applications, database integrations, or full custom e-commerce stores typically take 4 to 6 weeks. I outline clear, secure milestones on Upwork so you always know exactly what is being delivered."
     },
     {
       question: "What technologies do you use for building products?",
-      answer: "We specialize in React and Next.js (App Router) for blazingly fast, SEO-optimized frontends. For backends, database, and automation pipelines, we implement secure Node.js APIs, robust Python services, MongoDB, PostgreSQL, and serverless tools like Supabase and Firebase."
+      answer: "I specialize in React and Next.js (App Router) for blazingly fast, SEO-optimized frontends. For backends, database, and automation pipelines, I implement secure Node.js APIs, n8n workflow orchestration, robust Python services, MongoDB, PostgreSQL, and serverless tools like Supabase and Firebase."
     },
     {
       question: "Do you manage payments and contracts securely?",
-      answer: "Yes, all our contracts, milestone tracking, and payments are managed securely through Upwork. This offers absolute transparency, secure escrow protection for your funds, and a completely stress-free legal and financial framework for both parties."
+      answer: "Yes, all contracts, milestone tracking, and payments are managed securely through Upwork. This offers absolute transparency, secure escrow protection for your funds, and a completely stress-free legal and financial framework for both parties."
     },
     {
       question: "Do you offer support after launching the website?",
-      answer: "Absolutely. We set up comprehensive performance tracking, search console integrations, and Google Analytics pre-launch. Post-launch, we provide a dedicated support window to fix any bugs, observe user behaviors, and fine-tune loading speeds to maximize your conversions."
+      answer: "Absolutely. I set up comprehensive performance tracking, search console integrations, and Google Analytics pre-launch. Post-launch, I provide a dedicated support window to fix any bugs, observe user behaviors, and fine-tune loading speeds to maximize your conversions."
     }
   ];
 
@@ -72,7 +76,7 @@ const FaqSection = () => {
             </h2>
             
             <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-light mb-10">
-              Have some questions in mind? Here are answers to the most common questions our clients ask us. Can't find what you are looking for? Reach out directly to book a strategy call on Upwork.
+              Have some questions in mind? Here are answers to the most common questions clients ask me. Can't find what you are looking for? Reach out directly to book a strategy call on Upwork.
             </p>
 
             <div>

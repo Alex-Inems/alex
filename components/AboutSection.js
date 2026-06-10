@@ -113,7 +113,7 @@ const AboutSection = () => {
             </div>
             
             <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-6 leading-tight">
-              A senior full-stack developer building complete, premium digital products.
+              A senior full-stack developer and n8n automation expert building complete, premium digital products.
             </h3>
             
             <div className="space-y-5 text-gray-600 text-sm sm:text-base leading-relaxed font-light">
@@ -121,7 +121,10 @@ const AboutSection = () => {
                 I'm a full-stack engineer with over 5 years of experience building complete end-to-end web applications. I handle everything from designing premium, custom-coded layouts to architecting secure backends, robust database structures, and high-performance frontend interfaces.
               </p>
               <p>
-                My background allows me to bridge the gap between creative visual layout and scalable software engineering. I specialize in Next.js, React, Node.js, and Supabase, building tailored systems that increase user trust and drive business conversions.
+                I'm also an automation expert specializing in n8n — designing production-grade workflows that connect Next.js webhooks, AI classifiers, Google Sheets, Gmail, and CRM tools into seamless pipelines that save teams hundreds of hours.
+              </p>
+              <p>
+                My background allows me to bridge the gap between creative visual layout and scalable software engineering. I specialize in Next.js, React, n8n, Node.js, and Supabase, building tailored systems that increase user trust and drive business conversions.
               </p>
             </div>
 

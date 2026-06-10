@@ -57,7 +57,7 @@ const ValuePropSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className={`inline-block px-4 py-1.5 bg-gray-100 text-black text-xs sm:text-sm font-semibold tracking-wide uppercase rounded-full mb-4 shadow-sm select-none transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
-            Why we should work together
+            Why you should work with me
           </span>
           
           <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mt-2 mb-6 transition-all duration-1000 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
@@ -69,8 +69,8 @@ const ValuePropSection = () => {
           </div>
 
           <p className={`text-base sm:text-lg text-gray-700 leading-relaxed font-light transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
-            Our websites make visitors choose you over your competitors. <br className="hidden sm:inline" />
-            Our websites build relationships and connections with your customers.
+            My websites make visitors choose you over your competitors. <br className="hidden sm:inline" />
+            My websites build relationships and connections with your customers.
           </p>
         </div>
 

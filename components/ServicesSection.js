@@ -106,7 +106,7 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-24">
           <span className={`inline-block px-4 py-1.5 bg-gray-100 text-black text-xs sm:text-sm font-semibold tracking-wide uppercase rounded-full mb-4 shadow-sm select-none transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
-            Our Services
+            My Services
           </span>
           
           <h2 className={`text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 mt-2 mb-6 leading-tight transition-all duration-1000 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
@@ -133,7 +133,7 @@ const ServicesSection = () => {
               <div className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">01 / IDENTITY & DESIGN</div>
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 tracking-tight">Branding</h3>
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-light mb-8 max-w-lg">
-                Transform your business into an unforgettable premium brand. We design bespoke visual identities, typographic styleguides, and interface layouts built to capture immediate attention and command market authority.
+                Transform your business into an unforgettable premium brand. I design bespoke visual identities, typographic styleguides, and interface layouts built to capture immediate attention and command market authority.
               </p>
             </div>
 
@@ -184,7 +184,7 @@ const ServicesSection = () => {
               <div className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">02 / INTERACTIVE ENGINEERING</div>
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 tracking-tight">Digital Products</h3>
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-light mb-8 max-w-lg">
-                Launch bespoke web applications engineered for seamless scale. From modern SaaS platforms to high-performance e-commerce experiences, we architect high-quality frontends and robust backends designed to convert.
+                Launch bespoke web applications engineered for seamless scale. From modern SaaS platforms to high-performance e-commerce experiences, I architect high-quality frontends and robust backends designed to convert.
               </p>
             </div>
 
@@ -216,6 +216,58 @@ const ServicesSection = () => {
 
         </div>
 
+        {/* n8n Automation Section */}
+        <div
+          className={`mt-32 pt-20 border-t border-gray-100 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start transition-all duration-1000 ease-out ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          }`}
+          style={{ transitionDelay: '600ms' }}
+        >
+          <div>
+            <div className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">03 / WORKFLOW AUTOMATION</div>
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 tracking-tight">n8n Automations</h3>
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-light mb-8 max-w-lg">
+              I'm an automation expert specializing in n8n. I wire Next.js webhooks to AI classifiers, Google Sheets, Gmail, Slack, and CRM tools — building production pipelines that classify leads, generate content, and route notifications without manual intervention.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {['n8n', 'OpenAI / GPT', 'Webhooks', 'Google Sheets', 'Gmail', 'Next.js'].map((tag) => (
+                <span key={tag} className="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full text-xs font-medium border border-gray-200">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 group cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl">
+              <img
+                src="/images/n8n lead classifier.png"
+                alt="n8n Leads Classifier"
+                className="w-full aspect-[16/10] object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4">
+                <span className="px-2 py-0.5 bg-white/10 backdrop-blur-md border border-white/20 rounded text-[9px] font-semibold text-white tracking-wide uppercase mb-2 inline-block">n8n + Next.js</span>
+                <h4 className="text-white text-sm font-bold tracking-tight">Leads Classifier</h4>
+                <p className="text-gray-300 text-[11px] font-light mt-1">AI triage with webhook, Sheets log & admin dashboard</p>
+              </div>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 group cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl">
+              <img
+                src="/images/linkedin post generator.png"
+                alt="LinkedIn Post Generator"
+                className="w-full aspect-[16/10] object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4">
+                <span className="px-2 py-0.5 bg-white/10 backdrop-blur-md border border-white/20 rounded text-[9px] font-semibold text-white tracking-wide uppercase mb-2 inline-block">n8n + GPT</span>
+                <h4 className="text-white text-sm font-bold tracking-tight">LinkedIn Post Generator</h4>
+                <p className="text-gray-300 text-[11px] font-light mt-1">Instant AI posts with Sheets history & email alerts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Web Design & Landing Pages Tilted Showcase */}
         <div
           className={`mt-32 pt-20 border-t border-gray-100 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center overflow-hidden transition-all duration-1000 ease-out ${
@@ -230,7 +282,7 @@ const ServicesSection = () => {
               Web Design & <br />Landing Pages
             </h3>
             <p className="text-lg text-gray-600 font-light mt-6 max-w-md leading-relaxed">
-              We design websites & landing pages that look great, and sell great.
+              I design websites & landing pages that look great, and sell great.
             </p>
           </div>
 

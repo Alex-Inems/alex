@@ -2,6 +2,8 @@ import React from 'react';
 
 const HeroSection = () => {
   const designs = [
+    { title: 'n8n Leads Classifier', tag: 'n8n', img: '/images/n8n lead classifier.png' },
+    { title: 'LinkedIn Post Generator', tag: 'n8n + AI', img: '/images/linkedin post generator.png' },
     { title: 'Xtraspare E-commerce', tag: 'Next.js', img: '/images/bikewall.jpg' },
     { title: 'Oreo Luxury Showroom', tag: 'Firebase', img: '/images/oreo (1).png' },
     { title: 'Blogme Publishing', tag: 'React', img: '/images/blogwall.jpg' },
@@ -17,7 +19,7 @@ const HeroSection = () => {
       <style>{`
         @keyframes infinite-scroll {
           0% { transform: translateX(0); }
-          100% { transform: translateX(calc(-210px * 6 - 1.5rem * 6)); }
+          100% { transform: translateX(calc(-210px * 8 - 1.5rem * 8)); }
         }
         .scroll-container {
           overflow: hidden;
@@ -53,7 +55,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-base sm:text-lg mb-12 max-w-2xl mx-auto text-gray-800 leading-relaxed font-light">
-            Build world-class websites, brands and <br className="hidden sm:inline" /> products that not only look great, but sell great. 
+            I'm an automation expert specializing in n8n — I build world-class websites, brands, and <br className="hidden sm:inline" /> AI-powered workflows that not only look great, but sell great.
           </p>
 
           {/* ✅ Responsive button */}
