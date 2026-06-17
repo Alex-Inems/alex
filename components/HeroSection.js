@@ -2,6 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   const designs = [
+    { title: 'Inema Construction', tag: 'Next.js', img: '/images/inema.png' },
     { title: 'n8n Leads Classifier', tag: 'n8n', img: '/images/n8n lead classifier.png' },
     { title: 'LinkedIn Post Generator', tag: 'n8n + AI', img: '/images/linkedin post generator.png' },
     { title: 'Xtraspare E-commerce', tag: 'Next.js', img: '/images/bikewall.jpg' },
@@ -19,7 +20,7 @@ const HeroSection = () => {
       <style>{`
         @keyframes infinite-scroll {
           0% { transform: translateX(0); }
-          100% { transform: translateX(calc(-210px * 8 - 1.5rem * 8)); }
+          100% { transform: translateX(calc(-210px * 9 - 1.5rem * 9)); }
         }
         .scroll-container {
           overflow: hidden;

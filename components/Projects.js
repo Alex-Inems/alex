@@ -32,6 +32,16 @@ const PORTFOLIO_VIDEO_URL = 'https://youtu.be/mpHknM8chmA';
 
 const webProjects = [
   {
+    id: 9,
+    title: 'Inema Construction',
+    description:
+      'Full-stack corporate site for PT Inema Konstruksi with auth, admin dashboard, and project booking — editorial dark-mode design, landmark portfolio, six service disciplines, and safety metrics. Live at inema.site.',
+    tags: ['Next.js', 'React', 'Auth', 'Admin Dashboard', 'Booking'],
+    image: '/images/inema.png',
+    link: 'https://inema.site',
+    detailPage: '/inema',
+  },
+  {
     id: 1,
     title: 'Oreo Luxury Showcase',
     description:
@@ -65,8 +75,8 @@ const webProjects = [
     id: 6,
     title: 'Sturdee Education Platform',
     description:
-      'Premium EdTech platform with structured course catalogs, learning paths, faculty profiles, and alumni social proof.',
-    tags: ['Next.js', 'React', 'Tailwind CSS', 'Lucide Icons'],
+      'Full-stack EdTech platform with auth, admin dashboard, session booking, and an integrated tutorial site — courses, programs, learning paths, and instructor profiles. Live at sturdee.online.',
+    tags: ['Next.js', 'React', 'Auth', 'Admin Dashboard', 'Booking'],
     image: '/images/sturdee.png',
     link: 'https://sturdee.online',
     detailPage: '/sturdee',

@@ -3,7 +3,8 @@ import { ALL_PROJECTS } from '@/lib/projectData';
 
 export const metadata = {
   title: 'Sturdee Education Platform — Alex Thompson',
-  description: 'Built a premium custom education platform with structured courses, learning paths, instructor profiles, and editorial-grade design that commands high-ticket pricing.',
+  description:
+    'Full-stack EdTech platform with auth, admin dashboard, session booking, and integrated tutorials — courses, programs, and learning paths live at sturdee.online.',
 };
 
 const project = ALL_PROJECTS.find(p => p.id === 6);
