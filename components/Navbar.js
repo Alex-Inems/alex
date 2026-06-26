@@ -7,10 +7,10 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState('');
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
+    { name: 'Home', href: '#projects' },
+    { name: 'Projects', href: '#projects' },
     { name: 'AI Playground', href: '#ai-playground' },
     { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
     { name: 'Clients', href: '#clients' },
   ];
 
@@ -30,7 +30,7 @@ const Navbar = () => {
         }
         return false;
       });
-      setActiveSection(currentSection || 'home');
+      setActiveSection(currentSection || 'projects');
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -49,7 +49,7 @@ const Navbar = () => {
         top: offsetTop,
         behavior: 'smooth'
       });
-    } else if (href === '#home') {
+    } else if (href === '#projects' || href === '#home') {
       window.scrollTo({
         top: 0,
         behavior: 'smooth'
@@ -67,8 +67,8 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           {/* Logo / Brand */}
           <a
-            href="#home"
-            onClick={(e) => handleSmoothScroll(e, '#home')}
+            href="#projects"
+            onClick={(e) => handleSmoothScroll(e, '#projects')}
             className="flex items-center gap-3 group"
           >
             <div className="relative w-10 h-10 flex-shrink-0">
@@ -88,7 +88,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => {
               const isActive = activeSection === link.href.substring(1) ||
-                (link.href === '#home' && activeSection === '');
+                (link.href === '#projects' && (activeSection === 'projects' || activeSection === ''));
               return (
                 <a
                   key={link.name}
@@ -159,7 +159,7 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4">
             {navLinks.map((link) => {
               const isActive = activeSection === link.href.substring(1) ||
-                (link.href === '#home' && activeSection === '');
+                (link.href === '#projects' && (activeSection === 'projects' || activeSection === ''));
               return (
                 <a
                   key={link.name}

@@ -274,7 +274,7 @@ const ProjectsSection = () => {
     <section
       ref={sectionRef}
       id="projects"
-      className="relative bg-white py-20 md:py-32 overflow-hidden border-t border-gray-100"
+      className="relative bg-white pt-28 pb-20 md:pt-32 md:pb-32 overflow-hidden"
     >
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 

@@ -19,7 +19,7 @@ const HeroSection = () => {
   const doubledDesigns = [...designs, ...designs];
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white px-4 py-20">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white px-4 py-20 border-t border-gray-100">
       <style>{`
         @keyframes infinite-scroll {
           0% { transform: translateX(0); }

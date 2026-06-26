@@ -16,13 +16,13 @@ function page() {
   return (
     <div>
       <Navbar />
+      <ProjectsSection />
       <HeroSection />
       <ValuePropSection />
       <ServicesSection />
       <ProcessSection />
       <AiPlayground />
       <AboutSection />
-      <ProjectsSection />
       <ClientListSection />
       <FaqSection />
       <Footer />

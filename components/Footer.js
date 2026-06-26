@@ -5,7 +5,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     const navLinks = [
-        { name: 'Home', href: '#home' },
+        { name: 'Home', href: '#projects' },
         { name: 'About', href: '#about' },
         { name: 'Projects', href: '#projects' },
         { name: 'Clients', href: '#clients' }
@@ -51,8 +51,8 @@ const Footer = () => {
                     {/* Brand column */}
                     <div className="space-y-4">
                         <a
-                            href="#home"
-                            onClick={(e) => handleSmoothScroll(e, '#home')}
+                            href="#projects"
+                            onClick={(e) => handleSmoothScroll(e, '#projects')}
                             className="flex items-center gap-3 group w-fit"
                         >
                             <div className="relative w-10 h-10 flex-shrink-0">
