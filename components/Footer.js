@@ -68,7 +68,7 @@ const Footer = () => {
                             </span>
                         </a>
                         <p className="text-sm leading-relaxed text-gray-500 max-w-xs font-light">
-                            Full-stack developer and n8n automation expert crafting fast, scalable, and beautiful digital experiences.
+                            Shopify developer and full-stack engineer crafting stores, web apps, and automations that scale.
                         </p>
                         {/* Social icons */}
                         <div className="flex items-center gap-3 pt-2">

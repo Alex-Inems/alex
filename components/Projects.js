@@ -8,8 +8,8 @@ const automationProjects = [
     title: 'n8n Leads Classifier',
     highlight: 'AI triage for every inbound message',
     description:
-      'Next.js submission form wired to an n8n webhook. GPT classifies each message as a lead, opportunity, question, or spam — then logs to Google Sheets, sends Gmail alerts, and surfaces everything in an admin dashboard.',
-    tags: ['n8n', 'Next.js', 'OpenAI', 'Google Sheets'],
+      'Shopify contact form wired to an n8n webhook. GPT classifies each message as a lead, opportunity, question, or spam — then logs to Google Sheets, sends Gmail alerts, and surfaces everything in an admin dashboard.',
+    tags: ['n8n', 'Shopify', 'OpenAI', 'Google Sheets'],
     image: '/images/n8n lead classifier.png',
     detailPage: '/n8n-leads-classifier',
     metrics: ['4 categories', '<3s processing', 'Admin dashboard'],
@@ -19,24 +19,54 @@ const automationProjects = [
     title: 'LinkedIn Post Generator',
     highlight: 'Professional posts in under 5 seconds',
     description:
-      'Next.js UI sends topic and tone to an n8n webhook. GPT writes a LinkedIn-ready post, logs it to Google Sheets, emails the admin, and returns the result instantly via responseNode — all in 3–5 seconds.',
-    tags: ['n8n', 'Next.js', 'OpenAI', 'Gmail'],
+      'Shopify UI sends topic and tone to an n8n webhook. GPT writes a LinkedIn-ready post, logs it to Google Sheets, emails the admin, and returns the result instantly via responseNode — all in 3–5 seconds.',
+    tags: ['n8n', 'Shopify', 'OpenAI', 'Gmail'],
     image: '/images/linkedin post generator.png',
     detailPage: '/linkedin-post-generator',
     metrics: ['3–5s execution', 'Sheets history', 'Instant response'],
   },
 ];
 
-const PORTFOLIO_VIDEO_ID = 'mpHknM8chmA';
-const PORTFOLIO_VIDEO_URL = 'https://youtu.be/mpHknM8chmA';
+const PORTFOLIO_VIDEO_ID = 'Bj3buE41G00';
+const PORTFOLIO_VIDEO_URL = 'https://youtu.be/Bj3buE41G00';
 
-const webProjects = [
+const shopifyProjects = [
+  {
+    id: 10,
+    title: 'Yowaa Footwear',
+    description:
+      'Custom Shopify DTC sneaker store — premium Yeezy, Nike & Adidas with featured drops, shop-by-style collections, authenticity guarantee, pre-order flows, and member email capture. Live storefront with cart, search, and account.',
+    tags: ['Shopify', 'E-commerce', 'DTC', 'Liquid'],
+    image: '/images/yowaa.png',
+    link: 'https://yowaa-2.myshopify.com/',
+    detailPage: '/yowaa',
+  },
+  {
+    id: 11,
+    title: 'Yanga Beauty',
+    description:
+      'Premium Shopify beauty marketplace — French pharmacy, K-beauty, luxury skincare & hair brands with mega-menu navigation, sale carousels, brand-of-the-month features, reviews, and newsletter capture.',
+    tags: ['Shopify', 'E-commerce', 'Beauty', 'Liquid'],
+    image: '/images/yanga.png',
+    link: 'https://yanga-7885.myshopify.com/',
+    detailPage: '/yanga',
+  },
+  {
+    id: 12,
+    title: 'Aurum & Co. Jewelry',
+    description:
+      'Luxury Shopify fine jewelry store — flash sale countdown, GIA-certified pieces, category shop grid, concierge messaging, VIP email list, and insured checkout for rings, necklaces, watches & bridal.',
+    tags: ['Shopify', 'E-commerce', 'Luxury', 'Liquid'],
+    image: '/images/aurum.png',
+    link: 'https://aurum-co-21.myshopify.com/',
+    detailPage: '/aurum',
+  },
   {
     id: 9,
     title: 'Inema Construction',
     description:
-      'Full-stack corporate site for PT Inema Konstruksi with auth, admin dashboard, and project booking — editorial dark-mode design, landmark portfolio, six service disciplines, and safety metrics. Live at inema.site.',
-    tags: ['Next.js', 'React', 'Auth', 'Admin Dashboard', 'Booking'],
+      'Custom Shopify corporate site for PT Inema Konstruksi — editorial dark-mode design, landmark portfolio, service showcase, project inquiry flows, and admin-managed content. Live at inema.site.',
+    tags: ['Shopify', 'Corporate', 'Liquid', 'Booking'],
     image: '/images/inema.png',
     link: 'https://inema.site',
     detailPage: '/inema',
@@ -45,12 +75,25 @@ const webProjects = [
     id: 1,
     title: 'Oreo Luxury Showcase',
     description:
-      'Luxury car dealership platform with a Firebase CMS admin — inventory, page builder, and site settings managed without code.',
-    tags: ['Next.js', 'React', 'Firebase', 'Tailwind CSS'],
+      'Luxury automotive Shopify storefront — premium inventory showcase, vehicle listings, editorial page layouts, and owner-managed content through a custom Shopify admin experience.',
+    tags: ['Shopify', 'E-commerce', 'Automotive', 'Liquid'],
     image: '/images/oreo (2).png',
     link: 'https://oreo.ink',
     detailPage: '/oreo',
   },
+  {
+    id: 6,
+    title: 'Sturdee Education Platform',
+    description:
+      'Premium Shopify EdTech storefront — courses, programs, and tutorials with session booking, student accounts, instructor profiles, and admin-managed enrolments. Live at sturdee.online.',
+    tags: ['Shopify', 'EdTech', 'Liquid', 'Booking'],
+    image: '/images/sturdee.png',
+    link: 'https://sturdee.online',
+    detailPage: '/sturdee',
+  },
+];
+
+const fullStackProjects = [
   {
     id: 3,
     title: 'Blogging Platform (Blogme)',
@@ -70,16 +113,6 @@ const webProjects = [
     image: '/images/eventie (2).png',
     link: 'https://www.eventie.live',
     detailPage: '/eventie',
-  },
-  {
-    id: 6,
-    title: 'Sturdee Education Platform',
-    description:
-      'Full-stack EdTech platform with auth, admin dashboard, session booking, and an integrated tutorial site — courses, programs, learning paths, and instructor profiles. Live at sturdee.online.',
-    tags: ['Next.js', 'React', 'Auth', 'Admin Dashboard', 'Booking'],
-    image: '/images/sturdee.png',
-    link: 'https://sturdee.online',
-    detailPage: '/sturdee',
   },
 ];
 
@@ -254,7 +287,7 @@ const ProjectsSection = () => {
             My Work
           </h2>
           <p className="text-base sm:text-lg text-gray-600 font-light leading-relaxed">
-            I'm an automation expert specializing in n8n — here are my latest n8n workflows and web products, from AI lead classifiers to full-stack SaaS platforms.
+            I'm a Shopify developer — here are my latest storefronts, SaaS builds, and post-launch n8n automations, from DTC shops to AI-powered lead pipelines.
           </p>
         </div>
 
@@ -276,7 +309,7 @@ const ProjectsSection = () => {
                 <h3 className="text-lg font-bold text-gray-900 tracking-tight">Portfolio Reel</h3>
               </div>
               <p className="text-sm text-gray-500 font-light max-w-xl">
-                A walkthrough of my work — full-stack builds, n8n automations, and the kind of products I deliver for clients.
+                A walkthrough of my work — Shopify storefronts, full-stack builds, and the kind of products I deliver for clients.
               </p>
             </div>
             <a
@@ -304,8 +337,60 @@ const ProjectsSection = () => {
           </div>
         </div>
 
-        {/* Featured n8n Automations */}
+        {/* Shopify Stores */}
         <div className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="w-8 h-8 rounded-lg bg-gray-900 flex items-center justify-center">
+              <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-gray-900 tracking-tight">Shopify Stores</h3>
+              <p className="text-sm text-gray-500 font-light">Custom DTC storefronts built to convert</p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {shopifyProjects.map((project, index) => (
+              <WebCard
+                key={project.id}
+                project={project}
+                index={index}
+                isVisible={visibleCards.has(`web-${project.id}`)}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Full-Stack Web Products */}
+        <div className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="w-8 h-8 rounded-lg bg-gray-900 flex items-center justify-center">
+              <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-gray-900 tracking-tight">Full-Stack Web Products</h3>
+              <p className="text-sm text-gray-500 font-light">SaaS platforms, dashboards &amp; custom web apps</p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {fullStackProjects.map((project, index) => (
+              <WebCard
+                key={project.id}
+                project={project}
+                index={index}
+                isVisible={visibleCards.has(`web-${project.id}`)}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Post-Launch Automations */}
+        <div>
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-8 rounded-lg bg-[#ff6d5a] flex items-center justify-center">
               <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -313,8 +398,8 @@ const ProjectsSection = () => {
               </svg>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-gray-900 tracking-tight">n8n Automations</h3>
-              <p className="text-sm text-gray-500 font-light">Production workflows with Next.js webhooks &amp; AI</p>
+              <h3 className="text-lg font-bold text-gray-900 tracking-tight">Post-Launch Automations</h3>
+              <p className="text-sm text-gray-500 font-light">n8n workflows that scale your store after go-live</p>
             </div>
           </div>
 
@@ -325,32 +410,6 @@ const ProjectsSection = () => {
                 project={project}
                 index={index}
                 isVisible={visibleCards.has(`auto-${project.id}`)}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* Web Products */}
-        <div>
-          <div className="flex items-center gap-3 mb-8">
-            <div className="w-8 h-8 rounded-lg bg-gray-900 flex items-center justify-center">
-              <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-              </svg>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold text-gray-900 tracking-tight">Web Products</h3>
-              <p className="text-sm text-gray-500 font-light">Full-stack apps, SaaS platforms &amp; dashboards</p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {webProjects.map((project, index) => (
-              <WebCard
-                key={project.id}
-                project={project}
-                index={index}
-                isVisible={visibleCards.has(`web-${project.id}`)}
               />
             ))}
           </div>

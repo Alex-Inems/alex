@@ -2,11 +2,14 @@ import React from 'react';
 
 const HeroSection = () => {
   const designs = [
-    { title: 'Inema Construction', tag: 'Next.js', img: '/images/inema.png' },
+    { title: 'Yowaa Footwear', tag: 'Shopify', img: '/images/yowaa.png' },
+    { title: 'Yanga Beauty', tag: 'Shopify', img: '/images/yanga.png' },
+    { title: 'Aurum & Co.', tag: 'Luxury', img: '/images/aurum.png' },
+    { title: 'Inema Construction', tag: 'Shopify', img: '/images/inema.png' },
     { title: 'n8n Leads Classifier', tag: 'n8n', img: '/images/n8n lead classifier.png' },
     { title: 'LinkedIn Post Generator', tag: 'n8n + AI', img: '/images/linkedin post generator.png' },
     { title: 'Xtraspare E-commerce', tag: 'Next.js', img: '/images/bikewall.jpg' },
-    { title: 'Oreo Luxury Showroom', tag: 'Firebase', img: '/images/oreo (1).png' },
+    { title: 'Oreo Luxury Showroom', tag: 'Shopify', img: '/images/oreo (1).png' },
     { title: 'Blogme Publishing', tag: 'React', img: '/images/blogwall.jpg' },
     { title: 'Eventie Tickets System', tag: 'Supabase', img: '/images/eventie.jpg' },
     { title: 'Creative Builders Hub', tag: 'Sass', img: '/images/creative.png' },
@@ -20,7 +23,7 @@ const HeroSection = () => {
       <style>{`
         @keyframes infinite-scroll {
           0% { transform: translateX(0); }
-          100% { transform: translateX(calc(-210px * 9 - 1.5rem * 9)); }
+          100% { transform: translateX(calc(-210px * 12 - 1.5rem * 12)); }
         }
         .scroll-container {
           overflow: hidden;
@@ -52,11 +55,11 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.1] mb-8 text-black">
-            Premium websites that build <br className="hidden sm:inline" /> <span className="font-light">Premium brands.</span>
+            Custom Shopify stores that build <br className="hidden sm:inline" /> <span className="font-light">premium brands.</span>
           </h1>
           
           <p className="text-base sm:text-lg mb-12 max-w-2xl mx-auto text-gray-800 leading-relaxed font-light">
-            I'm an automation expert specializing in n8n — I build world-class websites, brands, and <br className="hidden sm:inline" /> AI-powered workflows that not only look great, but sell great.
+            I'm a Shopify developer who builds high-converting storefronts — and when you need more, <br className="hidden sm:inline" /> I deliver full-stack web apps and n8n automations that scale your business after launch.
           </p>
 
           {/* ✅ Responsive button */}

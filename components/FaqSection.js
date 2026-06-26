@@ -19,24 +19,28 @@ const FaqSection = () => {
 
   const faqs = [
     {
+      question: "Do you build custom Shopify stores?",
+      answer: "Yes — Shopify is my primary focus. I build custom DTC storefronts with theme development, collection architecture, product page design, checkout optimisation, and email capture. Recent builds include Yowaa (footwear), Yanga (beauty), and Aurum & Co. (luxury jewelry). Every store is engineered for mobile-first conversion, not just visual polish."
+    },
+    {
       question: "Why should I work with you instead of a traditional agency?",
-      answer: "When you work with me, you bypass middle management, sales reps, and corporate overhead. You deal directly with a senior full-stack developer and n8n automation expert. This direct pipeline guarantees transparent communication, rapid iteration speeds, and custom, premium-grade code built to your exact specifications."
+      answer: "When you work with me, you bypass middle management, sales reps, and corporate overhead. You deal directly with a senior Shopify developer and full-stack engineer. This direct pipeline guarantees transparent communication, rapid iteration speeds, and custom storefronts built to your exact specifications — with n8n automations available when you're ready to scale operations."
     },
     {
       question: "Do you build custom AI automation and Python agent pipelines?",
-      answer: "Yes, absolutely! As an automation expert specializing in n8n, I design and implement production-grade workflows that connect webhooks, LLM classifiers, Google Sheets, Gmail, Slack, and CRM tools. I also build autonomous LLM agents (using CrewAI and LangChain), Python data scrapers, and API integrations — embedding AI directly into your Next.js app or running them as background automations that save your business hundreds of hours."
+      answer: "Yes — after your store goes live, I design n8n workflows that connect webhooks, LLM classifiers, Google Sheets, Gmail, Slack, and CRM tools. I also build autonomous LLM agents (using CrewAI and LangChain), Python data scrapers, and API integrations — embedding AI directly into your Shopify store or running them as background automations that save your business hundreds of hours."
     },
     {
       question: "Do you build n8n workflows and webhook integrations?",
-      answer: "Yes — n8n is one of my core specializations. I build end-to-end automations with n8n cloud or self-hosted instances, wired to Next.js webhook endpoints, OpenAI/GPT nodes, Google Sheets logging, Gmail notifications, and custom admin dashboards. Recent builds include an AI leads classifier and a LinkedIn post generator — both with instant frontend responses and background task processing."
+      answer: "Yes — n8n is a core upsell after launch. I build end-to-end automations with n8n cloud or self-hosted instances, wired to Shopify webhook endpoints, OpenAI/GPT nodes, Google Sheets logging, Gmail notifications, and custom admin dashboards. Recent builds include an AI leads classifier and a LinkedIn post generator — both with instant frontend responses and background task processing."
     },
     {
       question: "What is your typical project timeline?",
-      answer: "A standard high-converting landing page or corporate website takes between 2 to 3 weeks. Complex SaaS applications, database integrations, or full custom e-commerce stores typically take 4 to 6 weeks. I outline clear, secure milestones on Upwork so you always know exactly what is being delivered."
+      answer: "A custom Shopify storefront typically takes 2 to 4 weeks depending on catalog size and theme complexity. Full-stack web apps, SaaS platforms, or database integrations take 4 to 6 weeks. I outline clear, secure milestones on Upwork so you always know exactly what is being delivered."
     },
     {
       question: "What technologies do you use for building products?",
-      answer: "I specialize in React and Next.js (App Router) for blazingly fast, SEO-optimized frontends. For backends, database, and automation pipelines, I implement secure Node.js APIs, n8n workflow orchestration, robust Python services, MongoDB, PostgreSQL, and serverless tools like Supabase and Firebase."
+      answer: "For Shopify, I work with Liquid themes, Shopify CLI, and custom section development. For full-stack products, I use React and Next.js (App Router) for blazingly fast frontends. For backends and automation, I implement Node.js APIs, n8n workflow orchestration, Python services, MongoDB, PostgreSQL, and serverless tools like Supabase and Firebase."
     },
     {
       question: "Do you manage payments and contracts securely?",

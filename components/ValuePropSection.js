@@ -18,8 +18,8 @@ const ValuePropSection = () => {
 
   const pitfalls = [
     {
-      title: 'Drowning in Competition',
-      description: "You are competing with thousands of copycat template websites launched daily, making your business blend in. You are losing potential clients because your site looks just like everyone else instead of standing out.",
+      title: 'Template Store Fatigue',
+      description: "Your Shopify store looks like every other theme on the market, so visitors bounce before they trust your brand. You're losing sales to competitors whose storefronts feel more premium and intentional.",
       icon: (
         <svg className="w-6 h-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" />
@@ -27,8 +27,8 @@ const ValuePropSection = () => {
       )
     },
     {
-      title: 'Poor Conversions',
-      description: "You might be getting visitors, but you aren't seeing them turn into paying clients. You are wasting traffic and marketing budget because your website lacks high-converting UX triggers to get people to contact you.",
+      title: 'Low Conversion Rates',
+      description: "You're driving traffic to your store but carts are abandoned and checkout feels friction-heavy. You're wasting ad spend because your product pages and collection flows aren't engineered to close sales.",
       icon: (
         <svg className="w-6 h-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -36,8 +36,8 @@ const ValuePropSection = () => {
       )
     },
     {
-      title: 'Poor Design',
-      description: "Your website is slow, outdated, or hard to navigate, causing prospects to lose trust in you within 50 milliseconds. You are driving high-value leads straight to your competitors because your design doesn't reflect your actual expertise.",
+      title: 'Manual Operations',
+      description: "You're copying order details into spreadsheets, replying to leads one by one, and posting content manually. Your team is buried in repetitive tasks that should be automated after launch.",
       icon: (
         <svg className="w-6 h-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -69,8 +69,8 @@ const ValuePropSection = () => {
           </div>
 
           <p className={`text-base sm:text-lg text-gray-700 leading-relaxed font-light transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
-            My websites make visitors choose you over your competitors. <br className="hidden sm:inline" />
-            My websites build relationships and connections with your customers.
+            My Shopify stores make visitors choose you over competitors. <br className="hidden sm:inline" />
+            My automations keep your business running while you focus on growth.
           </p>
         </div>
 
