@@ -33,23 +33,23 @@ const PORTFOLIO_VIDEO_URL = 'https://youtu.be/Bj3buE41G00';
 const shopifyProjects = [
   {
     id: 10,
-    title: 'Yowaa Footwear',
+    title: 'Oreo',
     description:
       'Custom Shopify DTC sneaker store — premium Yeezy, Nike & Adidas with featured drops, shop-by-style collections, authenticity guarantee, pre-order flows, and member email capture. Live storefront with cart, search, and account.',
     tags: ['Shopify', 'E-commerce', 'DTC', 'Liquid'],
     image: '/images/yowaa.png',
-    link: 'https://yowaa-2.myshopify.com/',
-    detailPage: '/yowaa',
+    link: 'https://www.oreo.ink',
+    detailPage: '/oreo',
   },
   {
     id: 11,
-    title: 'Yanga Beauty',
+    title: 'Yangaa',
     description:
       'Premium Shopify beauty marketplace — French pharmacy, K-beauty, luxury skincare & hair brands with mega-menu navigation, sale carousels, brand-of-the-month features, reviews, and newsletter capture.',
     tags: ['Shopify', 'E-commerce', 'Beauty', 'Liquid'],
     image: '/images/yanga.png',
-    link: 'https://yanga-7885.myshopify.com/',
-    detailPage: '/yanga',
+    link: 'https://www.yangaa.store',
+    detailPage: '/yangaa',
   },
   {
     id: 12,
@@ -70,16 +70,6 @@ const shopifyProjects = [
     image: '/images/inema.png',
     link: 'https://inema.site',
     detailPage: '/inema',
-  },
-  {
-    id: 1,
-    title: 'Oreo Luxury Showcase',
-    description:
-      'Luxury automotive Shopify storefront — premium inventory showcase, vehicle listings, editorial page layouts, and owner-managed content through a custom Shopify admin experience.',
-    tags: ['Shopify', 'E-commerce', 'Automotive', 'Liquid'],
-    image: '/images/oreo (2).png',
-    link: 'https://oreo.ink',
-    detailPage: '/oreo',
   },
   {
     id: 6,
@@ -119,9 +109,8 @@ const fullStackProjects = [
 const AutomationCard = ({ project, index, isVisible }) => (
   <div
     data-card-id={`auto-${project.id}`}
-    className={`group flex flex-col rounded-[28px] overflow-hidden border border-gray-200/80 bg-white shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 ${
-      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-    }`}
+    className={`group flex flex-col rounded-[28px] overflow-hidden border border-gray-200/80 bg-white shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
     style={{ transitionDelay: `${index * 120}ms` }}
   >
     {/* Workflow screenshot */}
@@ -196,9 +185,8 @@ const AutomationCard = ({ project, index, isVisible }) => (
 const WebCard = ({ project, index, isVisible }) => (
   <div
     data-card-id={`web-${project.id}`}
-    className={`group flex flex-col rounded-[24px] overflow-hidden border border-gray-200/60 bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 ${
-      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-    }`}
+    className={`group flex flex-col rounded-[24px] overflow-hidden border border-gray-200/60 bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
     style={{ transitionDelay: `${index * 100}ms` }}
   >
     <div className="relative aspect-[16/10] overflow-hidden">
@@ -294,9 +282,8 @@ const ProjectsSection = () => {
         {/* Portfolio video */}
         <div
           data-card-id="portfolio-video"
-          className={`mb-20 transition-all duration-700 ${
-            visibleCards.has('portfolio-video') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`mb-20 transition-all duration-700 ${visibleCards.has('portfolio-video') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-8">
             <div>

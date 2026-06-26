@@ -2,14 +2,13 @@ import React from 'react';
 
 const HeroSection = () => {
   const designs = [
-    { title: 'Yowaa Footwear', tag: 'Shopify', img: '/images/yowaa.png' },
-    { title: 'Yanga Beauty', tag: 'Shopify', img: '/images/yanga.png' },
+    { title: 'Oreo', tag: 'Shopify', img: '/images/yowaa.png' },
+    { title: 'Yangaa', tag: 'Shopify', img: '/images/yanga.png' },
     { title: 'Aurum & Co.', tag: 'Luxury', img: '/images/aurum.png' },
     { title: 'Inema Construction', tag: 'Shopify', img: '/images/inema.png' },
     { title: 'n8n Leads Classifier', tag: 'n8n', img: '/images/n8n lead classifier.png' },
     { title: 'LinkedIn Post Generator', tag: 'n8n + AI', img: '/images/linkedin post generator.png' },
     { title: 'Xtraspare E-commerce', tag: 'Next.js', img: '/images/bikewall.jpg' },
-    { title: 'Oreo Luxury Showroom', tag: 'Shopify', img: '/images/oreo (1).png' },
     { title: 'Blogme Publishing', tag: 'React', img: '/images/blogwall.jpg' },
     { title: 'Eventie Tickets System', tag: 'Supabase', img: '/images/eventie.jpg' },
     { title: 'Creative Builders Hub', tag: 'Sass', img: '/images/creative.png' },
@@ -23,7 +22,7 @@ const HeroSection = () => {
       <style>{`
         @keyframes infinite-scroll {
           0% { transform: translateX(0); }
-          100% { transform: translateX(calc(-210px * 12 - 1.5rem * 12)); }
+          100% { transform: translateX(calc(-210px * 11 - 1.5rem * 11)); }
         }
         .scroll-container {
           overflow: hidden;
@@ -57,7 +56,7 @@ const HeroSection = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.1] mb-8 text-black">
             Custom Shopify stores that build <br className="hidden sm:inline" /> <span className="font-light">premium brands.</span>
           </h1>
-          
+
           <p className="text-base sm:text-lg mb-12 max-w-2xl mx-auto text-gray-800 leading-relaxed font-light">
             I'm a Shopify developer who builds high-converting storefronts — and when you need more, <br className="hidden sm:inline" /> I deliver full-stack web apps and n8n automations that scale your business after launch.
           </p>
@@ -92,7 +91,7 @@ const HeroSection = () => {
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent group-hover:from-black/90 transition-all duration-300" />
-                    
+
                     {/* Tag */}
                     <div className="absolute top-2.5 left-2.5">
                       <span className="px-2 py-0.5 bg-white/10 backdrop-blur-md border border-white/20 rounded-md text-[10px] font-semibold text-white tracking-wide uppercase">

@@ -20,7 +20,7 @@ const FaqSection = () => {
   const faqs = [
     {
       question: "Do you build custom Shopify stores?",
-      answer: "Yes — Shopify is my primary focus. I build custom DTC storefronts with theme development, collection architecture, product page design, checkout optimisation, and email capture. Recent builds include Yowaa (footwear), Yanga (beauty), and Aurum & Co. (luxury jewelry). Every store is engineered for mobile-first conversion, not just visual polish."
+      answer: "Yes — Shopify is my primary focus. I build custom DTC storefronts with theme development, collection architecture, product page design, checkout optimisation, and email capture. Recent builds include Oreo (footwear), Yangaa (beauty), and Aurum & Co. (luxury jewelry). Every store is engineered for mobile-first conversion, not just visual polish."
     },
     {
       question: "Why should I work with you instead of a traditional agency?",

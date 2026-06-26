@@ -27,7 +27,7 @@ const ServicesSection = () => {
   const doubledBranding = [...brandingDesigns, ...brandingDesigns];
 
   const showcase1 = [
-    { img: '/images/oreo (2).png' },
+    { img: '/images/yowaa.png' },
     { img: '/images/xtraspare (1).png' },
     { img: '/images/blogme (2).png' },
     { img: '/images/eventie (2).png' },
@@ -37,7 +37,7 @@ const ServicesSection = () => {
 
   const showcase2 = [
     { img: '/images/xtraspare (2).png' },
-    { img: '/images/oreo (4).png' },
+    { img: '/images/yanga.png' },
     { img: '/images/eventie (4).png' },
     { img: '/images/blogme (3).png' },
     { img: '/images/ama2.jpg' }
@@ -192,7 +192,7 @@ const ServicesSection = () => {
             <div className="w-full h-[140px] sm:h-[180px] lg:h-[220px] relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 group cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl mt-4">
               <img
                 src="/images/yowaa.png"
-                alt="Yowaa Shopify store showcase"
+                alt="Oreo Shopify store showcase"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent group-hover:from-black/95 transition-all duration-300" />
@@ -205,7 +205,7 @@ const ServicesSection = () => {
               
               <div className="absolute bottom-5 left-5 right-5 text-left">
                 <h4 className="text-white text-base sm:text-lg font-bold tracking-tight mb-1 group-hover:text-gray-200 transition-colors duration-300">
-                  Yowaa Footwear Store
+                  Oreo Footwear Store
                 </h4>
                 <p className="text-gray-300 text-xs font-light tracking-wide">
                   Custom DTC sneaker storefront with featured drops, collections &amp; pre-order flows.
