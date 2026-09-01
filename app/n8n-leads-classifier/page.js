@@ -2,7 +2,7 @@ import ProjectDetailPage from '@/components/ProjectDetailPage';
 import { ALL_PROJECTS } from '@/lib/projectData';
 
 export const metadata = {
-  title: 'n8n Leads Classifier — Alex Thompson',
+  title: 'n8n Leads Classifier, Alex Thompson',
   description:
     'Full-stack AI lead qualification system with Shopify webhook, n8n GPT classifier, Google Sheets logging, Gmail notifications, and admin dashboard.',
 };

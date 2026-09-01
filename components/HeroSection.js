@@ -2,6 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   const designs = [
+    { title: 'Inkamoto Tours', tag: 'Travel', img: '/images/inkamoto.png' },
     { title: 'Oreo', tag: 'Shopify', img: '/images/yowaa.png' },
     { title: 'Yangaa', tag: 'Shopify', img: '/images/yanga.png' },
     { title: 'Aurum & Co.', tag: 'Luxury', img: '/images/aurum.png' },
@@ -22,7 +23,7 @@ const HeroSection = () => {
       <style>{`
         @keyframes infinite-scroll {
           0% { transform: translateX(0); }
-          100% { transform: translateX(calc(-210px * 11 - 1.5rem * 11)); }
+          100% { transform: translateX(calc(-210px * 12 - 1.5rem * 12)); }
         }
         .scroll-container {
           overflow: hidden;
@@ -54,11 +55,11 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.1] mb-8 text-black">
-            Custom Shopify stores that build <br className="hidden sm:inline" /> <span className="font-light">premium brands.</span>
+            Full-stack products that build <br className="hidden sm:inline" /> <span className="font-light">premium brands.</span>
           </h1>
 
           <p className="text-base sm:text-lg mb-12 max-w-2xl mx-auto text-gray-800 leading-relaxed font-light">
-            I'm a Shopify developer who builds high-converting storefronts — and when you need more, <br className="hidden sm:inline" /> I deliver full-stack web apps and n8n automations that scale your business after launch.
+            I'm a senior full-stack developer who builds web apps, SaaS platforms, Shopify stores, and <br className="hidden sm:inline" /> n8n automations that not only look great, but scale and sell.
           </p>
 
           {/* ✅ Responsive button */}

@@ -113,18 +113,18 @@ const AboutSection = () => {
             </div>
             
             <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-6 leading-tight">
-              A Shopify developer building stores that convert — with full-stack engineering when you need to go further.
+              A senior full-stack developer building complete, premium digital products end to end.
             </h3>
             
             <div className="space-y-5 text-gray-600 text-sm sm:text-base leading-relaxed font-light">
               <p>
-                I build custom Shopify storefronts for DTC brands — from theme design and collection architecture to checkout flows, email capture, and mobile-first product pages engineered to turn browsers into buyers.
+                I'm a full-stack engineer with over 5 years of experience building end-to-end web applications, from premium, custom-coded frontends to secure backends, robust database structures, and high-performance interfaces on Next.js and React.
               </p>
               <p>
-                When a store alone isn't enough, I bring 5+ years of full-stack experience to the table: Next.js apps, admin dashboards, auth systems, booking platforms, and SaaS products with secure backends and high-performance frontends.
+                I ship SaaS platforms, admin dashboards, auth systems, booking flows, and e-commerce products, including custom Shopify storefronts when clients need a conversion-focused store alongside their broader product stack.
               </p>
               <p>
-                After launch, I wire n8n automations that connect your store to the rest of your stack — lead classification, content generation, order notifications, and CRM pipelines that save your team hours every week.
+                I also design n8n automations that connect your apps to the rest of your stack, lead classification, content generation, notifications, and CRM pipelines that save your team hours every week.
               </p>
             </div>
 

@@ -2,7 +2,7 @@ import ProjectDetailPage from '@/components/ProjectDetailPage';
 import { ALL_PROJECTS } from '@/lib/projectData';
 
 export const metadata = {
-  title: 'Xtraspare Ecommerce — Alex Thompson',
+  title: 'Xtraspare Ecommerce, Alex Thompson',
   description: 'Rebuilt a broken live spare parts ecommerce store and added a full custom admin dashboard for product and order management.',
 };
 

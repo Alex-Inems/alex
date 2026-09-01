@@ -130,10 +130,10 @@ const ServicesSection = () => {
             style={{ transitionDelay: '300ms' }}
           >
             <div>
-              <div className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">01 / STORE IDENTITY</div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 tracking-tight">Store Branding</h3>
+              <div className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">01 / IDENTITY & DESIGN</div>
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 tracking-tight">Branding</h3>
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-light mb-8 max-w-lg">
-                Your Shopify store should feel unmistakably yours. I design bespoke visual identities, product photography layouts, and theme styling that capture attention and build trust from the first scroll.
+                Transform your business into an unforgettable premium brand. I design bespoke visual identities, typographic styleguides, and interface layouts built to capture attention and command market authority.
               </p>
             </div>
 
@@ -181,34 +181,34 @@ const ServicesSection = () => {
             style={{ transitionDelay: '500ms' }}
           >
             <div>
-              <div className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">02 / SHOPIFY & FULL-STACK</div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 tracking-tight">Shopify Stores</h3>
+              <div className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">02 / INTERACTIVE ENGINEERING</div>
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 tracking-tight">Digital Products</h3>
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-light mb-8 max-w-lg">
-                I build custom Shopify storefronts engineered for conversion — theme development, collection architecture, checkout optimisation, and mobile-first product pages. When you outgrow a template, I architect full-stack apps on Next.js and React.
+                I architect full-stack web applications engineered for scale, SaaS platforms, admin dashboards, auth systems, booking flows, and high-performance e-commerce on Next.js and React.
               </p>
             </div>
 
             {/* Premium large mockup card showcasing website i built */}
             <div className="w-full h-[140px] sm:h-[180px] lg:h-[220px] relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 group cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl mt-4">
               <img
-                src="/images/yowaa.png"
-                alt="Oreo Shopify store showcase"
+                src="/images/blogme (2).png"
+                alt="Blogme SaaS platform showcase"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent group-hover:from-black/95 transition-all duration-300" />
               
               <div className="absolute top-4 left-4">
                 <span className="px-3 py-1 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg text-[10px] font-semibold text-white tracking-wide uppercase">
-                  SHOPIFY DEV
+                  FULL-STACK DEV
                 </span>
               </div>
               
               <div className="absolute bottom-5 left-5 right-5 text-left">
                 <h4 className="text-white text-base sm:text-lg font-bold tracking-tight mb-1 group-hover:text-gray-200 transition-colors duration-300">
-                  Oreo Footwear Store
+                  Blogme Publishing Platform
                 </h4>
                 <p className="text-gray-300 text-xs font-light tracking-wide">
-                  Custom DTC sneaker storefront with featured drops, collections &amp; pre-order flows.
+                  Multi-user SaaS blogging platform with real-time publishing, SEO, and analytics.
                 </p>
               </div>
             </div>
@@ -224,13 +224,13 @@ const ServicesSection = () => {
           style={{ transitionDelay: '600ms' }}
         >
           <div>
-            <div className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">03 / POST-LAUNCH AUTOMATION</div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 tracking-tight">Store Automations</h3>
+            <div className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">03 / WORKFLOW AUTOMATION</div>
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 tracking-tight">n8n Automations</h3>
             <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-light mb-8 max-w-lg">
-              After your store goes live, I wire n8n workflows that connect Shopify to the rest of your stack — AI lead classifiers, order notifications, content generation, Google Sheets logging, and CRM pipelines that run without manual intervention.
+              I wire n8n workflows that connect your apps to AI classifiers, Google Sheets, Gmail, Slack, and CRM tools to build production pipelines that classify leads, generate content, and route notifications without manual intervention.
             </p>
             <div className="flex flex-wrap gap-2">
-              {['n8n', 'OpenAI / GPT', 'Webhooks', 'Google Sheets', 'Gmail', 'Shopify'].map((tag) => (
+              {['n8n', 'OpenAI / GPT', 'Webhooks', 'Google Sheets', 'Gmail', 'Next.js'].map((tag) => (
                 <span key={tag} className="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full text-xs font-medium border border-gray-200">
                   {tag}
                 </span>
@@ -247,7 +247,7 @@ const ServicesSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <span className="px-2 py-0.5 bg-white/10 backdrop-blur-md border border-white/20 rounded text-[9px] font-semibold text-white tracking-wide uppercase mb-2 inline-block">n8n + Shopify</span>
+                <span className="px-2 py-0.5 bg-white/10 backdrop-blur-md border border-white/20 rounded text-[9px] font-semibold text-white tracking-wide uppercase mb-2 inline-block">n8n + Next.js</span>
                 <h4 className="text-white text-sm font-bold tracking-tight">Leads Classifier</h4>
                 <p className="text-gray-300 text-[11px] font-light mt-1">AI triage with webhook, Sheets log & admin dashboard</p>
               </div>
@@ -260,7 +260,7 @@ const ServicesSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <span className="px-2 py-0.5 bg-white/10 backdrop-blur-md border border-white/20 rounded text-[9px] font-semibold text-white tracking-wide uppercase mb-2 inline-block">n8n + Shopify</span>
+                <span className="px-2 py-0.5 bg-white/10 backdrop-blur-md border border-white/20 rounded text-[9px] font-semibold text-white tracking-wide uppercase mb-2 inline-block">n8n + GPT</span>
                 <h4 className="text-white text-sm font-bold tracking-tight">LinkedIn Post Generator</h4>
                 <p className="text-gray-300 text-[11px] font-light mt-1">Instant AI posts with Sheets history & email alerts</p>
               </div>
@@ -282,7 +282,7 @@ const ServicesSection = () => {
               Web Design & <br />Landing Pages
             </h3>
             <p className="text-lg text-gray-600 font-light mt-6 max-w-md leading-relaxed">
-              I design Shopify themes and landing pages that look great, and sell great.
+              I design websites &amp; landing pages that look great, and sell great.
             </p>
           </div>
 

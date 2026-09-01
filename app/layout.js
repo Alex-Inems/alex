@@ -13,19 +13,18 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   // ── Primary SEO ──────────────────────────────────────────────────────────────
-  title: "Alex Thompson | Shopify Developer & Full-Stack Engineer",
+  title: "Alex Thompson | Full-Stack Developer",
   description:
-    "Shopify developer specialising in custom DTC storefronts, theme development, and conversion-focused e-commerce. I also build full-stack web apps and n8n automations for merchants who want to scale beyond launch. Available on Upwork.",
+    "Senior full-stack developer specialising in Next.js, React, SaaS platforms, admin dashboards, and custom web apps. I also build Shopify stores and n8n automations for clients who need end-to-end delivery. Available on Upwork.",
 
   keywords: [
-    "Shopify Developer",
-    "Shopify Store Setup",
-    "Shopify Theme Developer",
-    "E-commerce Developer",
-    "DTC Store Developer",
     "Full-Stack Developer",
     "Next.js Developer",
     "React Developer",
+    "SaaS Developer",
+    "Web Application Developer",
+    "Shopify Developer",
+    "E-commerce Developer",
     "n8n Automation",
     "Workflow Automation",
     "Freelance Developer",
@@ -35,9 +34,9 @@ export const metadata = {
 
   // ── Open Graph (Facebook Ads, LinkedIn, WhatsApp, Slack previews) ─────────
   openGraph: {
-    title: "Alex Thompson | Shopify Developer & Full-Stack Engineer",
+    title: "Alex Thompson | Full-Stack Developer",
     description:
-      "Custom Shopify stores, full-stack web apps, and post-launch n8n automations. Book a strategy call on Upwork.",
+      "Full-stack web apps, SaaS platforms, Shopify stores, and n8n automations. Book a strategy call on Upwork.",
     url: "https://www.upwork.com/freelancers/~01d99779b36e05950f",
     siteName: "Alex Thompson Portfolio",
     images: [
@@ -45,7 +44,7 @@ export const metadata = {
         url: "/images/alex.jpeg",
         width: 1200,
         height: 630,
-        alt: "Alex Thompson — Shopify Developer & Full-Stack Engineer",
+        alt: "Alex Thompson, Full-Stack Developer",
       },
     ],
     locale: "en_GB",
@@ -55,9 +54,9 @@ export const metadata = {
   // ── Twitter / X Card ─────────────────────────────────────────────────────────
   twitter: {
     card: "summary_large_image",
-    title: "Alex Thompson | Shopify Developer & Full-Stack Engineer",
+    title: "Alex Thompson | Full-Stack Developer",
     description:
-      "Custom Shopify stores, full-stack web apps, and post-launch n8n automations. Book a strategy call on Upwork.",
+      "Full-stack web apps, SaaS platforms, Shopify stores, and n8n automations. Book a strategy call on Upwork.",
     images: ["/images/alex.jpeg"],
   },
 

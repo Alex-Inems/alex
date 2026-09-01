@@ -209,7 +209,7 @@ const AiPlayground = () => {
             Scope Your Business AI <br className="hidden sm:inline" /> Automation in Real-Time.
           </h2>
           <p className="text-base sm:text-lg text-gray-600 font-light max-w-2xl mx-auto">
-            I build Shopify stores and full-stack apps — and when you're ready to automate, describe a repetitive workflow below. My AI co-pilot will diagram your flow, select the optimal stack (Shopify, n8n, or Python), and draft a production-ready blueprint.
+            I'm a full-stack developer. Describe a repetitive workflow or product idea below. My AI co-pilot will diagram your flow, select the optimal stack (Next.js, n8n, Python, or Shopify), and draft a production-ready blueprint.
           </p>
         </div>
 
