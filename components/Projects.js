@@ -1,5 +1,6 @@
 'use client'
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const automationProjects = [
@@ -113,19 +114,16 @@ const fullStackProjects = [
   },
 ];
 
-const AutomationCard = ({ project, index, isVisible }) => (
-  <div
-    data-card-id={`auto-${project.id}`}
-    className={`group flex flex-col rounded-[28px] overflow-hidden border border-gray-200/80 bg-white shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}
-    style={{ transitionDelay: `${index * 120}ms` }}
-  >
-    {/* Workflow screenshot */}
+const AutomationCard = ({ project, priority = false }) => (
+  <div className="group flex flex-col rounded-[28px] overflow-hidden border border-gray-200/80 bg-white shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-1">
     <div className="relative bg-[#1a1a2e] aspect-[16/9] overflow-hidden">
-      <img
+      <Image
         src={project.image}
         alt={project.title}
-        className="w-full h-full object-contain p-3 sm:p-4 transition-transform duration-700 group-hover:scale-[1.02]"
+        fill
+        sizes="(max-width: 1024px) 100vw, 50vw"
+        className="object-contain p-3 sm:p-4 transition-transform duration-700 group-hover:scale-[1.02]"
+        priority={priority}
       />
       <div className="absolute top-4 left-4 flex items-center gap-2">
         <span className="px-2.5 py-1 bg-[#ff6d5a] text-white text-[10px] font-bold tracking-widest uppercase rounded-md shadow-sm">
@@ -137,7 +135,6 @@ const AutomationCard = ({ project, index, isVisible }) => (
       </div>
     </div>
 
-    {/* Content */}
     <div className="flex flex-col flex-1 p-6 sm:p-8">
       <p className="text-[11px] font-semibold text-[#ff6d5a] uppercase tracking-widest mb-2">
         {project.highlight}
@@ -149,7 +146,6 @@ const AutomationCard = ({ project, index, isVisible }) => (
         {project.description}
       </p>
 
-      {/* Metric pills */}
       <div className="flex flex-wrap gap-2 mb-5">
         {project.metrics.map((m) => (
           <span
@@ -161,7 +157,6 @@ const AutomationCard = ({ project, index, isVisible }) => (
         ))}
       </div>
 
-      {/* Tags */}
       <div className="flex flex-wrap gap-1.5 mb-6">
         {project.tags.map((tag) => (
           <span
@@ -173,7 +168,6 @@ const AutomationCard = ({ project, index, isVisible }) => (
         ))}
       </div>
 
-      {/* Actions */}
       <div className="pt-5 border-t border-gray-100">
         <Link
           href={project.detailPage}
@@ -189,18 +183,16 @@ const AutomationCard = ({ project, index, isVisible }) => (
   </div>
 );
 
-const WebCard = ({ project, index, isVisible }) => (
-  <div
-    data-card-id={`web-${project.id}`}
-    className={`group flex flex-col rounded-[24px] overflow-hidden border border-gray-200/60 bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}
-    style={{ transitionDelay: `${index * 100}ms` }}
-  >
+const WebCard = ({ project, priority = false }) => (
+  <div className="group flex flex-col rounded-[24px] overflow-hidden border border-gray-200/60 bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
     <div className="relative aspect-[16/10] overflow-hidden">
-      <img
+      <Image
         src={project.image}
         alt={project.title}
-        className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+        fill
+        sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 600px"
+        className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+        priority={priority}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
     </div>
@@ -246,34 +238,12 @@ const WebCard = ({ project, index, isVisible }) => (
 );
 
 const ProjectsSection = () => {
-  const [visibleCards, setVisibleCards] = useState(new Set());
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setVisibleCards((prev) => new Set([...prev, entry.target.dataset.cardId]));
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    sectionRef.current?.querySelectorAll('[data-card-id]').forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section
-      ref={sectionRef}
       id="projects"
       className="relative bg-white pt-28 pb-20 md:pt-32 md:pb-32 overflow-hidden"
     >
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        {/* Header */}
         <div className="text-left max-w-3xl mb-16">
           <span className="inline-block px-4 py-1.5 bg-gray-100 text-gray-800 text-xs font-semibold tracking-wide uppercase rounded-full mb-4">
             Portfolio
@@ -286,7 +256,6 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        {/* Full-Stack Web Products */}
         <div className="mb-20">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-8 rounded-lg bg-gray-900 flex items-center justify-center">
@@ -302,17 +271,11 @@ const ProjectsSection = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {fullStackProjects.map((project, index) => (
-              <WebCard
-                key={project.id}
-                project={project}
-                index={index}
-                isVisible={visibleCards.has(`web-${project.id}`)}
-              />
+              <WebCard key={project.id} project={project} priority={index < 2} />
             ))}
           </div>
         </div>
 
-        {/* Shopify Stores */}
         <div className="mb-20">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-8 rounded-lg bg-gray-900 flex items-center justify-center">
@@ -327,18 +290,12 @@ const ProjectsSection = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {shopifyProjects.map((project, index) => (
-              <WebCard
-                key={project.id}
-                project={project}
-                index={index}
-                isVisible={visibleCards.has(`web-${project.id}`)}
-              />
+            {shopifyProjects.map((project) => (
+              <WebCard key={project.id} project={project} />
             ))}
           </div>
         </div>
 
-        {/* Automations */}
         <div>
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-8 rounded-lg bg-[#ff6d5a] flex items-center justify-center">
@@ -353,18 +310,12 @@ const ProjectsSection = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {automationProjects.map((project, index) => (
-              <AutomationCard
-                key={project.id}
-                project={project}
-                index={index}
-                isVisible={visibleCards.has(`auto-${project.id}`)}
-              />
+            {automationProjects.map((project) => (
+              <AutomationCard key={project.id} project={project} />
             ))}
           </div>
         </div>
 
-        {/* CTA */}
         <div className="text-center mt-20">
           <a
             href="https://www.upwork.com/freelancers/~01d99779b36e05950f?mp_source=share"
@@ -378,7 +329,6 @@ const ProjectsSection = () => {
             <span>Book a Call on Upwork</span>
           </a>
         </div>
-
       </div>
     </section>
   );
