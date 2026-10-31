@@ -28,58 +28,58 @@ const automationProjects = [
   },
 ];
 
-const shopifyProjects = [
-  {
-    id: 10,
-    title: 'Oreo',
-    description:
-      'Custom Shopify DTC sneaker store with premium Yeezy, Nike & Adidas, featured drops, shop-by-style collections, authenticity guarantee, pre-order flows, and member email capture. Live storefront with cart, search, and account.',
-    tags: ['Shopify', 'E-commerce', 'DTC', 'Liquid'],
-    image: '/images/yowaa.png',
-    link: 'https://www.oreo.ink',
-    detailPage: '/oreo',
-  },
-  {
-    id: 11,
-    title: 'Yangaa',
-    description:
-      'Premium Shopify beauty marketplace with French pharmacy, K-beauty, luxury skincare & hair brands, mega-menu navigation, sale carousels, brand-of-the-month features, reviews, and newsletter capture.',
-    tags: ['Shopify', 'E-commerce', 'Beauty', 'Liquid'],
-    image: '/images/yanga.png',
-    link: 'https://www.yangaa.store',
-    detailPage: '/yangaa',
-  },
-  {
-    id: 12,
-    title: 'Aurum & Co. Jewelry',
-    description:
-      'Luxury Shopify fine jewelry store with flash sale countdown, GIA-certified pieces, category shop grid, concierge messaging, VIP email list, and insured checkout for rings, necklaces, watches & bridal.',
-    tags: ['Shopify', 'E-commerce', 'Luxury', 'Liquid'],
-    image: '/images/aurum.png',
-    link: 'https://aurum-co-21.myshopify.com/',
-    detailPage: '/aurum',
-  },
-  {
-    id: 9,
-    title: 'Inema Construction',
-    description:
-      'Custom Shopify corporate site for PT Inema Konstruksi with editorial dark-mode design, landmark portfolio, service showcase, project inquiry flows, and admin-managed content. Live at inema.site.',
-    tags: ['Shopify', 'Corporate', 'Liquid', 'Booking'],
-    image: '/images/inema.png',
-    link: 'https://inema.site',
-    detailPage: '/inema',
-  },
-  {
-    id: 6,
-    title: 'Sturdee Education Platform',
-    description:
-      'Premium Shopify EdTech storefront with courses, programs, and tutorials, session booking, student accounts, instructor profiles, and admin-managed enrolments. Live at sturdee.online.',
-    tags: ['Shopify', 'EdTech', 'Liquid', 'Booking'],
-    image: '/images/sturdee.png',
-    link: 'https://sturdee.online',
-    detailPage: '/sturdee',
-  },
-];
+// const shopifyProjects = [
+  // {
+  //   id: 10,
+  //   title: 'Oreo',
+  //   description:
+  //     'Custom Shopify DTC sneaker store with premium Yeezy, Nike & Adidas, featured drops, shop-by-style collections, authenticity guarantee, pre-order flows, and member email capture. Live storefront with cart, search, and account.',
+  //   tags: ['Shopify', 'E-commerce', 'DTC', 'Liquid'],
+  //   image: '/images/yowaa.png',
+  //   link: 'https://www.oreo.ink',
+  //   detailPage: '/oreo',
+  // },
+  // {
+  //   id: 11,
+  //   title: 'Yangaa',
+  //   description:
+  //     'Premium Shopify beauty marketplace with French pharmacy, K-beauty, luxury skincare & hair brands, mega-menu navigation, sale carousels, brand-of-the-month features, reviews, and newsletter capture.',
+  //   tags: ['Shopify', 'E-commerce', 'Beauty', 'Liquid'],
+  //   image: '/images/yanga.png',
+  //   link: 'https://www.yangaa.store',
+  //   detailPage: '/yangaa',
+  // },
+  // {
+  //   id: 12,
+  //   title: 'Aurum & Co. Jewelry',
+  //   description:
+  //     'Luxury Shopify fine jewelry store with flash sale countdown, GIA-certified pieces, category shop grid, concierge messaging, VIP email list, and insured checkout for rings, necklaces, watches & bridal.',
+  //   tags: ['Shopify', 'E-commerce', 'Luxury', 'Liquid'],
+  //   image: '/images/aurum.png',
+  //   link: 'https://aurum-co-21.myshopify.com/',
+  //   detailPage: '/aurum',
+  // },
+//   {
+//     id: 9,
+//     title: 'Inema Construction',
+//     description:
+//       'Custom Shopify corporate site for PT Inema Konstruksi with editorial dark-mode design, landmark portfolio, service showcase, project inquiry flows, and admin-managed content. Live at inema.site.',
+//     tags: ['Shopify', 'Corporate', 'Liquid', 'Booking'],
+//     image: '/images/inema.png',
+//     link: 'https://inema.site',
+//     detailPage: '/inema',
+//   },
+//   {
+//     id: 6,
+//     title: 'Sturdee Education Platform',
+//     description:
+//       'Premium Shopify EdTech storefront with courses, programs, and tutorials, session booking, student accounts, instructor profiles, and admin-managed enrolments. Live at sturdee.online.',
+//     tags: ['Shopify', 'EdTech', 'Liquid', 'Booking'],
+//     image: '/images/sturdee.png',
+//     link: 'https://sturdee.online',
+//     detailPage: '/sturdee',
+//   },
+// ];
 
 const fullStackProjects = [
   {
@@ -112,6 +112,26 @@ const fullStackProjects = [
     link: 'https://www.eventie.live',
     detailPage: '/eventie',
   },
+  {
+    id: 9,
+    title: 'Inema Construction',
+    description:
+      'Custom Shopify corporate site for PT Inema Konstruksi with editorial dark-mode design, landmark portfolio, service showcase, project inquiry flows, and admin-managed content. Live at inema.site.',
+    tags: ['Shopify', 'Corporate', 'Liquid', 'Booking'],
+    image: '/images/inema.png',
+    link: 'https://inema.site',
+    detailPage: '/inema',
+  },
+  {
+    id: 6,
+    title: 'Sturdee Education Platform',
+    description:
+      'Premium Shopify EdTech storefront with courses, programs, and tutorials, session booking, student accounts, instructor profiles, and admin-managed enrolments. Live at sturdee.online.',
+    tags: ['Shopify', 'EdTech', 'Liquid', 'Booking'],
+    image: '/images/sturdee.png',
+    link: 'https://sturdee.online',
+    detailPage: '/sturdee',
+  }
 ];
 
 const AutomationCard = ({ project, priority = false }) => (
@@ -289,11 +309,11 @@ const ProjectsSection = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {shopifyProjects.map((project) => (
               <WebCard key={project.id} project={project} />
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div>
